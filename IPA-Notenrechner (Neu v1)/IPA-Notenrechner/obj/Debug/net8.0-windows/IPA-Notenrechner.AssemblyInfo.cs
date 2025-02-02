@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IPA-Notenrechner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+498ee62bc26e15cff9ba963bc02ca41e038a5fe3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+04478a90e1ca6c45647429b881798794d1aa89cf")]
 [assembly: System.Reflection.AssemblyProductAttribute("IPA-Notenrechner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IPA-Notenrechner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
