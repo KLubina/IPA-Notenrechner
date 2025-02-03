@@ -25,7 +25,7 @@ namespace IPA_Notenrechner
                                      ( dokumentationNote_Variable * DOKUMENTATION_GEWICHT_Constant ) +
                                      ( praesentationNote_Variable * PRAESENTATION_GEWICHT_Constant );
 
-        // Dann skalieren wir von 0–3 auf 0–6
+        // Dann skalieren wir
         double scaledGesamtnote_Variable = gesamtnote_Variable * 2.0;
 
         return Math.Round( scaledGesamtnote_Variable, 2 );
@@ -38,7 +38,7 @@ namespace IPA_Notenrechner
         }
       }
 
-    // Hilfsmethode zur Berechnung einer Teilnote (0–3)
+    // Hilfsmethode zur Berechnung einer Teilnote
     public static double BerechneTeilnote( List<double> punkte_Parameter )
       {
       if ( punkte_Parameter == null || punkte_Parameter.Count == 0 )
@@ -57,11 +57,11 @@ namespace IPA_Notenrechner
       return Math.Round( durchschnitt_Variable, 2 );
       }
 
-    // Falls du die einzelnen Teilnoten separat auf 0–6 skalieren möchtest,
+    // Falls du die einzelnen Teilnoten separat skalieren möchtest,
     // kannst du diese Methode verwenden:
     public static double SkaliereTeilnote( double teilnote_Variable )
       {
-      // teilnote_Variable kommt von BerechneTeilnote (0–3) und wird nun mal 2 genommen
+      // teilnote_Variable kommt von BerechneTeilnote und wird nun mal 2 genommen
       return Math.Round( teilnote_Variable * 2.0, 2 );
       }
     }

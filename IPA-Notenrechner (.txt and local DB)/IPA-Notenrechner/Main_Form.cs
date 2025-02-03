@@ -141,7 +141,7 @@ namespace IPA_Notenrechner
           return;
           }
 
-        // Berechne die Teilnoten (0–3)
+        // Berechne die Teilnoten
         double kompetenzNote_Variable = NotenRechner_Class.BerechneTeilnote(
             currentTemplate_Variable.KompetenzPunkte_Property );
         double dokumentationNote_Variable = NotenRechner_Class.BerechneTeilnote(
@@ -149,10 +149,10 @@ namespace IPA_Notenrechner
         double praesentationNote_Variable = NotenRechner_Class.BerechneTeilnote(
             currentTemplate_Variable.PraesentationPunkte_Property );
 
-        // Berechne die Gesamtnote (0–6)
+        // Berechne die Gesamtnote (1–6)
         double gesamtnote_Variable = NotenRechner_Class.BerechneGesamtnote( currentTemplate_Variable );
 
-        // Skaliere die Teilnoten von 0–3 auf 0–6
+        // Skaliere die Teilnoten
         double kompetenzScaled_Variable = NotenRechner_Class.SkaliereTeilnote( kompetenzNote_Variable );
         double dokumentationScaled_Variable = NotenRechner_Class.SkaliereTeilnote( dokumentationNote_Variable );
         double praesentationScaled_Variable = NotenRechner_Class.SkaliereTeilnote( praesentationNote_Variable );
@@ -168,7 +168,7 @@ namespace IPA_Notenrechner
         richTextBoxGradePresentationAndConversationScaled.Text =
             praesentationScaled_Variable.ToString( "F2" );
 
-        // Zeige die Gesamtnote (0–6)
+        // Zeige die Gesamtnote (1–6)
         richTextBoxEndNote.Text = gesamtnote_Variable.ToString( "F2" );
         }
       catch ( Exception ex_Variable )
