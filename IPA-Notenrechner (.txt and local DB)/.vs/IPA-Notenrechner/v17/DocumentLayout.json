@@ -11,16 +11,23 @@
       "RelativeMoniker": "D:0:0:{F96D3679-0737-4FBB-93C4-3380395818B2}|IPA-Notenrechner\\IPA-Notenrechner.csproj|solutionrelative:ipa-notenrechner\\main_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
+=======
+      "AbsoluteMoniker": "D:0:0:{F96D3679-0737-4FBB-93C4-3380395818B2}|IPA-Notenrechner\\IPA-Notenrechner.csproj|C:\\GitHubDesktop\\IPA-Notenrechner\\IPA-Notenrechner (.txt and local DB)\\ipa-notenrechner\\notenrechner_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F96D3679-0737-4FBB-93C4-3380395818B2}|IPA-Notenrechner\\IPA-Notenrechner.csproj|solutionrelative:ipa-notenrechner\\notenrechner_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F96D3679-0737-4FBB-93C4-3380395818B2}|IPA-Notenrechner\\IPA-Notenrechner.csproj|c:\\githubdesktop\\ipa-notenrechner\\ipa-notenrechner (.txt and local db)\\ipa-notenrechner\\main_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F96D3679-0737-4FBB-93C4-3380395818B2}|IPA-Notenrechner\\IPA-Notenrechner.csproj|solutionrelative:ipa-notenrechner\\main_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+>>>>>>> improve-calculation
       "AbsoluteMoniker": "D:0:0:{F96D3679-0737-4FBB-93C4-3380395818B2}|IPA-Notenrechner\\IPA-Notenrechner.csproj|C:\\GitHubDesktop\\IPA-Notenrechner\\IPA-Notenrechner (.txt and local DB)\\ipa-notenrechner\\createtemplate_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F96D3679-0737-4FBB-93C4-3380395818B2}|IPA-Notenrechner\\IPA-Notenrechner.csproj|solutionrelative:ipa-notenrechner\\createtemplate_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F96D3679-0737-4FBB-93C4-3380395818B2}|IPA-Notenrechner\\IPA-Notenrechner.csproj|C:\\GitHubDesktop\\IPA-Notenrechner\\IPA-Notenrechner (.txt and local DB)\\ipa-notenrechner\\createtemplate_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F96D3679-0737-4FBB-93C4-3380395818B2}|IPA-Notenrechner\\IPA-Notenrechner.csproj|solutionrelative:ipa-notenrechner\\createtemplate_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F96D3679-0737-4FBB-93C4-3380395818B2}|IPA-Notenrechner\\IPA-Notenrechner.csproj|C:\\GitHubDesktop\\IPA-Notenrechner\\IPA-Notenrechner (.txt and local DB)\\ipa-notenrechner\\main_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F96D3679-0737-4FBB-93C4-3380395818B2}|IPA-Notenrechner\\IPA-Notenrechner.csproj|solutionrelative:ipa-notenrechner\\main_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F96D3679-0737-4FBB-93C4-3380395818B2}|IPA-Notenrechner\\IPA-Notenrechner.csproj|C:\\GitHubDesktop\\IPA-Notenrechner\\IPA-Notenrechner (.txt and local DB)\\ipa-notenrechner\\template_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -90,13 +97,21 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 0,
+=======
+              "DocumentIndex": 1,
+>>>>>>> improve-calculation
               "Title": "NotenRechner_Class.cs",
               "DocumentMoniker": "C:\\GitHubDesktop\\IPA-Notenrechner\\IPA-Notenrechner (.txt and local DB)\\IPA-Notenrechner\\NotenRechner_Class.cs",
               "RelativeDocumentMoniker": "IPA-Notenrechner\\NotenRechner_Class.cs",
               "ToolTip": "C:\\GitHubDesktop\\IPA-Notenrechner\\IPA-Notenrechner (.txt and local DB)\\IPA-Notenrechner\\NotenRechner_Class.cs",
               "RelativeToolTip": "IPA-Notenrechner\\NotenRechner_Class.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAABNAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwDsAAAAAAAAAAAAAAA==",
+>>>>>>> improve-calculation
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-28T21:23:11.506Z",
               "EditorCaption": ""
@@ -109,14 +124,18 @@
               "RelativeDocumentMoniker": "IPA-Notenrechner\\Main_Form.cs",
               "ToolTip": "C:\\GitHubDesktop\\IPA-Notenrechner\\IPA-Notenrechner (.txt and local DB)\\IPA-Notenrechner\\Main_Form.cs",
               "RelativeToolTip": "IPA-Notenrechner\\Main_Form.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAkwLQAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-28T21:17:50.413Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 2,
+=======
+              "DocumentIndex": 3,
+>>>>>>> improve-calculation
               "Title": "CreateTemplate_Form.cs [Design]",
               "DocumentMoniker": "C:\\GitHubDesktop\\IPA-Notenrechner\\IPA-Notenrechner (.txt and local DB)\\IPA-Notenrechner\\CreateTemplate_Form.cs",
               "RelativeDocumentMoniker": "IPA-Notenrechner\\CreateTemplate_Form.cs",
@@ -127,7 +146,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 4,
+=======
+              "DocumentIndex": 2,
+>>>>>>> improve-calculation
               "Title": "Main_Form.cs [Design]",
               "DocumentMoniker": "C:\\GitHubDesktop\\IPA-Notenrechner\\IPA-Notenrechner (.txt and local DB)\\IPA-Notenrechner\\Main_Form.cs",
               "RelativeDocumentMoniker": "IPA-Notenrechner\\Main_Form.cs",
@@ -138,7 +161,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 3,
+=======
+              "DocumentIndex": 4,
+>>>>>>> improve-calculation
               "Title": "CreateTemplate_Form.cs",
               "DocumentMoniker": "C:\\GitHubDesktop\\IPA-Notenrechner\\IPA-Notenrechner (.txt and local DB)\\IPA-Notenrechner\\CreateTemplate_Form.cs",
               "RelativeDocumentMoniker": "IPA-Notenrechner\\CreateTemplate_Form.cs",

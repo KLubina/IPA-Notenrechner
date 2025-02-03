@@ -141,21 +141,24 @@ namespace IPA_Notenrechner
           return;
           }
 
-        // Berechne die Teilnoten (0–3)
+        // Berechne die Teilnoten unter Angabe der jeweiligen maxPossible-Werte:
         double kompetenzNote_Variable = NotenRechner_Class.BerechneTeilnote(
-            currentTemplate_Variable.KompetenzPunkte_Property );
+            currentTemplate_Variable.KompetenzPunkte_Property, 3.0 );
         double dokumentationNote_Variable = NotenRechner_Class.BerechneTeilnote(
-            currentTemplate_Variable.DokumentationPunkte_Property );
+            currentTemplate_Variable.DokumentationPunkte_Property, 1.2 );
         double praesentationNote_Variable = NotenRechner_Class.BerechneTeilnote(
-            currentTemplate_Variable.PraesentationPunkte_Property );
+            currentTemplate_Variable.PraesentationPunkte_Property, 1.8 );
 
-        // Berechne die Gesamtnote (0–6)
+        // Berechne die Gesamtnote (1–6)
         double gesamtnote_Variable = NotenRechner_Class.BerechneGesamtnote( currentTemplate_Variable );
 
-        // Skaliere die Teilnoten von 0–3 auf 0–6
-        double kompetenzScaled_Variable = NotenRechner_Class.SkaliereTeilnote( kompetenzNote_Variable );
-        double dokumentationScaled_Variable = NotenRechner_Class.SkaliereTeilnote( dokumentationNote_Variable );
-        double praesentationScaled_Variable = NotenRechner_Class.SkaliereTeilnote( praesentationNote_Variable );
+        // Skaliere die Teilnoten; hier wird als maxNote (maxPossible + 1) übergeben:
+        double kompetenzScaled_Variable = NotenRechner_Class.SkaliereTeilnote(
+            kompetenzNote_Variable, 3.0 + 1 );
+        double dokumentationScaled_Variable = NotenRechner_Class.SkaliereTeilnote(
+            dokumentationNote_Variable, 1.2 + 1 );
+        double praesentationScaled_Variable = NotenRechner_Class.SkaliereTeilnote(
+            praesentationNote_Variable, 1.8 + 1 );
 
         // Zeige die (unskalierten) Teilnoten
         richTextBoxGradeCompetence.Text = kompetenzNote_Variable.ToString( "F2" );
@@ -165,10 +168,9 @@ namespace IPA_Notenrechner
         // Zeige die skalierten Teilnoten
         richTextBoxGradeCompetenceScaled.Text = kompetenzScaled_Variable.ToString( "F2" );
         richTextBoxGradeDocumentationScaled.Text = dokumentationScaled_Variable.ToString( "F2" );
-        richTextBoxGradePresentationAndConversationScaled.Text =
-            praesentationScaled_Variable.ToString( "F2" );
+        richTextBoxGradePresentationAndConversationScaled.Text = praesentationScaled_Variable.ToString( "F2" );
 
-        // Zeige die Gesamtnote (0–6)
+        // Zeige die Gesamtnote (1–6)
         richTextBoxEndNote.Text = gesamtnote_Variable.ToString( "F2" );
         }
       catch ( Exception ex_Variable )

@@ -6,63 +6,54 @@ namespace IPA_Notenrechner
   {
   public class NotenRechner_Class
     {
-    // Konstanten für die Gewichtung
-    private const double KOMPETENZ_GEWICHT_Constant = 0.5;    // 50%
-    private const double DOKUMENTATION_GEWICHT_Constant = 0.2; // 20%
-    private const double PRAESENTATION_GEWICHT_Constant = 0.3; // 30%
+    // Gewichtungen
+    private const double KOMPETENZ_GEWICHT = 0.5;
+    private const double DOKUMENTATION_GEWICHT = 0.2;
+    private const double PRAESENTATION_GEWICHT = 0.3;
 
-    // Methode zur Berechnung der Gesamtnote (skaliert auf 6)
-    public static double BerechneGesamtnote( Template_Class template_Parameter )
+    // Berechnet die Teilnote (Raw-Note) für eine Kategorie.
+    // Dabei gilt: 0 Punkte → 1, volle Punkte → maxPossible + 1.
+    public static double BerechneTeilnote( List<double> punkte, double maxPossible )
       {
-      try
+      if ( punkte == null || punkte.Count == 0 )
+        return 1.0;
+
+      double summe = 0;
+      foreach ( double p in punkte )
         {
-        double kompetenzNote_Variable = BerechneTeilnote( template_Parameter.KompetenzPunkte_Property );
-        double dokumentationNote_Variable = BerechneTeilnote( template_Parameter.DokumentationPunkte_Property );
-        double praesentationNote_Variable = BerechneTeilnote( template_Parameter.PraesentationPunkte_Property );
-
-        // Hier erst die gewichtete Summe (max. 3) ermitteln
-        double gesamtnote_Variable = ( kompetenzNote_Variable * KOMPETENZ_GEWICHT_Constant ) +
-                                     ( dokumentationNote_Variable * DOKUMENTATION_GEWICHT_Constant ) +
-                                     ( praesentationNote_Variable * PRAESENTATION_GEWICHT_Constant );
-
-        // Dann skalieren wir von 0–3 auf 0–6
-        double scaledGesamtnote_Variable = gesamtnote_Variable * 2.0;
-
-        return Math.Round( scaledGesamtnote_Variable, 2 );
+        // Jeder Punkt wird in den erlaubten Bereich [0, maxPossible] geclamped
+        summe += Math.Max( 0, Math.Min( maxPossible, p ) );
         }
-      catch ( Exception ex_Variable )
-        {
-        MessageBox.Show( $"Fehler bei der Notenberechnung: {ex_Variable.Message}",
-            "Berechnungsfehler", MessageBoxButtons.OK, MessageBoxIcon.Error );
-        return 0;
-        }
+      double durchschnitt = summe / punkte.Count;
+      // Basis 1 addieren: 0 Punkte → 1, volle Punkte → maxPossible+1
+      return Math.Round( durchschnitt + 1, 2 );
       }
 
-    // Hilfsmethode zur Berechnung einer Teilnote (0–3)
-    public static double BerechneTeilnote( List<double> punkte_Parameter )
+    // Skaliert eine Teilnote aus dem Bereich [1, maxNote] (maxNote = maxPossible+1)
+    // auf den Bereich [1, 6].
+    public static double SkaliereTeilnote( double teilnote, double maxNote )
       {
-      if ( punkte_Parameter == null || punkte_Parameter.Count == 0 )
-        {
-        return 0;
-        }
-
-      double summe_Variable = 0;
-      foreach ( double punkt_Variable in punkte_Parameter )
-        {
-        double validierterPunkt_Variable = Math.Max( 0, Math.Min( 3, punkt_Variable ) );
-        summe_Variable += validierterPunkt_Variable;
-        }
-
-      double durchschnitt_Variable = summe_Variable / punkte_Parameter.Count;
-      return Math.Round( durchschnitt_Variable, 2 );
+      double scaled = 1 + ( ( teilnote - 1 ) / ( maxNote - 1 ) ) * 5;
+      return Math.Round( scaled, 2 );
       }
 
-    // Falls du die einzelnen Teilnoten separat auf 0–6 skalieren möchtest,
-    // kannst du diese Methode verwenden:
-    public static double SkaliereTeilnote( double teilnote_Variable )
+    // Berechnet die Gesamtnote als gewichtetes Mittel der skalierten Teilnoten.
+    // maxPossible-Werte: Kompetenz: 3, Dokumentation: 1.2, Präsentation: 1.8.
+    public static double BerechneGesamtnote( Template_Class template )
       {
-      // teilnote_Variable kommt von BerechneTeilnote (0–3) und wird nun mal 2 genommen
-      return Math.Round( teilnote_Variable * 2.0, 2 );
+      double kompetenzRaw = BerechneTeilnote( template.KompetenzPunkte_Property, 3 );
+      double dokumentationRaw = BerechneTeilnote( template.DokumentationPunkte_Property, 1.2 );
+      double praesentationRaw = BerechneTeilnote( template.PraesentationPunkte_Property, 1.8 );
+
+      // maxNote = maxPossible + 1
+      double kompetenzScaled = SkaliereTeilnote( kompetenzRaw, 3 + 1 );
+      double dokumentationScaled = SkaliereTeilnote( dokumentationRaw, 1.2 + 1 );
+      double praesentationScaled = SkaliereTeilnote( praesentationRaw, 1.8 + 1 );
+
+      double gesamtNote = kompetenzScaled * KOMPETENZ_GEWICHT +
+                            dokumentationScaled * DOKUMENTATION_GEWICHT +
+                            praesentationScaled * PRAESENTATION_GEWICHT;
+      return Math.Round( gesamtNote, 2 );
       }
     }
   }
