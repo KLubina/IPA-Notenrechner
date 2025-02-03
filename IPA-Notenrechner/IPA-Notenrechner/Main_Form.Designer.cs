@@ -33,15 +33,15 @@
       this.buttonCreateTemplate = new System.Windows.Forms.Button();
       this.buttonShowTemplate = new System.Windows.Forms.Button();
       this.richTextBoxEndNote = new System.Windows.Forms.RichTextBox();
-      this.richTextBoxGradeCompetence = new System.Windows.Forms.RichTextBox();
+      this.richTextBoxRawPartGradeCompetence = new System.Windows.Forms.RichTextBox();
       this.labelGradeCompetence = new System.Windows.Forms.Label();
-      this.richTextBoxGradeDocumentation = new System.Windows.Forms.RichTextBox();
+      this.richTextBoxRawPartGradeDocumentation = new System.Windows.Forms.RichTextBox();
       this.labelGradeDocumentation = new System.Windows.Forms.Label();
-      this.richTextBoxGradePresentationAndConversation = new System.Windows.Forms.RichTextBox();
+      this.richTextBoxRawPartGradePresentationAndConversation = new System.Windows.Forms.RichTextBox();
       this.labelGradePresentationAndConversation = new System.Windows.Forms.Label();
-      this.richTextBoxGradePresentationAndConversationScaled = new System.Windows.Forms.RichTextBox();
-      this.richTextBoxGradeDocumentationScaled = new System.Windows.Forms.RichTextBox();
-      this.richTextBoxGradeCompetenceScaled = new System.Windows.Forms.RichTextBox();
+      this.richTextBoxPartGradePresentationAndConversationScaled = new System.Windows.Forms.RichTextBox();
+      this.richTextBoxPartGradeDocumentationScaled = new System.Windows.Forms.RichTextBox();
+      this.richTextBoxPartGradeCompetenceScaled = new System.Windows.Forms.RichTextBox();
       this.labelChooseTxtTemplate = new System.Windows.Forms.Label();
       this.labelChooseDBTemplate = new System.Windows.Forms.Label();
       this.checkedListBoxChooseDBTemplate = new System.Windows.Forms.CheckedListBox();
@@ -62,8 +62,10 @@
       // checkedListBoxChooseTxtTemplate
       // 
       this.checkedListBoxChooseTxtTemplate.FormattingEnabled = true;
+      this.checkedListBoxChooseTxtTemplate.HorizontalScrollbar = true;
       this.checkedListBoxChooseTxtTemplate.Location = new System.Drawing.Point(953, 36);
       this.checkedListBoxChooseTxtTemplate.Name = "checkedListBoxChooseTxtTemplate";
+      this.checkedListBoxChooseTxtTemplate.ScrollAlwaysVisible = true;
       this.checkedListBoxChooseTxtTemplate.Size = new System.Drawing.Size(187, 259);
       this.checkedListBoxChooseTxtTemplate.TabIndex = 1;
       this.checkedListBoxChooseTxtTemplate.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.checkedListBoxChooseTxtTemplate_ItemCheck);
@@ -100,15 +102,15 @@
       this.richTextBoxEndNote.TabIndex = 4;
       this.richTextBoxEndNote.Text = "";
       // 
-      // richTextBoxGradeCompetence
+      // richTextBoxRawPartGradeCompetence
       // 
-      this.richTextBoxGradeCompetence.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
-      this.richTextBoxGradeCompetence.Location = new System.Drawing.Point(529, 172);
-      this.richTextBoxGradeCompetence.Name = "richTextBoxGradeCompetence";
-      this.richTextBoxGradeCompetence.ReadOnly = true;
-      this.richTextBoxGradeCompetence.Size = new System.Drawing.Size(92, 78);
-      this.richTextBoxGradeCompetence.TabIndex = 6;
-      this.richTextBoxGradeCompetence.Text = "";
+      this.richTextBoxRawPartGradeCompetence.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
+      this.richTextBoxRawPartGradeCompetence.Location = new System.Drawing.Point(529, 172);
+      this.richTextBoxRawPartGradeCompetence.Name = "richTextBoxRawPartGradeCompetence";
+      this.richTextBoxRawPartGradeCompetence.ReadOnly = true;
+      this.richTextBoxRawPartGradeCompetence.Size = new System.Drawing.Size(92, 78);
+      this.richTextBoxRawPartGradeCompetence.TabIndex = 6;
+      this.richTextBoxRawPartGradeCompetence.Text = "";
       // 
       // labelGradeCompetence
       // 
@@ -120,15 +122,15 @@
       this.labelGradeCompetence.TabIndex = 5;
       this.labelGradeCompetence.Text = "Note Kompetenz (50%):";
       // 
-      // richTextBoxGradeDocumentation
+      // richTextBoxRawPartGradeDocumentation
       // 
-      this.richTextBoxGradeDocumentation.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
-      this.richTextBoxGradeDocumentation.Location = new System.Drawing.Point(529, 256);
-      this.richTextBoxGradeDocumentation.Name = "richTextBoxGradeDocumentation";
-      this.richTextBoxGradeDocumentation.ReadOnly = true;
-      this.richTextBoxGradeDocumentation.Size = new System.Drawing.Size(92, 78);
-      this.richTextBoxGradeDocumentation.TabIndex = 8;
-      this.richTextBoxGradeDocumentation.Text = "";
+      this.richTextBoxRawPartGradeDocumentation.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
+      this.richTextBoxRawPartGradeDocumentation.Location = new System.Drawing.Point(529, 256);
+      this.richTextBoxRawPartGradeDocumentation.Name = "richTextBoxRawPartGradeDocumentation";
+      this.richTextBoxRawPartGradeDocumentation.ReadOnly = true;
+      this.richTextBoxRawPartGradeDocumentation.Size = new System.Drawing.Size(92, 78);
+      this.richTextBoxRawPartGradeDocumentation.TabIndex = 8;
+      this.richTextBoxRawPartGradeDocumentation.Text = "";
       // 
       // labelGradeDocumentation
       // 
@@ -140,15 +142,15 @@
       this.labelGradeDocumentation.TabIndex = 7;
       this.labelGradeDocumentation.Text = "Note Dokumentation (20%):";
       // 
-      // richTextBoxGradePresentationAndConversation
+      // richTextBoxRawPartGradePresentationAndConversation
       // 
-      this.richTextBoxGradePresentationAndConversation.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
-      this.richTextBoxGradePresentationAndConversation.Location = new System.Drawing.Point(529, 340);
-      this.richTextBoxGradePresentationAndConversation.Name = "richTextBoxGradePresentationAndConversation";
-      this.richTextBoxGradePresentationAndConversation.ReadOnly = true;
-      this.richTextBoxGradePresentationAndConversation.Size = new System.Drawing.Size(92, 78);
-      this.richTextBoxGradePresentationAndConversation.TabIndex = 10;
-      this.richTextBoxGradePresentationAndConversation.Text = "";
+      this.richTextBoxRawPartGradePresentationAndConversation.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
+      this.richTextBoxRawPartGradePresentationAndConversation.Location = new System.Drawing.Point(529, 340);
+      this.richTextBoxRawPartGradePresentationAndConversation.Name = "richTextBoxRawPartGradePresentationAndConversation";
+      this.richTextBoxRawPartGradePresentationAndConversation.ReadOnly = true;
+      this.richTextBoxRawPartGradePresentationAndConversation.Size = new System.Drawing.Size(92, 78);
+      this.richTextBoxRawPartGradePresentationAndConversation.TabIndex = 10;
+      this.richTextBoxRawPartGradePresentationAndConversation.Text = "";
       // 
       // labelGradePresentationAndConversation
       // 
@@ -160,35 +162,35 @@
       this.labelGradePresentationAndConversation.TabIndex = 9;
       this.labelGradePresentationAndConversation.Text = "Note Präsentation und Fachgespräch (30%):";
       // 
-      // richTextBoxGradePresentationAndConversationScaled
+      // richTextBoxPartGradePresentationAndConversationScaled
       // 
-      this.richTextBoxGradePresentationAndConversationScaled.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
-      this.richTextBoxGradePresentationAndConversationScaled.Location = new System.Drawing.Point(635, 340);
-      this.richTextBoxGradePresentationAndConversationScaled.Name = "richTextBoxGradePresentationAndConversationScaled";
-      this.richTextBoxGradePresentationAndConversationScaled.ReadOnly = true;
-      this.richTextBoxGradePresentationAndConversationScaled.Size = new System.Drawing.Size(119, 78);
-      this.richTextBoxGradePresentationAndConversationScaled.TabIndex = 13;
-      this.richTextBoxGradePresentationAndConversationScaled.Text = "";
+      this.richTextBoxPartGradePresentationAndConversationScaled.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
+      this.richTextBoxPartGradePresentationAndConversationScaled.Location = new System.Drawing.Point(635, 340);
+      this.richTextBoxPartGradePresentationAndConversationScaled.Name = "richTextBoxPartGradePresentationAndConversationScaled";
+      this.richTextBoxPartGradePresentationAndConversationScaled.ReadOnly = true;
+      this.richTextBoxPartGradePresentationAndConversationScaled.Size = new System.Drawing.Size(119, 78);
+      this.richTextBoxPartGradePresentationAndConversationScaled.TabIndex = 13;
+      this.richTextBoxPartGradePresentationAndConversationScaled.Text = "";
       // 
-      // richTextBoxGradeDocumentationScaled
+      // richTextBoxPartGradeDocumentationScaled
       // 
-      this.richTextBoxGradeDocumentationScaled.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
-      this.richTextBoxGradeDocumentationScaled.Location = new System.Drawing.Point(635, 256);
-      this.richTextBoxGradeDocumentationScaled.Name = "richTextBoxGradeDocumentationScaled";
-      this.richTextBoxGradeDocumentationScaled.ReadOnly = true;
-      this.richTextBoxGradeDocumentationScaled.Size = new System.Drawing.Size(119, 78);
-      this.richTextBoxGradeDocumentationScaled.TabIndex = 12;
-      this.richTextBoxGradeDocumentationScaled.Text = "";
+      this.richTextBoxPartGradeDocumentationScaled.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
+      this.richTextBoxPartGradeDocumentationScaled.Location = new System.Drawing.Point(635, 256);
+      this.richTextBoxPartGradeDocumentationScaled.Name = "richTextBoxPartGradeDocumentationScaled";
+      this.richTextBoxPartGradeDocumentationScaled.ReadOnly = true;
+      this.richTextBoxPartGradeDocumentationScaled.Size = new System.Drawing.Size(119, 78);
+      this.richTextBoxPartGradeDocumentationScaled.TabIndex = 12;
+      this.richTextBoxPartGradeDocumentationScaled.Text = "";
       // 
-      // richTextBoxGradeCompetenceScaled
+      // richTextBoxPartGradeCompetenceScaled
       // 
-      this.richTextBoxGradeCompetenceScaled.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
-      this.richTextBoxGradeCompetenceScaled.Location = new System.Drawing.Point(635, 172);
-      this.richTextBoxGradeCompetenceScaled.Name = "richTextBoxGradeCompetenceScaled";
-      this.richTextBoxGradeCompetenceScaled.ReadOnly = true;
-      this.richTextBoxGradeCompetenceScaled.Size = new System.Drawing.Size(119, 78);
-      this.richTextBoxGradeCompetenceScaled.TabIndex = 11;
-      this.richTextBoxGradeCompetenceScaled.Text = "";
+      this.richTextBoxPartGradeCompetenceScaled.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
+      this.richTextBoxPartGradeCompetenceScaled.Location = new System.Drawing.Point(635, 172);
+      this.richTextBoxPartGradeCompetenceScaled.Name = "richTextBoxPartGradeCompetenceScaled";
+      this.richTextBoxPartGradeCompetenceScaled.ReadOnly = true;
+      this.richTextBoxPartGradeCompetenceScaled.Size = new System.Drawing.Size(119, 78);
+      this.richTextBoxPartGradeCompetenceScaled.TabIndex = 11;
+      this.richTextBoxPartGradeCompetenceScaled.Text = "";
       // 
       // labelChooseTxtTemplate
       // 
@@ -213,8 +215,10 @@
       // checkedListBoxChooseDBTemplate
       // 
       this.checkedListBoxChooseDBTemplate.FormattingEnabled = true;
+      this.checkedListBoxChooseDBTemplate.HorizontalScrollbar = true;
       this.checkedListBoxChooseDBTemplate.Location = new System.Drawing.Point(760, 36);
       this.checkedListBoxChooseDBTemplate.Name = "checkedListBoxChooseDBTemplate";
+      this.checkedListBoxChooseDBTemplate.ScrollAlwaysVisible = true;
       this.checkedListBoxChooseDBTemplate.Size = new System.Drawing.Size(187, 259);
       this.checkedListBoxChooseDBTemplate.TabIndex = 15;
       this.checkedListBoxChooseDBTemplate.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.checkedListBoxChooseDBTemplate_ItemCheck);
@@ -247,20 +251,21 @@
       this.Controls.Add(this.labelChooseDBTemplate);
       this.Controls.Add(this.checkedListBoxChooseDBTemplate);
       this.Controls.Add(this.labelChooseTxtTemplate);
-      this.Controls.Add(this.richTextBoxGradePresentationAndConversationScaled);
-      this.Controls.Add(this.richTextBoxGradeDocumentationScaled);
-      this.Controls.Add(this.richTextBoxGradeCompetenceScaled);
-      this.Controls.Add(this.richTextBoxGradePresentationAndConversation);
+      this.Controls.Add(this.richTextBoxPartGradePresentationAndConversationScaled);
+      this.Controls.Add(this.richTextBoxPartGradeDocumentationScaled);
+      this.Controls.Add(this.richTextBoxPartGradeCompetenceScaled);
+      this.Controls.Add(this.richTextBoxRawPartGradePresentationAndConversation);
       this.Controls.Add(this.labelGradePresentationAndConversation);
-      this.Controls.Add(this.richTextBoxGradeDocumentation);
+      this.Controls.Add(this.richTextBoxRawPartGradeDocumentation);
       this.Controls.Add(this.labelGradeDocumentation);
-      this.Controls.Add(this.richTextBoxGradeCompetence);
+      this.Controls.Add(this.richTextBoxRawPartGradeCompetence);
       this.Controls.Add(this.labelGradeCompetence);
       this.Controls.Add(this.richTextBoxEndNote);
       this.Controls.Add(this.buttonShowTemplate);
       this.Controls.Add(this.buttonCreateTemplate);
       this.Controls.Add(this.checkedListBoxChooseTxtTemplate);
       this.Controls.Add(this.labelEndnote);
+      this.MinimumSize = new System.Drawing.Size(1172, 468);
       this.Name = "Main_Form";
       this.Text = "IPA-Notenrechner";
       this.ResumeLayout(false);
@@ -274,15 +279,15 @@
     private System.Windows.Forms.Button buttonCreateTemplate;
     private System.Windows.Forms.Button buttonShowTemplate;
     private System.Windows.Forms.RichTextBox richTextBoxEndNote;
-    private System.Windows.Forms.RichTextBox richTextBoxGradeCompetence;
+    private System.Windows.Forms.RichTextBox richTextBoxRawPartGradeCompetence;
     private System.Windows.Forms.Label labelGradeCompetence;
-    private System.Windows.Forms.RichTextBox richTextBoxGradeDocumentation;
+    private System.Windows.Forms.RichTextBox richTextBoxRawPartGradeDocumentation;
     private System.Windows.Forms.Label labelGradeDocumentation;
-    private System.Windows.Forms.RichTextBox richTextBoxGradePresentationAndConversation;
+    private System.Windows.Forms.RichTextBox richTextBoxRawPartGradePresentationAndConversation;
     private System.Windows.Forms.Label labelGradePresentationAndConversation;
-    private System.Windows.Forms.RichTextBox richTextBoxGradePresentationAndConversationScaled;
-    private System.Windows.Forms.RichTextBox richTextBoxGradeDocumentationScaled;
-    private System.Windows.Forms.RichTextBox richTextBoxGradeCompetenceScaled;
+    private System.Windows.Forms.RichTextBox richTextBoxPartGradePresentationAndConversationScaled;
+    private System.Windows.Forms.RichTextBox richTextBoxPartGradeDocumentationScaled;
+    private System.Windows.Forms.RichTextBox richTextBoxPartGradeCompetenceScaled;
     private System.Windows.Forms.Label labelChooseTxtTemplate;
     private System.Windows.Forms.Label labelChooseDBTemplate;
     private System.Windows.Forms.CheckedListBox checkedListBoxChooseDBTemplate;

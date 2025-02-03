@@ -1,12 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace IPA_Notenrechner
@@ -21,7 +15,6 @@ namespace IPA_Notenrechner
       InitializeComponent();
       currentTemplate_Variable = new Template_Class();
 
-      // Setze den Pfad zum Templates-Ordner
       string gitPath_Variable = @"C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\Templates";
 
       if ( Directory.Exists( gitPath_Variable ) )
@@ -36,23 +29,18 @@ namespace IPA_Notenrechner
         );
         }
 
-      // Stelle sicher, dass der Templates-Ordner existiert
       try
         {
         if ( !Directory.Exists( templatesPath_Variable ) )
           {
           Directory.CreateDirectory( templatesPath_Variable );
           }
-
-        // Debug-Ausgabe
-        MessageBox.Show( $"Templates Pfad: {templatesPath_Variable}\nOrdner existiert: {Directory.Exists( templatesPath_Variable )}", "Debug Info" );
-
         LoadTemplateList();
         }
       catch ( Exception ex_Variable )
         {
-        MessageBox.Show( $"Fehler beim Initialisieren des Template-Ordners: {ex_Variable.Message}", "Fehler",
-            MessageBoxButtons.OK, MessageBoxIcon.Error );
+        MessageBox.Show( $"Fehler beim Initialisieren des Template-Ordners: {ex_Variable.Message}",
+            "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error );
         }
       }
 
@@ -60,39 +48,28 @@ namespace IPA_Notenrechner
       {
       try
         {
-        // Liste für txt Templates leeren
         checkedListBoxChooseTxtTemplate.Items.Clear();
-
-        // Liste für DB Templates leeren
         checkedListBoxChooseDBTemplate.Items.Clear();
 
-        // Prüfe ob der Ordner für txt Templates existiert
         if ( !Directory.Exists( templatesPath_Variable ) )
           {
           throw new DirectoryNotFoundException( $"Der Template-Ordner wurde nicht gefunden: {templatesPath_Variable}" );
           }
 
-        // Alle .txt Dateien im Ordner finden
         string[] templates_Variable = Directory.GetFiles( templatesPath_Variable, "*.txt" );
-
-        // Templates zur txt Liste hinzufügen
         foreach ( string template_Variable in templates_Variable )
           {
           string templateName_Variable = Path.GetFileNameWithoutExtension( template_Variable );
           checkedListBoxChooseTxtTemplate.Items.Add( templateName_Variable );
           }
 
-        // Datenbank Templates laden
         DatabaseManager_Class dbManager_Object = new DatabaseManager_Class();
         List<string> dbTemplates_Variable = dbManager_Object.GetTemplateNames();
-
-        // Templates zur DB Liste hinzufügen
         foreach ( string templateName_Variable in dbTemplates_Variable )
           {
           checkedListBoxChooseDBTemplate.Items.Add( templateName_Variable );
           }
 
-        // Aktualisiere die Anzeige
         checkedListBoxChooseTxtTemplate.Refresh();
         checkedListBoxChooseDBTemplate.Refresh();
         }
@@ -101,6 +78,113 @@ namespace IPA_Notenrechner
         MessageBox.Show( $"Fehler beim Laden der Templates: {ex_Variable.Message}",
             "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error );
         }
+      }
+
+    private void buttonShowTemplate_Click( object sender_Variable, EventArgs e_Variable )
+      {
+      try
+        {
+        if ( LoadSelectedTemplate() )
+          {
+          // Berechne rohe Teilnoten
+          double rohKompetenz_Variable = NotenRechner_Class.BerechneRoheTeilnote(
+              currentTemplate_Variable.BerechneGesamtpunkteKompetenz(),
+              currentTemplate_Variable.FullCompetence,
+              2.5 );
+
+          double rohDokumentation_Variable = NotenRechner_Class.BerechneRoheTeilnote(
+              currentTemplate_Variable.BerechneGesamtpunkteDokumentation(),
+              currentTemplate_Variable.FullDocumentation,
+              1.0 );
+
+          double rohPraesentation_Variable = NotenRechner_Class.BerechneRoheTeilnote(
+              currentTemplate_Variable.BerechneGesamtpunktePraesentation(),
+              currentTemplate_Variable.FullPresentation,
+              1.5 );
+
+          // Berechne skalierte Noten
+          double skaliertKompetenz_Variable = NotenRechner_Class.BerechneSkalierteNote( rohKompetenz_Variable, 2.5 );
+          double skaliertDokumentation_Variable = NotenRechner_Class.BerechneSkalierteNote( rohDokumentation_Variable, 1.0 );
+          double skaliertPraesentation_Variable = NotenRechner_Class.BerechneSkalierteNote( rohPraesentation_Variable, 1.5 );
+
+          // Zeige die rohen Teilnoten
+          richTextBoxRawPartGradeCompetence.Text = rohKompetenz_Variable.ToString( "F2" );
+          richTextBoxRawPartGradeDocumentation.Text = rohDokumentation_Variable.ToString( "F2" );
+          richTextBoxRawPartGradePresentationAndConversation.Text = rohPraesentation_Variable.ToString( "F2" );
+
+          // Zeige die skalierten Teilnoten
+          richTextBoxPartGradeCompetenceScaled.Text = skaliertKompetenz_Variable.ToString( "F2" );
+          richTextBoxPartGradeDocumentationScaled.Text = skaliertDokumentation_Variable.ToString( "F2" );
+          richTextBoxPartGradePresentationAndConversationScaled.Text = skaliertPraesentation_Variable.ToString( "F2" );
+
+          // Berechne Gesamtnote
+          double gesamtNote_Variable = NotenRechner_Class.BerechneGesamtnote(
+              currentTemplate_Variable.BerechneGesamtpunkteKompetenz(),
+              currentTemplate_Variable.BerechneGesamtpunkteDokumentation(),
+              currentTemplate_Variable.BerechneGesamtpunktePraesentation() );
+
+          richTextBoxEndNote.Text = gesamtNote_Variable.ToString( "F2" );
+          }
+        }
+      catch ( Exception ex_Variable )
+        {
+        MessageBox.Show( $"Fehler beim Anzeigen des Templates: {ex_Variable.Message}",
+            "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error );
+        }
+      }
+
+    private bool LoadSelectedTemplate()
+      {
+      bool txtTemplateSelected_LocalVariable = false;
+      bool dbTemplateSelected_LocalVariable = false;
+
+      for ( int i_LocalVariable = 0; i_LocalVariable < checkedListBoxChooseTxtTemplate.Items.Count; i_LocalVariable++ )
+        {
+        if ( checkedListBoxChooseTxtTemplate.GetItemChecked( i_LocalVariable ) )
+          {
+          txtTemplateSelected_LocalVariable = true;
+          break;
+          }
+        }
+
+      for ( int i_LocalVariable = 0; i_LocalVariable < checkedListBoxChooseDBTemplate.Items.Count; i_LocalVariable++ )
+        {
+        if ( checkedListBoxChooseDBTemplate.GetItemChecked( i_LocalVariable ) )
+          {
+          dbTemplateSelected_LocalVariable = true;
+          break;
+          }
+        }
+
+      if ( !txtTemplateSelected_LocalVariable && !dbTemplateSelected_LocalVariable )
+        {
+        MessageBox.Show( "Bitte wählen Sie zuerst ein Template aus und aktivieren Sie die Checkbox.",
+            "Keine Auswahl", MessageBoxButtons.OK, MessageBoxIcon.Warning );
+        return false;
+        }
+
+      if ( checkedListBoxChooseTxtTemplate.SelectedItem != null && txtTemplateSelected_LocalVariable )
+        {
+        string templateName_Variable = checkedListBoxChooseTxtTemplate.SelectedItem.ToString();
+        string templatePath_Variable = Path.Combine( templatesPath_Variable, templateName_Variable + ".txt" );
+
+        if ( File.Exists( templatePath_Variable ) )
+          {
+          currentTemplate_Variable = Template_Class.LoadTemplate( templatePath_Variable );
+          return true;
+          }
+        }
+      else if ( checkedListBoxChooseDBTemplate.SelectedItem != null && dbTemplateSelected_LocalVariable )
+        {
+        string templateName_Variable = checkedListBoxChooseDBTemplate.SelectedItem.ToString();
+        DatabaseManager_Class dbManager_Object = new DatabaseManager_Class();
+        currentTemplate_Variable = dbManager_Object.LoadTemplate( templateName_Variable );
+        return true;
+        }
+
+      MessageBox.Show( "Bitte wählen Sie ein Template aus.", "Information",
+          MessageBoxButtons.OK, MessageBoxIcon.Information );
+      return false;
       }
 
     private void buttonCreateTemplate_Click( object sender_Variable, EventArgs e_Variable )
@@ -112,128 +196,8 @@ namespace IPA_Notenrechner
         }
       }
 
-    private void buttonShowTemplate_Click( object sender_Variable, EventArgs e_Variable )
-      {
-      try
-        {
-        // Prüfe ob überhaupt ein Template in einer der Listen ausgewählt ist
-        bool txtTemplateSelected_LocalVariable = false;
-        bool dbTemplateSelected_LocalVariable = false;
-
-        // Prüfe txt Templates
-        for ( int i_LocalVariable = 0; i_LocalVariable < checkedListBoxChooseTxtTemplate.Items.Count; i_LocalVariable++ )
-          {
-          if ( checkedListBoxChooseTxtTemplate.GetItemChecked( i_LocalVariable ) )
-            {
-            txtTemplateSelected_LocalVariable = true;
-            break;
-            }
-          }
-
-        // Prüfe DB Templates
-        for ( int i_LocalVariable = 0; i_LocalVariable < checkedListBoxChooseDBTemplate.Items.Count; i_LocalVariable++ )
-          {
-          if ( checkedListBoxChooseDBTemplate.GetItemChecked( i_LocalVariable ) )
-            {
-            dbTemplateSelected_LocalVariable = true;
-            break;
-            }
-          }
-
-        // Wenn kein Template ausgewählt wurde
-        if ( !txtTemplateSelected_LocalVariable && !dbTemplateSelected_LocalVariable )
-          {
-          MessageBox.Show( "Bitte wählen Sie zuerst ein Template aus und aktivieren Sie die Checkbox.",
-              "Keine Auswahl", MessageBoxButtons.OK, MessageBoxIcon.Warning );
-          return;
-          }
-
-        // Rest Ihres bestehenden Codes...
-        // Prüfe, ob ein txt Template ausgewählt wurde
-        if ( checkedListBoxChooseTxtTemplate.SelectedItem != null && txtTemplateSelected_LocalVariable )
-          {
-          string templateName_Variable = checkedListBoxChooseTxtTemplate.SelectedItem.ToString();
-          string templatePath_Variable = Path.Combine( templatesPath_Variable, templateName_Variable + ".txt" );
-
-          if ( File.Exists( templatePath_Variable ) )
-            {
-            currentTemplate_Variable = Template_Class.LoadTemplate( templatePath_Variable );
-            }
-          }
-        // Prüfe, ob ein DB Template ausgewählt wurde
-        else if ( checkedListBoxChooseDBTemplate.SelectedItem != null && dbTemplateSelected_LocalVariable )
-          {
-          string templateName_Variable = checkedListBoxChooseDBTemplate.SelectedItem.ToString();
-          DatabaseManager_Class dbManager_Object = new DatabaseManager_Class();
-          currentTemplate_Variable = dbManager_Object.LoadTemplate( templateName_Variable );
-          }
-
-        // Prüfe, ob ein txt Template ausgewählt wurde
-        if ( checkedListBoxChooseTxtTemplate.SelectedItem != null )
-          {
-          string templateName_Variable = checkedListBoxChooseTxtTemplate.SelectedItem.ToString();
-          string templatePath_Variable = Path.Combine( templatesPath_Variable, templateName_Variable + ".txt" );
-
-          if ( File.Exists( templatePath_Variable ) )
-            {
-            currentTemplate_Variable = Template_Class.LoadTemplate( templatePath_Variable );
-            }
-          }
-        // Prüfe, ob ein DB Template ausgewählt wurde
-        else if ( checkedListBoxChooseDBTemplate.SelectedItem != null )
-          {
-          string templateName_Variable = checkedListBoxChooseDBTemplate.SelectedItem.ToString();
-          DatabaseManager_Class dbManager_Object = new DatabaseManager_Class();
-          currentTemplate_Variable = dbManager_Object.LoadTemplate( templateName_Variable );
-          }
-        else
-          {
-          MessageBox.Show( "Bitte wählen Sie ein Template aus.", "Information",
-              MessageBoxButtons.OK, MessageBoxIcon.Information );
-          return;
-          }
-
-        // Berechne die Teilnoten unter Angabe der jeweiligen maxPossible-Werte:
-        double kompetenzNote_Variable = NotenRechner_Class.BerechneTeilnote(
-            currentTemplate_Variable.KompetenzPunkte_Property, 3.0 );
-        double dokumentationNote_Variable = NotenRechner_Class.BerechneTeilnote(
-            currentTemplate_Variable.DokumentationPunkte_Property, 1.2 );
-        double praesentationNote_Variable = NotenRechner_Class.BerechneTeilnote(
-            currentTemplate_Variable.PraesentationPunkte_Property, 1.8 );
-
-        // Berechne die Gesamtnote (1–6)
-        double gesamtnote_Variable = NotenRechner_Class.BerechneGesamtnote( currentTemplate_Variable );
-
-        // Skaliere die Teilnoten; hier wird als maxNote (maxPossible + 1) übergeben:
-        double kompetenzScaled_Variable = NotenRechner_Class.SkaliereTeilnote(
-            kompetenzNote_Variable, 3.0 + 1 );
-        double dokumentationScaled_Variable = NotenRechner_Class.SkaliereTeilnote(
-            dokumentationNote_Variable, 1.2 + 1 );
-        double praesentationScaled_Variable = NotenRechner_Class.SkaliereTeilnote(
-            praesentationNote_Variable, 1.8 + 1 );
-
-        // Zeige die (unskalierten) Teilnoten
-        richTextBoxGradeCompetence.Text = kompetenzNote_Variable.ToString( "F2" );
-        richTextBoxGradeDocumentation.Text = dokumentationNote_Variable.ToString( "F2" );
-        richTextBoxGradePresentationAndConversation.Text = praesentationNote_Variable.ToString( "F2" );
-
-        // Zeige die skalierten Teilnoten
-        richTextBoxGradeCompetenceScaled.Text = kompetenzScaled_Variable.ToString( "F2" );
-        richTextBoxGradeDocumentationScaled.Text = dokumentationScaled_Variable.ToString( "F2" );
-        richTextBoxGradePresentationAndConversationScaled.Text = praesentationScaled_Variable.ToString( "F2" );
-
-        // Zeige die Gesamtnote (1–6)
-        richTextBoxEndNote.Text = gesamtnote_Variable.ToString( "F2" );
-        }
-      catch ( Exception ex_Variable )
-        {
-        MessageBox.Show( $"Fehler beim Anzeigen des Templates: {ex_Variable.Message}",
-            "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error );
-        }
-      }
     private void checkedListBoxChooseTxtTemplate_ItemCheck( object sender_Variable, ItemCheckEventArgs e_Variable )
       {
-      // Alle anderen Items unchecken
       for ( int i_LocalVariable = 0; i_LocalVariable < checkedListBoxChooseTxtTemplate.Items.Count; i_LocalVariable++ )
         {
         if ( i_LocalVariable != e_Variable.Index )
@@ -241,7 +205,7 @@ namespace IPA_Notenrechner
           checkedListBoxChooseTxtTemplate.SetItemChecked( i_LocalVariable, false );
           }
         }
-      // DB Liste leeren
+
       for ( int i_LocalVariable = 0; i_LocalVariable < checkedListBoxChooseDBTemplate.Items.Count; i_LocalVariable++ )
         {
         checkedListBoxChooseDBTemplate.SetItemChecked( i_LocalVariable, false );
@@ -250,7 +214,6 @@ namespace IPA_Notenrechner
 
     private void checkedListBoxChooseDBTemplate_ItemCheck( object sender_Variable, ItemCheckEventArgs e_Variable )
       {
-      // Alle anderen Items unchecken
       for ( int i_LocalVariable = 0; i_LocalVariable < checkedListBoxChooseDBTemplate.Items.Count; i_LocalVariable++ )
         {
         if ( i_LocalVariable != e_Variable.Index )
@@ -258,7 +221,7 @@ namespace IPA_Notenrechner
           checkedListBoxChooseDBTemplate.SetItemChecked( i_LocalVariable, false );
           }
         }
-      // Txt Liste leeren
+
       for ( int i_LocalVariable = 0; i_LocalVariable < checkedListBoxChooseTxtTemplate.Items.Count; i_LocalVariable++ )
         {
         checkedListBoxChooseTxtTemplate.SetItemChecked( i_LocalVariable, false );
