@@ -9,11 +9,15 @@ namespace IPA_Notenrechner
     {
     private Template_Class currentTemplate_Variable;
     private string templatesPath_Variable;
+    private readonly DatabaseManager_Class dbManager_Object;
+    private readonly bool useDatabase;
 
-    public Main_Form()
+    public Main_Form( bool useDatabase = false )
       {
       InitializeComponent();
+      this.useDatabase = useDatabase;
       currentTemplate_Variable = new Template_Class();
+      dbManager_Object = new DatabaseManager_Class( useDatabase );
 
       string gitPath_Variable = @"C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\Templates";
 
@@ -51,6 +55,7 @@ namespace IPA_Notenrechner
         checkedListBoxChooseTxtTemplate.Items.Clear();
         checkedListBoxChooseDBTemplate.Items.Clear();
 
+        // Lade Text-Templates
         if ( !Directory.Exists( templatesPath_Variable ) )
           {
           throw new DirectoryNotFoundException( $"Der Template-Ordner wurde nicht gefunden: {templatesPath_Variable}" );
@@ -63,11 +68,18 @@ namespace IPA_Notenrechner
           checkedListBoxChooseTxtTemplate.Items.Add( templateName_Variable );
           }
 
-        DatabaseManager_Class dbManager_Object = new DatabaseManager_Class();
-        List<string> dbTemplates_Variable = dbManager_Object.GetTemplateNames();
-        foreach ( string templateName_Variable in dbTemplates_Variable )
+        // Lade DB-Templates nur wenn Datenbank aktiviert ist
+        if ( useDatabase )
           {
-          checkedListBoxChooseDBTemplate.Items.Add( templateName_Variable );
+          List<string> dbTemplates_Variable = dbManager_Object.GetTemplateNames();
+          foreach ( string templateName_Variable in dbTemplates_Variable )
+            {
+            checkedListBoxChooseDBTemplate.Items.Add( templateName_Variable );
+            }
+          }
+        else
+          {
+          checkedListBoxChooseDBTemplate.Enabled = false;
           }
 
         checkedListBoxChooseTxtTemplate.Refresh();
@@ -147,12 +159,15 @@ namespace IPA_Notenrechner
           }
         }
 
-      for ( int i_LocalVariable = 0; i_LocalVariable < checkedListBoxChooseDBTemplate.Items.Count; i_LocalVariable++ )
+      if ( useDatabase )
         {
-        if ( checkedListBoxChooseDBTemplate.GetItemChecked( i_LocalVariable ) )
+        for ( int i_LocalVariable = 0; i_LocalVariable < checkedListBoxChooseDBTemplate.Items.Count; i_LocalVariable++ )
           {
-          dbTemplateSelected_LocalVariable = true;
-          break;
+          if ( checkedListBoxChooseDBTemplate.GetItemChecked( i_LocalVariable ) )
+            {
+            dbTemplateSelected_LocalVariable = true;
+            break;
+            }
           }
         }
 
@@ -174,10 +189,9 @@ namespace IPA_Notenrechner
           return true;
           }
         }
-      else if ( checkedListBoxChooseDBTemplate.SelectedItem != null && dbTemplateSelected_LocalVariable )
+      else if ( useDatabase && checkedListBoxChooseDBTemplate.SelectedItem != null && dbTemplateSelected_LocalVariable )
         {
         string templateName_Variable = checkedListBoxChooseDBTemplate.SelectedItem.ToString();
-        DatabaseManager_Class dbManager_Object = new DatabaseManager_Class();
         currentTemplate_Variable = dbManager_Object.LoadTemplate( templateName_Variable );
         return true;
         }
@@ -206,14 +220,19 @@ namespace IPA_Notenrechner
           }
         }
 
-      for ( int i_LocalVariable = 0; i_LocalVariable < checkedListBoxChooseDBTemplate.Items.Count; i_LocalVariable++ )
+      if ( useDatabase )
         {
-        checkedListBoxChooseDBTemplate.SetItemChecked( i_LocalVariable, false );
+        for ( int i_LocalVariable = 0; i_LocalVariable < checkedListBoxChooseDBTemplate.Items.Count; i_LocalVariable++ )
+          {
+          checkedListBoxChooseDBTemplate.SetItemChecked( i_LocalVariable, false );
+          }
         }
       }
 
     private void checkedListBoxChooseDBTemplate_ItemCheck( object sender_Variable, ItemCheckEventArgs e_Variable )
       {
+      if ( !useDatabase ) return;
+
       for ( int i_LocalVariable = 0; i_LocalVariable < checkedListBoxChooseDBTemplate.Items.Count; i_LocalVariable++ )
         {
         if ( i_LocalVariable != e_Variable.Index )

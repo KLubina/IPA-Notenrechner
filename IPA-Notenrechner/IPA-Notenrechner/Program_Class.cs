@@ -13,9 +13,10 @@ namespace IPA_Notenrechner
       Application.EnableVisualStyles();
       Application.SetCompatibleTextRenderingDefault( false );
 
+      bool useDatabase = false;
       // Rechnernamen abrufen
       string computerName = Environment.MachineName.ToLower();
-      string connString;
+      string connString = null;
 
       // Abhängig vom Rechnernamen den passenden Connection String wählen
       if ( computerName == "desktop-o9bmbcb" )
@@ -26,29 +27,31 @@ namespace IPA_Notenrechner
         {
         connString = ConfigurationManager.ConnectionStrings[ "NotenrechnerDbLaptop" ].ConnectionString;
         }
-      else
-        {
-        MessageBox.Show( "Unbekannter Computer. Keine passende Verbindung gefunden!" );
-        return;
-        }
 
-      // Verbindung testen
-      try
+      // Wenn ein Connection String gefunden wurde, Verbindung testen
+      if ( connString != null )
         {
-        using ( SqlConnection conn = new SqlConnection( connString ) )
+        try
           {
-          conn.Open();
-          MessageBox.Show( "Verbindung zur Datenbank erfolgreich!" );
+          using ( SqlConnection conn = new SqlConnection( connString ) )
+            {
+            conn.Open();
+            useDatabase = true;
+            MessageBox.Show( "Verbindung zur Datenbank erfolgreich! Die Anwendung wird mit Datenbankunterstützung gestartet." );
+            }
+          }
+        catch ( Exception )
+          {
+          MessageBox.Show( "Keine Datenbankverbindung möglich. Die Anwendung wird nur mit Textdateien arbeiten." );
           }
         }
-      catch ( Exception ex )
+      else
         {
-        MessageBox.Show( "Konnte nicht verbinden: " + ex.Message );
-        return; // App abbrechen, wenn’s nicht klappt
+        MessageBox.Show( "Kein Datenbankzugang für diesen Computer konfiguriert. Die Anwendung wird nur mit Textdateien arbeiten." );
         }
 
-      // Hauptformular starten
-      Application.Run( new Main_Form() );
+      // Hauptformular mit dem entsprechenden Modus starten
+      Application.Run( new Main_Form( useDatabase ) );
       }
     }
   }

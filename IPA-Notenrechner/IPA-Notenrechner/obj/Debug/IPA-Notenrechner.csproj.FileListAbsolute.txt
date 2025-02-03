@@ -42,3 +42,17 @@ C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner (.txt and local DB)\IPA-Noten
 C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner (.txt and local DB)\IPA-Notenrechner\obj\Debug\IPA-Notenrechner.csproj.CoreCompileInputs.cache
 C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner (.txt and local DB)\IPA-Notenrechner\obj\Debug\IPA-Notenrechner.exe
 C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner (.txt and local DB)\IPA-Notenrechner\obj\Debug\IPA-Notenrechner.pdb
+C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\bin\Debug\System.Buffers.dll
+C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\bin\Debug\System.Memory.dll
+C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\bin\Debug\System.Numerics.Vectors.dll
+C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\bin\Debug\System.Text.Json.dll
+C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\bin\Debug\System.ValueTuple.dll
+C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\bin\Debug\System.Text.Encodings.Web.dll
+C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\bin\Debug\System.Buffers.xml
+C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\bin\Debug\System.Memory.xml
+C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\bin\Debug\System.Numerics.Vectors.xml
+C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\obj\Debug\IPA-Note.DC638018.Up2Date

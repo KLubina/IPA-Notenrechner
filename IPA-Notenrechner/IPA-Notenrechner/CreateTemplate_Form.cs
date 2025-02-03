@@ -16,12 +16,14 @@ namespace IPA_Notenrechner
     private Template_Class newTemplate_Variable;
     private string templatesPath_Variable;
     private DatabaseManager_Class dbManager_Object;
+    private readonly bool useDatabase;
 
-    public CreateTemplate_Form()
+    public CreateTemplate_Form( bool useDatabase = false )
       {
       InitializeComponent();
+      this.useDatabase = useDatabase;
       newTemplate_Variable = new Template_Class();
-      dbManager_Object = new DatabaseManager_Class();
+      dbManager_Object = new DatabaseManager_Class( useDatabase );
       templatesPath_Variable = Path.Combine(
           AppDomain.CurrentDomain.BaseDirectory,
           "..", "..", "Templates"
@@ -29,9 +31,16 @@ namespace IPA_Notenrechner
 
       // Setze .txt als Standardauswahl
       radioButtonTxt.Checked = true;
+
+      // Deaktiviere DB-Option wenn keine DB verfügbar
+      if ( !useDatabase )
+        {
+        radioButtonDB.Enabled = false;
+        radioButtonDB.Visible = false;
+        }
       }
 
-    public CreateTemplate_Form( string templatesPath_Parameter ) : this()
+    public CreateTemplate_Form( string templatesPath_Parameter, bool useDatabase = false ) : this( useDatabase )
       {
       templatesPath_Variable = templatesPath_Parameter;
       }
@@ -46,7 +55,7 @@ namespace IPA_Notenrechner
           {
           SaveAsTextFile();
           }
-        else if ( radioButtonDB.Checked )
+        else if ( radioButtonDB.Checked && useDatabase )
           {
           SaveToDatabase();
           }
