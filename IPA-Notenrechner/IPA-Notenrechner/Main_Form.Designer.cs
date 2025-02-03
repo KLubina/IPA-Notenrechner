@@ -62,7 +62,7 @@
       // checkedListBoxChooseTxtTemplate
       // 
       this.checkedListBoxChooseTxtTemplate.FormattingEnabled = true;
-      this.checkedListBoxChooseTxtTemplate.Location = new System.Drawing.Point(940, 36);
+      this.checkedListBoxChooseTxtTemplate.Location = new System.Drawing.Point(953, 36);
       this.checkedListBoxChooseTxtTemplate.Name = "checkedListBoxChooseTxtTemplate";
       this.checkedListBoxChooseTxtTemplate.Size = new System.Drawing.Size(187, 259);
       this.checkedListBoxChooseTxtTemplate.TabIndex = 1;
@@ -71,7 +71,7 @@
       // buttonCreateTemplate
       // 
       this.buttonCreateTemplate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-      this.buttonCreateTemplate.Location = new System.Drawing.Point(747, 322);
+      this.buttonCreateTemplate.Location = new System.Drawing.Point(760, 322);
       this.buttonCreateTemplate.Name = "buttonCreateTemplate";
       this.buttonCreateTemplate.Size = new System.Drawing.Size(380, 32);
       this.buttonCreateTemplate.TabIndex = 2;
@@ -82,7 +82,7 @@
       // buttonShowTemplate
       // 
       this.buttonShowTemplate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-      this.buttonShowTemplate.Location = new System.Drawing.Point(747, 359);
+      this.buttonShowTemplate.Location = new System.Drawing.Point(760, 359);
       this.buttonShowTemplate.Name = "buttonShowTemplate";
       this.buttonShowTemplate.Size = new System.Drawing.Size(380, 32);
       this.buttonShowTemplate.TabIndex = 3;
@@ -96,7 +96,7 @@
       this.richTextBoxEndNote.Location = new System.Drawing.Point(433, 6);
       this.richTextBoxEndNote.Name = "richTextBoxEndNote";
       this.richTextBoxEndNote.ReadOnly = true;
-      this.richTextBoxEndNote.Size = new System.Drawing.Size(294, 133);
+      this.richTextBoxEndNote.Size = new System.Drawing.Size(318, 133);
       this.richTextBoxEndNote.TabIndex = 4;
       this.richTextBoxEndNote.Text = "";
       // 
@@ -166,7 +166,7 @@
       this.richTextBoxGradePresentationAndConversationScaled.Location = new System.Drawing.Point(635, 340);
       this.richTextBoxGradePresentationAndConversationScaled.Name = "richTextBoxGradePresentationAndConversationScaled";
       this.richTextBoxGradePresentationAndConversationScaled.ReadOnly = true;
-      this.richTextBoxGradePresentationAndConversationScaled.Size = new System.Drawing.Size(92, 78);
+      this.richTextBoxGradePresentationAndConversationScaled.Size = new System.Drawing.Size(119, 78);
       this.richTextBoxGradePresentationAndConversationScaled.TabIndex = 13;
       this.richTextBoxGradePresentationAndConversationScaled.Text = "";
       // 
@@ -176,7 +176,7 @@
       this.richTextBoxGradeDocumentationScaled.Location = new System.Drawing.Point(635, 256);
       this.richTextBoxGradeDocumentationScaled.Name = "richTextBoxGradeDocumentationScaled";
       this.richTextBoxGradeDocumentationScaled.ReadOnly = true;
-      this.richTextBoxGradeDocumentationScaled.Size = new System.Drawing.Size(92, 78);
+      this.richTextBoxGradeDocumentationScaled.Size = new System.Drawing.Size(119, 78);
       this.richTextBoxGradeDocumentationScaled.TabIndex = 12;
       this.richTextBoxGradeDocumentationScaled.Text = "";
       // 
@@ -186,7 +186,7 @@
       this.richTextBoxGradeCompetenceScaled.Location = new System.Drawing.Point(635, 172);
       this.richTextBoxGradeCompetenceScaled.Name = "richTextBoxGradeCompetenceScaled";
       this.richTextBoxGradeCompetenceScaled.ReadOnly = true;
-      this.richTextBoxGradeCompetenceScaled.Size = new System.Drawing.Size(92, 78);
+      this.richTextBoxGradeCompetenceScaled.Size = new System.Drawing.Size(119, 78);
       this.richTextBoxGradeCompetenceScaled.TabIndex = 11;
       this.richTextBoxGradeCompetenceScaled.Text = "";
       // 
@@ -194,7 +194,7 @@
       // 
       this.labelChooseTxtTemplate.AutoSize = true;
       this.labelChooseTxtTemplate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-      this.labelChooseTxtTemplate.Location = new System.Drawing.Point(937, 6);
+      this.labelChooseTxtTemplate.Location = new System.Drawing.Point(950, 6);
       this.labelChooseTxtTemplate.Name = "labelChooseTxtTemplate";
       this.labelChooseTxtTemplate.Size = new System.Drawing.Size(182, 17);
       this.labelChooseTxtTemplate.TabIndex = 14;
@@ -204,7 +204,7 @@
       // 
       this.labelChooseDBTemplate.AutoSize = true;
       this.labelChooseDBTemplate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-      this.labelChooseDBTemplate.Location = new System.Drawing.Point(744, 6);
+      this.labelChooseDBTemplate.Location = new System.Drawing.Point(757, 6);
       this.labelChooseDBTemplate.Name = "labelChooseDBTemplate";
       this.labelChooseDBTemplate.Size = new System.Drawing.Size(183, 17);
       this.labelChooseDBTemplate.TabIndex = 16;
@@ -213,7 +213,7 @@
       // checkedListBoxChooseDBTemplate
       // 
       this.checkedListBoxChooseDBTemplate.FormattingEnabled = true;
-      this.checkedListBoxChooseDBTemplate.Location = new System.Drawing.Point(747, 36);
+      this.checkedListBoxChooseDBTemplate.Location = new System.Drawing.Point(760, 36);
       this.checkedListBoxChooseDBTemplate.Name = "checkedListBoxChooseDBTemplate";
       this.checkedListBoxChooseDBTemplate.Size = new System.Drawing.Size(187, 259);
       this.checkedListBoxChooseDBTemplate.TabIndex = 15;
@@ -233,15 +233,15 @@
       this.labelGradeScaled.AutoSize = true;
       this.labelGradeScaled.Location = new System.Drawing.Point(632, 153);
       this.labelGradeScaled.Name = "labelGradeScaled";
-      this.labelGradeScaled.Size = new System.Drawing.Size(87, 13);
+      this.labelGradeScaled.Size = new System.Drawing.Size(122, 13);
       this.labelGradeScaled.TabIndex = 18;
-      this.labelGradeScaled.Text = "skalierte Teilnote";
+      this.labelGradeScaled.Text = "Teilnote als eigene Note";
       // 
       // Main_Form
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(1151, 429);
+      this.ClientSize = new System.Drawing.Size(1156, 429);
       this.Controls.Add(this.labelGradeScaled);
       this.Controls.Add(this.labelRawPartGrade);
       this.Controls.Add(this.labelChooseDBTemplate);
