@@ -116,6 +116,58 @@ namespace IPA_Notenrechner
       {
       try
         {
+        // Prüfe ob überhaupt ein Template in einer der Listen ausgewählt ist
+        bool txtTemplateSelected_LocalVariable = false;
+        bool dbTemplateSelected_LocalVariable = false;
+
+        // Prüfe txt Templates
+        for ( int i_LocalVariable = 0; i_LocalVariable < checkedListBoxChooseTxtTemplate.Items.Count; i_LocalVariable++ )
+          {
+          if ( checkedListBoxChooseTxtTemplate.GetItemChecked( i_LocalVariable ) )
+            {
+            txtTemplateSelected_LocalVariable = true;
+            break;
+            }
+          }
+
+        // Prüfe DB Templates
+        for ( int i_LocalVariable = 0; i_LocalVariable < checkedListBoxChooseDBTemplate.Items.Count; i_LocalVariable++ )
+          {
+          if ( checkedListBoxChooseDBTemplate.GetItemChecked( i_LocalVariable ) )
+            {
+            dbTemplateSelected_LocalVariable = true;
+            break;
+            }
+          }
+
+        // Wenn kein Template ausgewählt wurde
+        if ( !txtTemplateSelected_LocalVariable && !dbTemplateSelected_LocalVariable )
+          {
+          MessageBox.Show( "Bitte wählen Sie zuerst ein Template aus und aktivieren Sie die Checkbox.",
+              "Keine Auswahl", MessageBoxButtons.OK, MessageBoxIcon.Warning );
+          return;
+          }
+
+        // Rest Ihres bestehenden Codes...
+        // Prüfe, ob ein txt Template ausgewählt wurde
+        if ( checkedListBoxChooseTxtTemplate.SelectedItem != null && txtTemplateSelected_LocalVariable )
+          {
+          string templateName_Variable = checkedListBoxChooseTxtTemplate.SelectedItem.ToString();
+          string templatePath_Variable = Path.Combine( templatesPath_Variable, templateName_Variable + ".txt" );
+
+          if ( File.Exists( templatePath_Variable ) )
+            {
+            currentTemplate_Variable = Template_Class.LoadTemplate( templatePath_Variable );
+            }
+          }
+        // Prüfe, ob ein DB Template ausgewählt wurde
+        else if ( checkedListBoxChooseDBTemplate.SelectedItem != null && dbTemplateSelected_LocalVariable )
+          {
+          string templateName_Variable = checkedListBoxChooseDBTemplate.SelectedItem.ToString();
+          DatabaseManager_Class dbManager_Object = new DatabaseManager_Class();
+          currentTemplate_Variable = dbManager_Object.LoadTemplate( templateName_Variable );
+          }
+
         // Prüfe, ob ein txt Template ausgewählt wurde
         if ( checkedListBoxChooseTxtTemplate.SelectedItem != null )
           {
@@ -177,6 +229,39 @@ namespace IPA_Notenrechner
         {
         MessageBox.Show( $"Fehler beim Anzeigen des Templates: {ex_Variable.Message}",
             "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error );
+        }
+      }
+    private void checkedListBoxChooseTxtTemplate_ItemCheck( object sender_Variable, ItemCheckEventArgs e_Variable )
+      {
+      // Alle anderen Items unchecken
+      for ( int i_LocalVariable = 0; i_LocalVariable < checkedListBoxChooseTxtTemplate.Items.Count; i_LocalVariable++ )
+        {
+        if ( i_LocalVariable != e_Variable.Index )
+          {
+          checkedListBoxChooseTxtTemplate.SetItemChecked( i_LocalVariable, false );
+          }
+        }
+      // DB Liste leeren
+      for ( int i_LocalVariable = 0; i_LocalVariable < checkedListBoxChooseDBTemplate.Items.Count; i_LocalVariable++ )
+        {
+        checkedListBoxChooseDBTemplate.SetItemChecked( i_LocalVariable, false );
+        }
+      }
+
+    private void checkedListBoxChooseDBTemplate_ItemCheck( object sender_Variable, ItemCheckEventArgs e_Variable )
+      {
+      // Alle anderen Items unchecken
+      for ( int i_LocalVariable = 0; i_LocalVariable < checkedListBoxChooseDBTemplate.Items.Count; i_LocalVariable++ )
+        {
+        if ( i_LocalVariable != e_Variable.Index )
+          {
+          checkedListBoxChooseDBTemplate.SetItemChecked( i_LocalVariable, false );
+          }
+        }
+      // Txt Liste leeren
+      for ( int i_LocalVariable = 0; i_LocalVariable < checkedListBoxChooseTxtTemplate.Items.Count; i_LocalVariable++ )
+        {
+        checkedListBoxChooseTxtTemplate.SetItemChecked( i_LocalVariable, false );
         }
       }
     }
