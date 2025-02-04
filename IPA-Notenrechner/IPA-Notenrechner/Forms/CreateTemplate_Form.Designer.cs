@@ -119,8 +119,8 @@
       this.labelPresentationAndConversation10 = new System.Windows.Forms.Label();
       this.labelPresentationAndConversation9 = new System.Windows.Forms.Label();
       this.buttonSaveTemplate = new System.Windows.Forms.Button();
-      this.radioButtonTxt = new System.Windows.Forms.RadioButton();
-      this.radioButtonDB = new System.Windows.Forms.RadioButton();
+      this.radioButtonTxt_Field = new System.Windows.Forms.RadioButton();
+      this.radioButtonDB_Field = new System.Windows.Forms.RadioButton();
       this.SuspendLayout();
       // 
       // labelCompetence
@@ -872,29 +872,29 @@
       this.buttonSaveTemplate.TabIndex = 90;
       this.buttonSaveTemplate.Text = "Template speichern";
       this.buttonSaveTemplate.UseVisualStyleBackColor = true;
-      this.buttonSaveTemplate.Click += new System.EventHandler(this.button1_Click);
+      this.buttonSaveTemplate.Click += new System.EventHandler(this.buttonSaveTemplate_Click);
       // 
-      // radioButtonTxt
+      // radioButtonTxt_Field
       // 
-      this.radioButtonTxt.AutoSize = true;
-      this.radioButtonTxt.Location = new System.Drawing.Point(799, 144);
-      this.radioButtonTxt.Name = "radioButtonTxt";
-      this.radioButtonTxt.Size = new System.Drawing.Size(104, 17);
-      this.radioButtonTxt.TabIndex = 91;
-      this.radioButtonTxt.TabStop = true;
-      this.radioButtonTxt.Text = "als .txt speichern";
-      this.radioButtonTxt.UseVisualStyleBackColor = true;
+      this.radioButtonTxt_Field.AutoSize = true;
+      this.radioButtonTxt_Field.Location = new System.Drawing.Point(799, 144);
+      this.radioButtonTxt_Field.Name = "radioButtonTxt_Field";
+      this.radioButtonTxt_Field.Size = new System.Drawing.Size(104, 17);
+      this.radioButtonTxt_Field.TabIndex = 91;
+      this.radioButtonTxt_Field.TabStop = true;
+      this.radioButtonTxt_Field.Text = "als .txt speichern";
+      this.radioButtonTxt_Field.UseVisualStyleBackColor = true;
       // 
-      // radioButtonDB
+      // radioButtonDB_Field
       // 
-      this.radioButtonDB.AutoSize = true;
-      this.radioButtonDB.Location = new System.Drawing.Point(799, 175);
-      this.radioButtonDB.Name = "radioButtonDB";
-      this.radioButtonDB.Size = new System.Drawing.Size(100, 17);
-      this.radioButtonDB.TabIndex = 92;
-      this.radioButtonDB.TabStop = true;
-      this.radioButtonDB.Text = "in DB speichern";
-      this.radioButtonDB.UseVisualStyleBackColor = true;
+      this.radioButtonDB_Field.AutoSize = true;
+      this.radioButtonDB_Field.Location = new System.Drawing.Point(799, 175);
+      this.radioButtonDB_Field.Name = "radioButtonDB_Field";
+      this.radioButtonDB_Field.Size = new System.Drawing.Size(100, 17);
+      this.radioButtonDB_Field.TabIndex = 92;
+      this.radioButtonDB_Field.TabStop = true;
+      this.radioButtonDB_Field.Text = "in DB speichern";
+      this.radioButtonDB_Field.UseVisualStyleBackColor = true;
       // 
       // CreateTemplate_Form
       // 
@@ -902,8 +902,8 @@
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.AutoScroll = true;
       this.ClientSize = new System.Drawing.Size(1102, 845);
-      this.Controls.Add(this.radioButtonDB);
-      this.Controls.Add(this.radioButtonTxt);
+      this.Controls.Add(this.radioButtonDB_Field);
+      this.Controls.Add(this.radioButtonTxt_Field);
       this.Controls.Add(this.buttonSaveTemplate);
       this.Controls.Add(this.textBoxPresentationAndConversation10);
       this.Controls.Add(this.textBoxPresentationAndConversation9);
@@ -1094,7 +1094,7 @@
     private System.Windows.Forms.Label labelPresentationAndConversation10;
     private System.Windows.Forms.Label labelPresentationAndConversation9;
     private System.Windows.Forms.Button buttonSaveTemplate;
-    private System.Windows.Forms.RadioButton radioButtonTxt;
-    private System.Windows.Forms.RadioButton radioButtonDB;
+    private System.Windows.Forms.RadioButton radioButtonTxt_Field;
+    private System.Windows.Forms.RadioButton radioButtonDB_Field;
     }
   }

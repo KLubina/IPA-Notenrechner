@@ -13,30 +13,30 @@ namespace IPA_Notenrechner
       Application.EnableVisualStyles();
       Application.SetCompatibleTextRenderingDefault( false );
 
-      bool useDatabase = false;
+      bool useDatabase_Variable = false;
       // Rechnernamen abrufen
-      string computerName = Environment.MachineName.ToLower();
-      string connString = null;
+      string computerName_Variable = Environment.MachineName.ToLower();
+      string connString_Variable = null;
 
       // Abhängig vom Rechnernamen den passenden Connection String wählen
-      if ( computerName == "desktop-o9bmbcb" )
+      if ( computerName_Variable == "desktop-o9bmbcb" )
         {
-        connString = ConfigurationManager.ConnectionStrings[ "NotenrechnerDbPC" ].ConnectionString;
+        connString_Variable = ConfigurationManager.ConnectionStrings[ "NotenrechnerDbPC" ].ConnectionString;
         }
-      else if ( computerName == "laptop-6hk14r0a" )
+      else if ( computerName_Variable == "laptop-6hk14r0a" )
         {
-        connString = ConfigurationManager.ConnectionStrings[ "NotenrechnerDbLaptop" ].ConnectionString;
+        connString_Variable = ConfigurationManager.ConnectionStrings[ "NotenrechnerDbLaptop" ].ConnectionString;
         }
 
       // Wenn ein Connection String gefunden wurde, Verbindung testen
-      if ( connString != null )
+      if ( connString_Variable != null )
         {
         try
           {
-          using ( SqlConnection conn = new SqlConnection( connString ) )
+          using ( SqlConnection conn_Variable = new SqlConnection( connString_Variable ) )
             {
-            conn.Open();
-            useDatabase = true;
+            conn_Variable.Open();
+            useDatabase_Variable = true;
             MessageBox.Show( "Verbindung zur Datenbank erfolgreich! Die Anwendung wird mit Datenbankunterstützung gestartet." );
             }
           }
@@ -51,7 +51,7 @@ namespace IPA_Notenrechner
         }
 
       // Hauptformular mit dem entsprechenden Modus starten
-      Application.Run( new Main_Form( useDatabase ) );
+      Application.Run( new Main_Form( useDatabase_Variable ) );
       }
     }
   }

@@ -14,14 +14,14 @@ namespace IPA_Notenrechner
     public string Name_Property { get; set; }
 
     // Konstanten für maximale Punktzahlen
-    private const double MAX_KOMPETENZ = 66.0;
-    private const double MAX_DOKUMENTATION = 24.0;
-    private const double MAX_PRAESENTATION = 30.0;
+    private const double MAX_KOMPETENZ_Constant = 66.0;
+    private const double MAX_DOKUMENTATION_Constant = 24.0;
+    private const double MAX_PRAESENTATION_Constant = 30.0;
 
     // Properties für die Maximalpunkte
-    public double FullCompetence { get; set; }
-    public double FullDocumentation { get; set; }
-    public double FullPresentation { get; set; }
+    public double FullCompetence_Property { get; set; }
+    public double FullDocumentation_Property { get; set; }
+    public double FullPresentation_Property { get; set; }
 
     public Template_Class()
       {
@@ -31,9 +31,9 @@ namespace IPA_Notenrechner
       PraesentationPunkte_Property = new List<double>();
 
       // Setzen der Standardwerte für Maximalpunkte
-      FullCompetence = MAX_KOMPETENZ;
-      FullDocumentation = MAX_DOKUMENTATION;
-      FullPresentation = MAX_PRAESENTATION;
+      FullCompetence_Property = MAX_KOMPETENZ_Constant;
+      FullDocumentation_Property = MAX_DOKUMENTATION_Constant;
+      FullPresentation_Property = MAX_PRAESENTATION_Constant;
       }
 
     public double BerechneGesamtpunkteKompetenz()
@@ -70,23 +70,23 @@ namespace IPA_Notenrechner
       {
       try
         {
-        using ( StreamWriter writer = new StreamWriter( path_Parameter ) )
+        using ( StreamWriter writer_Variable = new StreamWriter( path_Parameter ) )
           {
-          writer.WriteLine( $"FC:{FullCompetence}" );
-          writer.WriteLine( $"FD:{FullDocumentation}" );
-          writer.WriteLine( $"FP:{FullPresentation}" );
+          writer_Variable.WriteLine( $"FC:{FullCompetence_Property}" );
+          writer_Variable.WriteLine( $"FD:{FullDocumentation_Property}" );
+          writer_Variable.WriteLine( $"FP:{FullPresentation_Property}" );
 
           if ( !string.IsNullOrEmpty( Name_Property ) )
-            writer.WriteLine( $"N:{Name_Property}" );
+            writer_Variable.WriteLine( $"N:{Name_Property}" );
 
-          foreach ( double punkt in KompetenzPunkte_Property )
-            writer.WriteLine( $"K:{punkt}" );
+          foreach ( double punkt_Variable in KompetenzPunkte_Property )
+            writer_Variable.WriteLine( $"K:{punkt_Variable}" );
 
-          foreach ( double punkt in DokumentationPunkte_Property )
-            writer.WriteLine( $"D:{punkt}" );
+          foreach ( double punkt_Variable in DokumentationPunkte_Property )
+            writer_Variable.WriteLine( $"D:{punkt_Variable}" );
 
-          foreach ( double punkt in PraesentationPunkte_Property )
-            writer.WriteLine( $"P:{punkt}" );
+          foreach ( double punkt_Variable in PraesentationPunkte_Property )
+            writer_Variable.WriteLine( $"P:{punkt_Variable}" );
           }
         }
       catch ( Exception ex_Variable )
@@ -97,42 +97,42 @@ namespace IPA_Notenrechner
 
     public static Template_Class LoadTemplate( string path_Parameter )
       {
-      Template_Class template_Object = new Template_Class();
+      Template_Class template_Variable = new Template_Class();
       try
         {
-        string[] lines = File.ReadAllLines( path_Parameter );
-        foreach ( string line in lines )
+        string[] lines_Variable = File.ReadAllLines( path_Parameter );
+        foreach ( string line_Variable in lines_Variable )
           {
-          string[] parts = line.Split( ':' );
-          if ( parts.Length == 2 )
+          string[] parts_Variable = line_Variable.Split( ':' );
+          if ( parts_Variable.Length == 2 )
             {
-            string key = parts[ 0 ];
-            string valueStr = parts[ 1 ];
-            switch ( key )
+            string key_Variable = parts_Variable[ 0 ];
+            string valueStr_Variable = parts_Variable[ 1 ];
+            switch ( key_Variable )
               {
               case "FC":
-                template_Object.FullCompetence = Convert.ToDouble( valueStr );
+                template_Variable.FullCompetence_Property = Convert.ToDouble( valueStr_Variable );
                 break;
               case "FD":
-                template_Object.FullDocumentation = Convert.ToDouble( valueStr );
+                template_Variable.FullDocumentation_Property = Convert.ToDouble( valueStr_Variable );
                 break;
               case "FP":
-                template_Object.FullPresentation = Convert.ToDouble( valueStr );
+                template_Variable.FullPresentation_Property = Convert.ToDouble( valueStr_Variable );
                 break;
               case "N":
-                template_Object.Name_Property = valueStr;
+                template_Variable.Name_Property = valueStr_Variable;
                 break;
               case "K":
-                double kompetenzPunkt_Variable = Math.Max( 0, Convert.ToDouble( valueStr ) );
-                template_Object.KompetenzPunkte_Property.Add( kompetenzPunkt_Variable );
+                double kompetenzPunkt_Variable = Math.Max( 0, Convert.ToDouble( valueStr_Variable ) );
+                template_Variable.KompetenzPunkte_Property.Add( kompetenzPunkt_Variable );
                 break;
               case "D":
-                double dokumentationPunkt_Variable = Math.Max( 0, Convert.ToDouble( valueStr ) );
-                template_Object.DokumentationPunkte_Property.Add( dokumentationPunkt_Variable );
+                double dokumentationPunkt_Variable = Math.Max( 0, Convert.ToDouble( valueStr_Variable ) );
+                template_Variable.DokumentationPunkte_Property.Add( dokumentationPunkt_Variable );
                 break;
               case "P":
-                double praesentationPunkt_Variable = Math.Max( 0, Convert.ToDouble( valueStr ) );
-                template_Object.PraesentationPunkte_Property.Add( praesentationPunkt_Variable );
+                double praesentationPunkt_Variable = Math.Max( 0, Convert.ToDouble( valueStr_Variable ) );
+                template_Variable.PraesentationPunkte_Property.Add( praesentationPunkt_Variable );
                 break;
               }
             }
@@ -142,7 +142,7 @@ namespace IPA_Notenrechner
         {
         MessageBox.Show( $"Fehler beim Laden: {ex_Variable.Message}" );
         }
-      return template_Object;
+      return template_Variable;
       }
     }
   }

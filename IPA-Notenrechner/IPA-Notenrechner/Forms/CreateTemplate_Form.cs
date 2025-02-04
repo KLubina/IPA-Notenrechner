@@ -1,89 +1,56 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace IPA_Notenrechner
   {
   public partial class CreateTemplate_Form: Form
     {
-    private Template_Class newTemplate_Variable;
-    private string templatesPath_Variable;
-    private DatabaseManager_Class dbManager_Object;
-    private readonly bool useDatabase;
+    private Template_Class newTemplate_Field;
+    private string templatesPath_Field;
+    private DatabaseManager_Class dbManager_Field;
+    private readonly bool useDatabase_Field;
 
-    public CreateTemplate_Form( bool useDatabase = false )
+    public CreateTemplate_Form( bool useDatabase_Parameter = false )
       {
       InitializeComponent();
-      this.useDatabase = useDatabase;
-      newTemplate_Variable = new Template_Class();
-      dbManager_Object = new DatabaseManager_Class( useDatabase );
-      templatesPath_Variable = Path.Combine(
+      this.useDatabase_Field = useDatabase_Parameter;
+      newTemplate_Field = new Template_Class();
+      dbManager_Field = new DatabaseManager_Class( useDatabase_Parameter );
+      templatesPath_Field = Path.Combine(
           AppDomain.CurrentDomain.BaseDirectory,
           "..", "..", "Templates"
       );
 
       // Setze .txt als Standardauswahl
-      radioButtonTxt.Checked = true;
+      radioButtonTxt_Field.Checked = true;
 
       // Deaktiviere DB-Option wenn keine DB verfügbar
-      if ( !useDatabase )
+      if ( !useDatabase_Parameter )
         {
-        radioButtonDB.Enabled = false;
-        radioButtonDB.Visible = false;
+        radioButtonDB_Field.Enabled = false;
+        radioButtonDB_Field.Visible = false;
         }
       }
 
     public CreateTemplate_Form( string templatesPath_Parameter, bool useDatabase = false ) : this( useDatabase )
       {
-      templatesPath_Variable = templatesPath_Parameter;
-      }
-
-    private void buttonSaveTemplate_Click( object sender_Variable, EventArgs e_Variable )
-      {
-      try
-        {
-        CollectPoints();
-
-        if ( radioButtonTxt.Checked )
-          {
-          SaveAsTextFile();
-          }
-        else if ( radioButtonDB.Checked && useDatabase )
-          {
-          SaveToDatabase();
-          }
-        else
-          {
-          MessageBox.Show( "Bitte wählen Sie eine Speicheroption aus.",
-              "Warnung", MessageBoxButtons.OK, MessageBoxIcon.Warning );
-          }
-        }
-      catch ( Exception ex_Variable )
-        {
-        MessageBox.Show( $"Fehler beim Speichern des Templates: {ex_Variable.Message}",
-            "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error );
-        }
+      templatesPath_Field = templatesPath_Parameter;
       }
 
     private void SaveAsTextFile()
       {
       SaveFileDialog saveDialog_Variable = new SaveFileDialog
         {
-        InitialDirectory = templatesPath_Variable,
+        InitialDirectory = templatesPath_Field,
         Filter = "Text files (*.txt)|*.txt",
         DefaultExt = "txt"
         };
 
       if ( saveDialog_Variable.ShowDialog() == DialogResult.OK )
         {
-        newTemplate_Variable.SaveTemplate( saveDialog_Variable.FileName );
+        newTemplate_Field.SaveTemplate( saveDialog_Variable.FileName );
         MessageBox.Show( "Template wurde erfolgreich als Textdatei gespeichert!",
             "Erfolg", MessageBoxButtons.OK, MessageBoxIcon.Information );
         this.DialogResult = DialogResult.OK;
@@ -96,7 +63,7 @@ namespace IPA_Notenrechner
       try
         {
         // Prüfe DB-Verbindung
-        if ( !dbManager_Object.TestConnection() )
+        if ( !dbManager_Field.TestConnection() )
           {
           MessageBox.Show( "Keine Verbindung zur Datenbank möglich.",
               "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error );
@@ -105,9 +72,9 @@ namespace IPA_Notenrechner
 
         // Template Namen aus dem ersten Eingabefeld generieren
         string templateName_Variable = $"Template_{DateTime.Now:yyyyMMdd_HHmmss}";
-        newTemplate_Variable.Name_Property = templateName_Variable;
+        newTemplate_Field.Name_Property = templateName_Variable;
 
-        if ( dbManager_Object.SaveTemplate( newTemplate_Variable ) )
+        if ( dbManager_Field.SaveTemplate( newTemplate_Field ) )
           {
           MessageBox.Show( "Template wurde erfolgreich in der Datenbank gespeichert!",
               "Erfolg", MessageBoxButtons.OK, MessageBoxIcon.Information );
@@ -126,9 +93,9 @@ namespace IPA_Notenrechner
       {
       try
         {
-        newTemplate_Variable.KompetenzPunkte_Property.Clear();
-        newTemplate_Variable.DokumentationPunkte_Property.Clear();
-        newTemplate_Variable.PraesentationPunkte_Property.Clear();
+        newTemplate_Field.KompetenzPunkte_Property.Clear();
+        newTemplate_Field.DokumentationPunkte_Property.Clear();
+        newTemplate_Field.PraesentationPunkte_Property.Clear();
 
         // Sammle Pflichtkriterien (A1-A11)
         for ( int i_Variable = 1; i_Variable <= 11; i_Variable++ )
@@ -137,7 +104,7 @@ namespace IPA_Notenrechner
           if ( textBox_Variable != null && !string.IsNullOrEmpty( textBox_Variable.Text ) )
             {
             double punkt_Variable = Math.Max( 0, Math.Min( 3, Convert.ToDouble( textBox_Variable.Text ) ) );
-            newTemplate_Variable.KompetenzPunkte_Property.Add( punkt_Variable );
+            newTemplate_Field.KompetenzPunkte_Property.Add( punkt_Variable );
             }
           }
 
@@ -146,7 +113,7 @@ namespace IPA_Notenrechner
         if ( textBoxObligatorySelected_Variable != null && !string.IsNullOrEmpty( textBoxObligatorySelected_Variable.Text ) )
           {
           double punkt_Variable = Math.Max( 0, Math.Min( 3, Convert.ToDouble( textBoxObligatorySelected_Variable.Text ) ) );
-          newTemplate_Variable.KompetenzPunkte_Property.Add( punkt_Variable );
+          newTemplate_Field.KompetenzPunkte_Property.Add( punkt_Variable );
           }
 
         // Sammle Wahlkriterien direkt aus dem Katalog
@@ -156,7 +123,7 @@ namespace IPA_Notenrechner
           if ( textBox_Variable != null && !string.IsNullOrEmpty( textBox_Variable.Text ) )
             {
             double punkt_Variable = Math.Max( 0, Math.Min( 3, Convert.ToDouble( textBox_Variable.Text ) ) );
-            newTemplate_Variable.KompetenzPunkte_Property.Add( punkt_Variable );
+            newTemplate_Field.KompetenzPunkte_Property.Add( punkt_Variable );
             }
           }
 
@@ -167,7 +134,7 @@ namespace IPA_Notenrechner
           if ( textBox_Variable != null && !string.IsNullOrEmpty( textBox_Variable.Text ) )
             {
             double punkt_Variable = Math.Max( 0, Math.Min( 3, Convert.ToDouble( textBox_Variable.Text ) ) );
-            newTemplate_Variable.KompetenzPunkte_Property.Add( punkt_Variable );
+            newTemplate_Field.KompetenzPunkte_Property.Add( punkt_Variable );
             }
           }
 
@@ -178,7 +145,7 @@ namespace IPA_Notenrechner
           if ( textBox_Variable != null && !string.IsNullOrEmpty( textBox_Variable.Text ) )
             {
             double punkt_Variable = Math.Max( 0, Math.Min( 3, Convert.ToDouble( textBox_Variable.Text ) ) );
-            newTemplate_Variable.DokumentationPunkte_Property.Add( punkt_Variable );
+            newTemplate_Field.DokumentationPunkte_Property.Add( punkt_Variable );
             }
           }
 
@@ -189,7 +156,7 @@ namespace IPA_Notenrechner
           if ( textBox_Variable != null && !string.IsNullOrEmpty( textBox_Variable.Text ) )
             {
             double punkt_Variable = Math.Max( 0, Math.Min( 3, Convert.ToDouble( textBox_Variable.Text ) ) );
-            newTemplate_Variable.PraesentationPunkte_Property.Add( punkt_Variable );
+            newTemplate_Field.PraesentationPunkte_Property.Add( punkt_Variable );
             }
           }
         }
@@ -201,9 +168,31 @@ namespace IPA_Notenrechner
         }
       }
 
-    private void button1_Click( object sender_Variable, EventArgs e_Variable )
+    private void buttonSaveTemplate_Click( object sender_Parameter, EventArgs e_Parameter )
       {
-      buttonSaveTemplate_Click( sender_Variable, e_Variable );
+      try
+        {
+        CollectPoints();
+
+        if ( radioButtonTxt_Field.Checked )
+          {
+          SaveAsTextFile();
+          }
+        else if ( radioButtonDB_Field.Checked && useDatabase_Field )
+          {
+          SaveToDatabase();
+          }
+        else
+          {
+          MessageBox.Show( "Bitte wählen Sie eine Speicheroption aus.",
+              "Warnung", MessageBoxButtons.OK, MessageBoxIcon.Warning );
+          }
+        }
+      catch ( Exception ex_Variable )
+        {
+        MessageBox.Show( $"Fehler beim Speichern des Templates: {ex_Variable.Message}",
+            "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error );
+        }
       }
     }
   }

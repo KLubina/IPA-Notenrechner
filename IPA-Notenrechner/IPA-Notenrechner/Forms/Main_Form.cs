@@ -8,27 +8,27 @@ namespace IPA_Notenrechner
   {
   public partial class Main_Form: Form
     {
-    private Template_Class currentTemplate_Variable;
-    private string templatesPath_Variable;
-    private readonly DatabaseManager_Class dbManager_Object;
-    private readonly bool useDatabase;
+    private Template_Class currentTemplate_Field;
+    private string templatesPath_Field;
+    private readonly DatabaseManager_Class dbManager_Field;
+    private readonly bool useDatabase_Field;
 
-    public Main_Form( bool useDatabase = false )
+    public Main_Form( bool useDatabase_Parameter = false )
       {
       InitializeComponent();
-      this.useDatabase = useDatabase;
-      currentTemplate_Variable = new Template_Class();
-      dbManager_Object = new DatabaseManager_Class( useDatabase );
+      this.useDatabase_Field = useDatabase_Parameter;
+      currentTemplate_Field = new Template_Class();
+      dbManager_Field = new DatabaseManager_Class( useDatabase_Parameter );
 
       string gitPath_Variable = @"C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\Templates";
 
       if ( Directory.Exists( gitPath_Variable ) )
         {
-        templatesPath_Variable = gitPath_Variable;
+        templatesPath_Field = gitPath_Variable;
         }
       else
         {
-        templatesPath_Variable = Path.Combine(
+        templatesPath_Field = Path.Combine(
             Application.StartupPath,
             "..", "..", "Templates"
         );
@@ -36,9 +36,9 @@ namespace IPA_Notenrechner
 
       try
         {
-        if ( !Directory.Exists( templatesPath_Variable ) )
+        if ( !Directory.Exists( templatesPath_Field ) )
           {
-          Directory.CreateDirectory( templatesPath_Variable );
+          Directory.CreateDirectory( templatesPath_Field );
           }
         LoadTemplateList();
         }
@@ -57,12 +57,12 @@ namespace IPA_Notenrechner
         checkedListBoxChooseDBTemplate.Items.Clear();
 
         // Lade Text-Templates
-        if ( !Directory.Exists( templatesPath_Variable ) )
+        if ( !Directory.Exists( templatesPath_Field ) )
           {
-          throw new DirectoryNotFoundException( $"Der Template-Ordner wurde nicht gefunden: {templatesPath_Variable}" );
+          throw new DirectoryNotFoundException( $"Der Template-Ordner wurde nicht gefunden: {templatesPath_Field}" );
           }
 
-        string[] templates_Variable = Directory.GetFiles( templatesPath_Variable, "*.txt" );
+        string[] templates_Variable = Directory.GetFiles( templatesPath_Field, "*.txt" );
         foreach ( string template_Variable in templates_Variable )
           {
           string templateName_Variable = Path.GetFileNameWithoutExtension( template_Variable );
@@ -70,9 +70,9 @@ namespace IPA_Notenrechner
           }
 
         // Lade DB-Templates nur wenn Datenbank aktiviert ist
-        if ( useDatabase )
+        if ( useDatabase_Field )
           {
-          List<string> dbTemplates_Variable = dbManager_Object.GetTemplateNames();
+          List<string> dbTemplates_Variable = dbManager_Field.GetTemplateNames();
           foreach ( string templateName_Variable in dbTemplates_Variable )
             {
             checkedListBoxChooseDBTemplate.Items.Add( templateName_Variable );
@@ -93,7 +93,7 @@ namespace IPA_Notenrechner
         }
       }
 
-    private void buttonShowTemplate_Click( object sender_Variable, EventArgs e_Variable )
+    private void buttonShowTemplate_Click( object sender_Parameter, EventArgs e_Parameter )
       {
       try
         {
@@ -101,18 +101,18 @@ namespace IPA_Notenrechner
           {
           // Berechne rohe Teilnoten
           double rohKompetenz_Variable = NotenRechner_Class.BerechneRoheTeilnote(
-              currentTemplate_Variable.BerechneGesamtpunkteKompetenz(),
-              currentTemplate_Variable.FullCompetence,
+              currentTemplate_Field.BerechneGesamtpunkteKompetenz(),
+              currentTemplate_Field.FullCompetence_Property,
               2.5 );
 
           double rohDokumentation_Variable = NotenRechner_Class.BerechneRoheTeilnote(
-              currentTemplate_Variable.BerechneGesamtpunkteDokumentation(),
-              currentTemplate_Variable.FullDocumentation,
+              currentTemplate_Field.BerechneGesamtpunkteDokumentation(),
+              currentTemplate_Field.FullDocumentation_Property,
               1.0 );
 
           double rohPraesentation_Variable = NotenRechner_Class.BerechneRoheTeilnote(
-              currentTemplate_Variable.BerechneGesamtpunktePraesentation(),
-              currentTemplate_Variable.FullPresentation,
+              currentTemplate_Field.BerechneGesamtpunktePraesentation(),
+              currentTemplate_Field.FullPresentation_Property,
               1.5 );
 
           // Berechne skalierte Noten
@@ -132,9 +132,9 @@ namespace IPA_Notenrechner
 
           // Berechne Gesamtnote
           double gesamtNote_Variable = NotenRechner_Class.BerechneGesamtnote(
-              currentTemplate_Variable.BerechneGesamtpunkteKompetenz(),
-              currentTemplate_Variable.BerechneGesamtpunkteDokumentation(),
-              currentTemplate_Variable.BerechneGesamtpunktePraesentation() );
+              currentTemplate_Field.BerechneGesamtpunkteKompetenz(),
+              currentTemplate_Field.BerechneGesamtpunkteDokumentation(),
+              currentTemplate_Field.BerechneGesamtpunktePraesentation() );
 
           richTextBoxEndNote.Text = gesamtNote_Variable.ToString( "F2" );
           }
@@ -148,52 +148,52 @@ namespace IPA_Notenrechner
 
     private bool LoadSelectedTemplate()
       {
-      bool txtTemplateSelected_LocalVariable = false;
-      bool dbTemplateSelected_LocalVariable = false;
+      bool txtTemplateSelected_Variable = false;
+      bool dbTemplateSelected_Variable = false;
 
-      for ( int i_LocalVariable = 0; i_LocalVariable < checkedListBoxChooseTxtTemplate.Items.Count; i_LocalVariable++ )
+      for ( int i_Variable = 0; i_Variable < checkedListBoxChooseTxtTemplate.Items.Count; i_Variable++ )
         {
-        if ( checkedListBoxChooseTxtTemplate.GetItemChecked( i_LocalVariable ) )
+        if ( checkedListBoxChooseTxtTemplate.GetItemChecked( i_Variable ) )
           {
-          txtTemplateSelected_LocalVariable = true;
+          txtTemplateSelected_Variable = true;
           break;
           }
         }
 
-      if ( useDatabase )
+      if ( useDatabase_Field )
         {
-        for ( int i_LocalVariable = 0; i_LocalVariable < checkedListBoxChooseDBTemplate.Items.Count; i_LocalVariable++ )
+        for ( int i_Variable = 0; i_Variable < checkedListBoxChooseDBTemplate.Items.Count; i_Variable++ )
           {
-          if ( checkedListBoxChooseDBTemplate.GetItemChecked( i_LocalVariable ) )
+          if ( checkedListBoxChooseDBTemplate.GetItemChecked( i_Variable ) )
             {
-            dbTemplateSelected_LocalVariable = true;
+            dbTemplateSelected_Variable = true;
             break;
             }
           }
         }
 
-      if ( !txtTemplateSelected_LocalVariable && !dbTemplateSelected_LocalVariable )
+      if ( !txtTemplateSelected_Variable && !dbTemplateSelected_Variable )
         {
         MessageBox.Show( "Bitte wählen Sie zuerst ein Template aus und aktivieren Sie die Checkbox.",
             "Keine Auswahl", MessageBoxButtons.OK, MessageBoxIcon.Warning );
         return false;
         }
 
-      if ( checkedListBoxChooseTxtTemplate.SelectedItem != null && txtTemplateSelected_LocalVariable )
+      if ( checkedListBoxChooseTxtTemplate.SelectedItem != null && txtTemplateSelected_Variable )
         {
         string templateName_Variable = checkedListBoxChooseTxtTemplate.SelectedItem.ToString();
-        string templatePath_Variable = Path.Combine( templatesPath_Variable, templateName_Variable + ".txt" );
+        string templatePath_Variable = Path.Combine( templatesPath_Field, templateName_Variable + ".txt" );
 
         if ( File.Exists( templatePath_Variable ) )
           {
-          currentTemplate_Variable = Template_Class.LoadTemplate( templatePath_Variable );
+          currentTemplate_Field = Template_Class.LoadTemplate( templatePath_Variable );
           return true;
           }
         }
-      else if ( useDatabase && checkedListBoxChooseDBTemplate.SelectedItem != null && dbTemplateSelected_LocalVariable )
+      else if ( useDatabase_Field && checkedListBoxChooseDBTemplate.SelectedItem != null && dbTemplateSelected_Variable )
         {
         string templateName_Variable = checkedListBoxChooseDBTemplate.SelectedItem.ToString();
-        currentTemplate_Variable = dbManager_Object.LoadTemplate( templateName_Variable );
+        currentTemplate_Field = dbManager_Field.LoadTemplate( templateName_Variable );
         return true;
         }
 
@@ -202,49 +202,49 @@ namespace IPA_Notenrechner
       return false;
       }
 
-    private void buttonCreateTemplate_Click( object sender_Variable, EventArgs e_Variable )
+    private void buttonCreateTemplate_Click( object sender_Parameter, EventArgs e_Parameter )
       {
-      CreateTemplate_Form createTemplateForm_Object = new CreateTemplate_Form( templatesPath_Variable );
-      if ( createTemplateForm_Object.ShowDialog() == DialogResult.OK )
+      CreateTemplate_Form createTemplateForm_Variable = new CreateTemplate_Form( templatesPath_Field );
+      if ( createTemplateForm_Variable.ShowDialog() == DialogResult.OK )
         {
         LoadTemplateList();
         }
       }
 
-    private void checkedListBoxChooseTxtTemplate_ItemCheck( object sender_Variable, ItemCheckEventArgs e_Variable )
+    private void checkedListBoxChooseTxtTemplate_ItemCheck( object sender_Parameter, ItemCheckEventArgs e_Parameter )
       {
-      for ( int i_LocalVariable = 0; i_LocalVariable < checkedListBoxChooseTxtTemplate.Items.Count; i_LocalVariable++ )
+      for ( int i_Variable = 0; i_Variable < checkedListBoxChooseTxtTemplate.Items.Count; i_Variable++ )
         {
-        if ( i_LocalVariable != e_Variable.Index )
+        if ( i_Variable != e_Parameter.Index )
           {
-          checkedListBoxChooseTxtTemplate.SetItemChecked( i_LocalVariable, false );
+          checkedListBoxChooseTxtTemplate.SetItemChecked( i_Variable, false );
           }
         }
 
-      if ( useDatabase )
+      if ( useDatabase_Field )
         {
-        for ( int i_LocalVariable = 0; i_LocalVariable < checkedListBoxChooseDBTemplate.Items.Count; i_LocalVariable++ )
+        for ( int i_Variable = 0; i_Variable < checkedListBoxChooseDBTemplate.Items.Count; i_Variable++ )
           {
-          checkedListBoxChooseDBTemplate.SetItemChecked( i_LocalVariable, false );
+          checkedListBoxChooseDBTemplate.SetItemChecked( i_Variable, false );
           }
         }
       }
 
-    private void checkedListBoxChooseDBTemplate_ItemCheck( object sender_Variable, ItemCheckEventArgs e_Variable )
+    private void checkedListBoxChooseDBTemplate_ItemCheck( object sender_Parameter, ItemCheckEventArgs e_Parameter )
       {
-      if ( !useDatabase ) return;
+      if ( !useDatabase_Field ) return;
 
-      for ( int i_LocalVariable = 0; i_LocalVariable < checkedListBoxChooseDBTemplate.Items.Count; i_LocalVariable++ )
+      for ( int i_Variable = 0; i_Variable < checkedListBoxChooseDBTemplate.Items.Count; i_Variable++ )
         {
-        if ( i_LocalVariable != e_Variable.Index )
+        if ( i_Variable != e_Parameter.Index )
           {
-          checkedListBoxChooseDBTemplate.SetItemChecked( i_LocalVariable, false );
+          checkedListBoxChooseDBTemplate.SetItemChecked( i_Variable, false );
           }
         }
 
-      for ( int i_LocalVariable = 0; i_LocalVariable < checkedListBoxChooseTxtTemplate.Items.Count; i_LocalVariable++ )
+      for ( int i_Variable = 0; i_Variable < checkedListBoxChooseTxtTemplate.Items.Count; i_Variable++ )
         {
-        checkedListBoxChooseTxtTemplate.SetItemChecked( i_LocalVariable, false );
+        checkedListBoxChooseTxtTemplate.SetItemChecked( i_Variable, false );
         }
       }
 
@@ -257,7 +257,7 @@ namespace IPA_Notenrechner
         {
         selectedTemplate_Variable = checkedListBoxChooseTxtTemplate.SelectedItem.ToString();
         }
-      else if ( useDatabase && checkedListBoxChooseDBTemplate.SelectedItem != null &&
+      else if ( useDatabase_Field && checkedListBoxChooseDBTemplate.SelectedItem != null &&
                checkedListBoxChooseDBTemplate.GetItemChecked( checkedListBoxChooseDBTemplate.SelectedIndex ) )
         {
         selectedTemplate_Variable = checkedListBoxChooseDBTemplate.SelectedItem.ToString();
@@ -265,8 +265,8 @@ namespace IPA_Notenrechner
 
       if ( selectedTemplate_Variable != null )
         {
-        EditTemplate_Form editTemplate_Object = new EditTemplate_Form( selectedTemplate_Variable, templatesPath_Variable, useDatabase );
-        if ( editTemplate_Object.ShowDialog() == DialogResult.OK )
+        EditTemplate_Form editTemplate_Variable = new EditTemplate_Form( selectedTemplate_Variable, templatesPath_Field, useDatabase_Field );
+        if ( editTemplate_Variable.ShowDialog() == DialogResult.OK )
           {
           LoadTemplateList(); // Liste nach Bearbeitung aktualisieren
           }

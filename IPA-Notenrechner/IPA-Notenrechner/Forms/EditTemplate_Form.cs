@@ -8,34 +8,34 @@ namespace IPA_Notenrechner.Forms
   {
   public partial class EditTemplate_Form: Form
     {
-    private Template_Class template_Variable;
-    private readonly DatabaseManager_Class dbManager_Object;
-    private string templatesPath_Variable;
+    private Template_Class template_Field;
+    private readonly DatabaseManager_Class dbManager_Field;
+    private string templatesPath_Field;
 
-    public EditTemplate_Form( string templateName_Parameter, string templatesPath_Parameter = null, bool useDatabase = false )
+    public EditTemplate_Form( string templateName_Parameter, string templatesPath_Parameter = null, bool useDatabase_Parameter = false )
       {
       InitializeComponent();
-      dbManager_Object = new DatabaseManager_Class( useDatabase );
-      templatesPath_Variable = templatesPath_Parameter ?? Path.Combine(
+      dbManager_Field = new DatabaseManager_Class( useDatabase_Parameter );
+      templatesPath_Field = templatesPath_Parameter ?? Path.Combine(
           AppDomain.CurrentDomain.BaseDirectory,
           "..", "..", "Templates"
       );
 
-      LoadTemplate( templateName_Parameter, useDatabase );
+      LoadTemplate( templateName_Parameter, useDatabase_Parameter );
       }
 
-    private void LoadTemplate( string templateName_Parameter, bool useDatabase )
+    private void LoadTemplate( string templateName_Parameter, bool useDatabase_Parameter )
       {
       try
         {
-        if ( useDatabase )
+        if ( useDatabase_Parameter )
           {
-          template_Variable = dbManager_Object.LoadTemplate( templateName_Parameter );
+          template_Field = dbManager_Field.LoadTemplate( templateName_Parameter );
           }
         else
           {
-          string templatePath_Variable = Path.Combine( templatesPath_Variable, templateName_Parameter + ".txt" );
-          template_Variable = Template_Class.LoadTemplate( templatePath_Variable );
+          string templatePath_Variable = Path.Combine( templatesPath_Field, templateName_Parameter + ".txt" );
+          template_Field = Template_Class.LoadTemplate( templatePath_Variable );
           }
 
         PopulateFormWithTemplateData();
@@ -52,62 +52,62 @@ namespace IPA_Notenrechner.Forms
       try
         {
         // Pflichtkriterien (A1-A11)
-        for ( int i_Variable = 0; i_Variable < Math.Min( template_Variable.KompetenzPunkte_Property.Count, 11 ); i_Variable++ )
+        for ( int i_Variable = 0; i_Variable < Math.Min( template_Field.KompetenzPunkte_Property.Count, 11 ); i_Variable++ )
           {
           var textBox_Variable = Controls.Find( $"textBoxObligatoryCriteriaA{i_Variable + 1}", true ).FirstOrDefault() as TextBox;
           if ( textBox_Variable != null )
             {
-            textBox_Variable.Text = template_Variable.KompetenzPunkte_Property[ i_Variable ].ToString();
+            textBox_Variable.Text = template_Field.KompetenzPunkte_Property[ i_Variable ].ToString();
             }
           }
 
         // Pflichtwahlkriterium
-        if ( template_Variable.KompetenzPunkte_Property.Count > 11 )
+        if ( template_Field.KompetenzPunkte_Property.Count > 11 )
           {
           var textBox_Variable = Controls.Find( "textBoxObligatorySelectedCriteria1", true ).FirstOrDefault() as TextBox;
           if ( textBox_Variable != null )
             {
-            textBox_Variable.Text = template_Variable.KompetenzPunkte_Property[ 11 ].ToString();
+            textBox_Variable.Text = template_Field.KompetenzPunkte_Property[ 11 ].ToString();
             }
           }
 
         // Wahlkriterien aus dem Katalog
-        for ( int i_Variable = 0; i_Variable < 2 && ( i_Variable + 12 ) < template_Variable.KompetenzPunkte_Property.Count; i_Variable++ )
+        for ( int i_Variable = 0; i_Variable < 2 && ( i_Variable + 12 ) < template_Field.KompetenzPunkte_Property.Count; i_Variable++ )
           {
           var textBox_Variable = Controls.Find( $"textBoxSelectedCatalogueCriteria{i_Variable + 1}", true ).FirstOrDefault() as TextBox;
           if ( textBox_Variable != null )
             {
-            textBox_Variable.Text = template_Variable.KompetenzPunkte_Property[ i_Variable + 12 ].ToString();
+            textBox_Variable.Text = template_Field.KompetenzPunkte_Property[ i_Variable + 12 ].ToString();
             }
           }
 
         // Individuelle Wahlkriterien
-        for ( int i_Variable = 0; i_Variable < 8 && ( i_Variable + 14 ) < template_Variable.KompetenzPunkte_Property.Count; i_Variable++ )
+        for ( int i_Variable = 0; i_Variable < 8 && ( i_Variable + 14 ) < template_Field.KompetenzPunkte_Property.Count; i_Variable++ )
           {
           var textBox_Variable = Controls.Find( $"textBoxIndividualCriteria{i_Variable + 1}", true ).FirstOrDefault() as TextBox;
           if ( textBox_Variable != null )
             {
-            textBox_Variable.Text = template_Variable.KompetenzPunkte_Property[ i_Variable + 14 ].ToString();
+            textBox_Variable.Text = template_Field.KompetenzPunkte_Property[ i_Variable + 14 ].ToString();
             }
           }
 
         // Dokumentationspunkte
-        for ( int i_Variable = 0; i_Variable < template_Variable.DokumentationPunkte_Property.Count && i_Variable < 8; i_Variable++ )
+        for ( int i_Variable = 0; i_Variable < template_Field.DokumentationPunkte_Property.Count && i_Variable < 8; i_Variable++ )
           {
           var textBox_Variable = Controls.Find( $"textBoxDocumentation{i_Variable + 1}", true ).FirstOrDefault() as TextBox;
           if ( textBox_Variable != null )
             {
-            textBox_Variable.Text = template_Variable.DokumentationPunkte_Property[ i_Variable ].ToString();
+            textBox_Variable.Text = template_Field.DokumentationPunkte_Property[ i_Variable ].ToString();
             }
           }
 
         // Präsentations- und Fachgesprächspunkte
-        for ( int i_Variable = 0; i_Variable < template_Variable.PraesentationPunkte_Property.Count && i_Variable < 10; i_Variable++ )
+        for ( int i_Variable = 0; i_Variable < template_Field.PraesentationPunkte_Property.Count && i_Variable < 10; i_Variable++ )
           {
           var textBox_Variable = Controls.Find( $"textBoxPresentationAndConversation{i_Variable + 1}", true ).FirstOrDefault() as TextBox;
           if ( textBox_Variable != null )
             {
-            textBox_Variable.Text = template_Variable.PraesentationPunkte_Property[ i_Variable ].ToString();
+            textBox_Variable.Text = template_Field.PraesentationPunkte_Property[ i_Variable ].ToString();
             }
           }
         }
@@ -118,12 +118,12 @@ namespace IPA_Notenrechner.Forms
         }
       }
 
-    private void buttonSaveTemplate_Click( object sender_Variable, EventArgs e_Variable )
+    private void buttonSaveTemplate_Click( object sender_Parameter, EventArgs e_Parameter )
       {
       try
         {
         CollectPoints();
-        template_Variable.SaveTemplate( Path.Combine( templatesPath_Variable, template_Variable.Name_Property + ".txt" ) );
+        template_Field.SaveTemplate( Path.Combine( templatesPath_Field, template_Field.Name_Property + ".txt" ) );
         MessageBox.Show( "Template wurde erfolgreich aktualisiert!",
             "Erfolg", MessageBoxButtons.OK, MessageBoxIcon.Information );
         this.DialogResult = DialogResult.OK;
@@ -140,9 +140,9 @@ namespace IPA_Notenrechner.Forms
       {
       try
         {
-        template_Variable.KompetenzPunkte_Property.Clear();
-        template_Variable.DokumentationPunkte_Property.Clear();
-        template_Variable.PraesentationPunkte_Property.Clear();
+        template_Field.KompetenzPunkte_Property.Clear();
+        template_Field.DokumentationPunkte_Property.Clear();
+        template_Field.PraesentationPunkte_Property.Clear();
 
         // Sammle Pflichtkriterien (A1-A11)
         for ( int i_Variable = 1; i_Variable <= 11; i_Variable++ )
@@ -151,7 +151,7 @@ namespace IPA_Notenrechner.Forms
           if ( textBox_Variable != null && !string.IsNullOrEmpty( textBox_Variable.Text ) )
             {
             double punkt_Variable = Math.Max( 0, Math.Min( 3, Convert.ToDouble( textBox_Variable.Text ) ) );
-            template_Variable.KompetenzPunkte_Property.Add( punkt_Variable );
+            template_Field.KompetenzPunkte_Property.Add( punkt_Variable );
             }
           }
 
@@ -160,7 +160,7 @@ namespace IPA_Notenrechner.Forms
         if ( textBoxObligatorySelected_Variable != null && !string.IsNullOrEmpty( textBoxObligatorySelected_Variable.Text ) )
           {
           double punkt_Variable = Math.Max( 0, Math.Min( 3, Convert.ToDouble( textBoxObligatorySelected_Variable.Text ) ) );
-          template_Variable.KompetenzPunkte_Property.Add( punkt_Variable );
+          template_Field.KompetenzPunkte_Property.Add( punkt_Variable );
           }
 
         // Sammle Wahlkriterien direkt aus dem Katalog
@@ -170,7 +170,7 @@ namespace IPA_Notenrechner.Forms
           if ( textBox_Variable != null && !string.IsNullOrEmpty( textBox_Variable.Text ) )
             {
             double punkt_Variable = Math.Max( 0, Math.Min( 3, Convert.ToDouble( textBox_Variable.Text ) ) );
-            template_Variable.KompetenzPunkte_Property.Add( punkt_Variable );
+            template_Field.KompetenzPunkte_Property.Add( punkt_Variable );
             }
           }
 
@@ -181,7 +181,7 @@ namespace IPA_Notenrechner.Forms
           if ( textBox_Variable != null && !string.IsNullOrEmpty( textBox_Variable.Text ) )
             {
             double punkt_Variable = Math.Max( 0, Math.Min( 3, Convert.ToDouble( textBox_Variable.Text ) ) );
-            template_Variable.KompetenzPunkte_Property.Add( punkt_Variable );
+            template_Field.KompetenzPunkte_Property.Add( punkt_Variable );
             }
           }
 
@@ -192,7 +192,7 @@ namespace IPA_Notenrechner.Forms
           if ( textBox_Variable != null && !string.IsNullOrEmpty( textBox_Variable.Text ) )
             {
             double punkt_Variable = Math.Max( 0, Math.Min( 3, Convert.ToDouble( textBox_Variable.Text ) ) );
-            template_Variable.DokumentationPunkte_Property.Add( punkt_Variable );
+            template_Field.DokumentationPunkte_Property.Add( punkt_Variable );
             }
           }
 
@@ -203,7 +203,7 @@ namespace IPA_Notenrechner.Forms
           if ( textBox_Variable != null && !string.IsNullOrEmpty( textBox_Variable.Text ) )
             {
             double punkt_Variable = Math.Max( 0, Math.Min( 3, Convert.ToDouble( textBox_Variable.Text ) ) );
-            template_Variable.PraesentationPunkte_Property.Add( punkt_Variable );
+            template_Field.PraesentationPunkte_Property.Add( punkt_Variable );
             }
           }
         }
