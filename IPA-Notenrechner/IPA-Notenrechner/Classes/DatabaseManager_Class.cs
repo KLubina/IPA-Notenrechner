@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Data.SqlClient;
-using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Configuration;
-using System.Linq;
+using System.Data.SqlClient;
 using System.IO;
+using System.Linq;
 using System.Text.Json;
+using System.Windows.Forms;
 
 namespace IPA_Notenrechner
   {
@@ -15,13 +15,16 @@ namespace IPA_Notenrechner
     private readonly bool useDatabase_Field;
     private readonly string textFilePath_Field;
 
-    public DatabaseManager_Class( bool useDatabase_Parameter )
+    public DatabaseManager_Class( bool useDatabase_Parameter = false )
       {
       this.useDatabase_Field = useDatabase_Parameter;
-      this.textFilePath_Field = Path.Combine(
+      textFilePath_Field = Path.Combine(
           Environment.GetFolderPath( Environment.SpecialFolder.ApplicationData ),
           "IPA_Notenrechner",
           "templates.json" );
+
+      // Erstelle den Ordner, falls er noch nicht existiert
+      Directory.CreateDirectory( Path.GetDirectoryName( textFilePath_Field ) );
 
       if ( useDatabase_Parameter )
         {
@@ -35,9 +38,6 @@ namespace IPA_Notenrechner
           connectionString_Field = ConfigurationManager.ConnectionStrings[ "NotenrechnerDbLaptop" ].ConnectionString;
           }
         }
-
-      // Stelle sicher, dass der Ordner für die JSON-Datei existiert
-      Directory.CreateDirectory( Path.GetDirectoryName( textFilePath_Field ) );
       }
 
     public bool TestConnection()
@@ -86,12 +86,9 @@ namespace IPA_Notenrechner
           using ( SqlCommand command_Variable = new SqlCommand( query_Variable, connection_Variable ) )
             {
             command_Variable.Parameters.AddWithValue( "@Name", template_Parameter.Name_Property );
-            command_Variable.Parameters.AddWithValue( "@KompetenzPunkte",
-                string.Join( ",", template_Parameter.KompetenzPunkte_Property ) );
-            command_Variable.Parameters.AddWithValue( "@DokumentationPunkte",
-                string.Join( ",", template_Parameter.DokumentationPunkte_Property ) );
-            command_Variable.Parameters.AddWithValue( "@PraesentationPunkte",
-                string.Join( ",", template_Parameter.PraesentationPunkte_Property ) );
+            command_Variable.Parameters.AddWithValue( "@KompetenzPunkte", string.Join( ",", template_Parameter.KompetenzPunkte_Property ) );
+            command_Variable.Parameters.AddWithValue( "@DokumentationPunkte", string.Join( ",", template_Parameter.DokumentationPunkte_Property ) );
+            command_Variable.Parameters.AddWithValue( "@PraesentationPunkte", string.Join( ",", template_Parameter.PraesentationPunkte_Property ) );
 
             command_Variable.ExecuteNonQuery();
             return true;
@@ -111,7 +108,7 @@ namespace IPA_Notenrechner
         {
         List<Template_Class> templates_Variable = LoadAllTemplatesFromFile();
 
-        // Überprüfen, ob ein Template mit diesem Namen bereits existiert
+        // Entferne ein Template mit demselben Namen, falls vorhanden
         templates_Variable.RemoveAll( t_Parameter => t_Parameter.Name_Property == template_Parameter.Name_Property );
         templates_Variable.Add( template_Parameter );
 
