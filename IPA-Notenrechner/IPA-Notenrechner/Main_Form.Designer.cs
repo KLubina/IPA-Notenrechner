@@ -47,6 +47,9 @@
       this.checkedListBoxChooseDBTemplate = new System.Windows.Forms.CheckedListBox();
       this.labelRawPartGrade = new System.Windows.Forms.Label();
       this.labelGradeScaled = new System.Windows.Forms.Label();
+      this.labelNoteProPunktKompetenz = new System.Windows.Forms.Label();
+      this.labelNoteProPunktDokumentation = new System.Windows.Forms.Label();
+      this.labelNoteProPunktPrasentationUndFachgesprach = new System.Windows.Forms.Label();
       this.SuspendLayout();
       // 
       // labelEndnote
@@ -241,11 +244,41 @@
       this.labelGradeScaled.TabIndex = 18;
       this.labelGradeScaled.Text = "Teilnote als eigene Note";
       // 
+      // labelNoteProPunktKompetenz
+      // 
+      this.labelNoteProPunktKompetenz.AutoSize = true;
+      this.labelNoteProPunktKompetenz.Location = new System.Drawing.Point(17, 239);
+      this.labelNoteProPunktKompetenz.Name = "labelNoteProPunktKompetenz";
+      this.labelNoteProPunktKompetenz.Size = new System.Drawing.Size(136, 13);
+      this.labelNoteProPunktKompetenz.TabIndex = 19;
+      this.labelNoteProPunktKompetenz.Text = "0.037379... Note pro Punkt";
+      // 
+      // labelNoteProPunktDokumentation
+      // 
+      this.labelNoteProPunktDokumentation.AutoSize = true;
+      this.labelNoteProPunktDokumentation.Location = new System.Drawing.Point(17, 322);
+      this.labelNoteProPunktDokumentation.Name = "labelNoteProPunktDokumentation";
+      this.labelNoteProPunktDokumentation.Size = new System.Drawing.Size(130, 13);
+      this.labelNoteProPunktDokumentation.TabIndex = 20;
+      this.labelNoteProPunktDokumentation.Text = "0.04167... Note pro Punkt";
+      // 
+      // labelNoteProPunktPrasentationUndFachgesprach
+      // 
+      this.labelNoteProPunktPrasentationUndFachgesprach.AutoSize = true;
+      this.labelNoteProPunktPrasentationUndFachgesprach.Location = new System.Drawing.Point(17, 405);
+      this.labelNoteProPunktPrasentationUndFachgesprach.Name = "labelNoteProPunktPrasentationUndFachgesprach";
+      this.labelNoteProPunktPrasentationUndFachgesprach.Size = new System.Drawing.Size(103, 13);
+      this.labelNoteProPunktPrasentationUndFachgesprach.TabIndex = 21;
+      this.labelNoteProPunktPrasentationUndFachgesprach.Text = "0.05 Note pro Punkt";
+      // 
       // Main_Form
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(1156, 429);
+      this.Controls.Add(this.labelNoteProPunktPrasentationUndFachgesprach);
+      this.Controls.Add(this.labelNoteProPunktDokumentation);
+      this.Controls.Add(this.labelNoteProPunktKompetenz);
       this.Controls.Add(this.labelGradeScaled);
       this.Controls.Add(this.labelRawPartGrade);
       this.Controls.Add(this.labelChooseDBTemplate);
@@ -293,6 +326,9 @@
     private System.Windows.Forms.CheckedListBox checkedListBoxChooseDBTemplate;
     private System.Windows.Forms.Label labelRawPartGrade;
     private System.Windows.Forms.Label labelGradeScaled;
+    private System.Windows.Forms.Label labelNoteProPunktKompetenz;
+    private System.Windows.Forms.Label labelNoteProPunktDokumentation;
+    private System.Windows.Forms.Label labelNoteProPunktPrasentationUndFachgesprach;
     }
   }
 
