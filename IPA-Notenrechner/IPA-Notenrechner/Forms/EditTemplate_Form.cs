@@ -28,6 +28,7 @@ namespace IPA_Notenrechner.Forms
       {
       try
         {
+        // Versuch zuerst das Template aus der gewählten Quelle zu laden
         if ( useDatabase_Parameter )
           {
           template_Field = dbManager_Field.LoadTemplate( templateName_Parameter );
@@ -35,10 +36,28 @@ namespace IPA_Notenrechner.Forms
         else
           {
           string templatePath_Variable = Path.Combine( templatesPath_Field, templateName_Parameter + ".txt" );
-          template_Field = Template_Class.LoadTemplate( templatePath_Variable );
+          if ( File.Exists( templatePath_Variable ) )
+            {
+            template_Field = Template_Class.LoadTemplate( templatePath_Variable );
+            }
+          else
+            {
+            MessageBox.Show( $"Template-Datei nicht gefunden: {templatePath_Variable}",
+                "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error );
+            return;
+            }
           }
 
-        PopulateFormWithTemplateData();
+        // Wenn das Template erfolgreich geladen wurde, fülle das Formular
+        if ( template_Field != null )
+          {
+          PopulateFormWithTemplateData();
+          }
+        else
+          {
+          MessageBox.Show( "Template konnte nicht geladen werden.",
+              "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error );
+          }
         }
       catch ( Exception ex_Variable )
         {

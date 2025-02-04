@@ -15,16 +15,13 @@ namespace IPA_Notenrechner
     private readonly bool useDatabase_Field;
     private readonly string textFilePath_Field;
 
-    public DatabaseManager_Class( bool useDatabase_Parameter = false )
+    public DatabaseManager_Class( bool useDatabase_Parameter )
       {
       this.useDatabase_Field = useDatabase_Parameter;
-      textFilePath_Field = Path.Combine(
+      this.textFilePath_Field = Path.Combine(
           Environment.GetFolderPath( Environment.SpecialFolder.ApplicationData ),
           "IPA_Notenrechner",
           "templates.json" );
-
-      // Erstelle den Ordner, falls er noch nicht existiert
-      Directory.CreateDirectory( Path.GetDirectoryName( textFilePath_Field ) );
 
       if ( useDatabase_Parameter )
         {
@@ -37,7 +34,19 @@ namespace IPA_Notenrechner
           {
           connectionString_Field = ConfigurationManager.ConnectionStrings[ "NotenrechnerDbLaptop" ].ConnectionString;
           }
+
+        // Stelle sicher, dass die Tabelle existiert
+        if ( !EnsureTemplateTableExists() )
+          {
+          MessageBox.Show( "Die Templates-Tabelle konnte nicht erstellt werden. " +
+              "Die Anwendung wird ohne Datenbankunterstützung gestartet.",
+              "Warnung", MessageBoxButtons.OK, MessageBoxIcon.Warning );
+          this.useDatabase_Field = false;
+          }
         }
+
+      // Stelle sicher, dass der Ordner für die JSON-Datei existiert
+      Directory.CreateDirectory( Path.GetDirectoryName( textFilePath_Field ) );
       }
 
     public bool TestConnection()
@@ -49,8 +58,14 @@ namespace IPA_Notenrechner
         using ( SqlConnection connection_Variable = new SqlConnection( connectionString_Field ) )
           {
           connection_Variable.Open();
-          MessageBox.Show( "Verbindung zur Datenbank erfolgreich!" );
-          return true;
+
+          // Überprüfe zusätzlich, ob die Templates-Tabelle existiert
+          if ( EnsureTemplateTableExists() )
+            {
+            MessageBox.Show( "Verbindung zur Datenbank erfolgreich!" );
+            return true;
+            }
+          return false;
           }
         }
       catch ( Exception ex_Variable )
@@ -258,6 +273,45 @@ namespace IPA_Notenrechner
       catch
         {
         return new List<Template_Class>();
+        }
+      }
+    private bool EnsureTemplateTableExists()
+      {
+      if ( !useDatabase_Field ) return true;
+
+      try
+        {
+        using ( SqlConnection connection_Variable = new SqlConnection( connectionString_Field ) )
+          {
+          connection_Variable.Open();
+
+          // Prüfe ob die Tabelle bereits existiert
+          string checkTableQuery_Variable = @"
+                IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'Templates')
+                BEGIN
+                    CREATE TABLE Templates (
+                        Id INT IDENTITY(1,1) PRIMARY KEY,
+                        Name NVARCHAR(255) NOT NULL,
+                        KompetenzPunkte NVARCHAR(MAX),
+                        DokumentationPunkte NVARCHAR(MAX),
+                        PraesentationPunkte NVARCHAR(MAX),
+                        CreatedAt DATETIME DEFAULT GETDATE(),
+                        UpdatedAt DATETIME DEFAULT GETDATE()
+                    )
+                END";
+
+          using ( SqlCommand command_Variable = new SqlCommand( checkTableQuery_Variable, connection_Variable ) )
+            {
+            command_Variable.ExecuteNonQuery();
+            }
+          return true;
+          }
+        }
+      catch ( Exception ex_Variable )
+        {
+        MessageBox.Show( $"Fehler beim Erstellen der Templates-Tabelle: {ex_Variable.Message}",
+            "Datenbankfehler", MessageBoxButtons.OK, MessageBoxIcon.Error );
+        return false;
         }
       }
     }

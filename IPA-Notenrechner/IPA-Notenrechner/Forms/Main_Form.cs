@@ -250,31 +250,47 @@ namespace IPA_Notenrechner
 
     private void buttonEditTemplate_Click( object sender_Variable, EventArgs e_Variable )
       {
-      string selectedTemplate_Variable = null;
+      try
+        {
+        string selectedTemplate_Variable = null;
+        bool isDbTemplate_Variable = false;
 
-      if ( checkedListBoxChooseTxtTemplate.SelectedItem != null &&
-          checkedListBoxChooseTxtTemplate.GetItemChecked( checkedListBoxChooseTxtTemplate.SelectedIndex ) )
-        {
-        selectedTemplate_Variable = checkedListBoxChooseTxtTemplate.SelectedItem.ToString();
-        }
-      else if ( useDatabase_Field && checkedListBoxChooseDBTemplate.SelectedItem != null &&
-               checkedListBoxChooseDBTemplate.GetItemChecked( checkedListBoxChooseDBTemplate.SelectedIndex ) )
-        {
-        selectedTemplate_Variable = checkedListBoxChooseDBTemplate.SelectedItem.ToString();
-        }
-
-      if ( selectedTemplate_Variable != null )
-        {
-        EditTemplate_Form editTemplate_Variable = new EditTemplate_Form( selectedTemplate_Variable, templatesPath_Field, useDatabase_Field );
-        if ( editTemplate_Variable.ShowDialog() == DialogResult.OK )
+        // Prüfe, welche Art von Template ausgewählt wurde
+        if ( checkedListBoxChooseTxtTemplate.SelectedItem != null &&
+            checkedListBoxChooseTxtTemplate.GetItemChecked( checkedListBoxChooseTxtTemplate.SelectedIndex ) )
           {
-          LoadTemplateList(); // Liste nach Bearbeitung aktualisieren
+          selectedTemplate_Variable = checkedListBoxChooseTxtTemplate.SelectedItem.ToString();
+          isDbTemplate_Variable = false;
+          }
+        else if ( useDatabase_Field && checkedListBoxChooseDBTemplate.SelectedItem != null &&
+                 checkedListBoxChooseDBTemplate.GetItemChecked( checkedListBoxChooseDBTemplate.SelectedIndex ) )
+          {
+          selectedTemplate_Variable = checkedListBoxChooseDBTemplate.SelectedItem.ToString();
+          isDbTemplate_Variable = true;
+          }
+
+        if ( selectedTemplate_Variable != null )
+          {
+          EditTemplate_Form editTemplate_Variable = new EditTemplate_Form(
+              selectedTemplate_Variable,
+              templatesPath_Field,
+              isDbTemplate_Variable );  // Übergebe die korrekte Information über die Template-Quelle
+
+          if ( editTemplate_Variable.ShowDialog() == DialogResult.OK )
+            {
+            LoadTemplateList(); // Liste nach Bearbeitung aktualisieren
+            }
+          }
+        else
+          {
+          MessageBox.Show( "Bitte wählen Sie zuerst ein Template aus.",
+              "Keine Auswahl", MessageBoxButtons.OK, MessageBoxIcon.Warning );
           }
         }
-      else
+      catch ( Exception ex_Variable )
         {
-        MessageBox.Show( "Bitte wählen Sie zuerst ein Template aus.",
-            "Keine Auswahl", MessageBoxButtons.OK, MessageBoxIcon.Warning );
+        MessageBox.Show( $"Fehler beim Öffnen des Edit-Formulars: {ex_Variable.Message}",
+            "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error );
         }
       }
     }
