@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IPA_Notenrechner.Forms;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Windows.Forms;
@@ -244,6 +245,36 @@ namespace IPA_Notenrechner
       for ( int i_LocalVariable = 0; i_LocalVariable < checkedListBoxChooseTxtTemplate.Items.Count; i_LocalVariable++ )
         {
         checkedListBoxChooseTxtTemplate.SetItemChecked( i_LocalVariable, false );
+        }
+      }
+
+    private void buttonEditTemplate_Click( object sender_Variable, EventArgs e_Variable )
+      {
+      string selectedTemplate_Variable = null;
+
+      if ( checkedListBoxChooseTxtTemplate.SelectedItem != null &&
+          checkedListBoxChooseTxtTemplate.GetItemChecked( checkedListBoxChooseTxtTemplate.SelectedIndex ) )
+        {
+        selectedTemplate_Variable = checkedListBoxChooseTxtTemplate.SelectedItem.ToString();
+        }
+      else if ( useDatabase && checkedListBoxChooseDBTemplate.SelectedItem != null &&
+               checkedListBoxChooseDBTemplate.GetItemChecked( checkedListBoxChooseDBTemplate.SelectedIndex ) )
+        {
+        selectedTemplate_Variable = checkedListBoxChooseDBTemplate.SelectedItem.ToString();
+        }
+
+      if ( selectedTemplate_Variable != null )
+        {
+        EditTemplate_Form editTemplate_Object = new EditTemplate_Form( selectedTemplate_Variable, templatesPath_Variable, useDatabase );
+        if ( editTemplate_Object.ShowDialog() == DialogResult.OK )
+          {
+          LoadTemplateList(); // Liste nach Bearbeitung aktualisieren
+          }
+        }
+      else
+        {
+        MessageBox.Show( "Bitte wählen Sie zuerst ein Template aus.",
+            "Keine Auswahl", MessageBoxButtons.OK, MessageBoxIcon.Warning );
         }
       }
     }

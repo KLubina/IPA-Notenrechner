@@ -56,3 +56,4 @@ C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\bin\Debug\Sy
 C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\bin\Debug\System.Numerics.Vectors.xml
 C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\obj\Debug\IPA-Note.DC638018.Up2Date
+C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\obj\Debug\IPA_Notenrechner.Forms.EditTemplate_Form.resources

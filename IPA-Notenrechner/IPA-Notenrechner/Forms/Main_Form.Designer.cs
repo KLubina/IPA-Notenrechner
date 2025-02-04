@@ -50,6 +50,7 @@
       this.labelNoteProPunktKompetenz = new System.Windows.Forms.Label();
       this.labelNoteProPunktDokumentation = new System.Windows.Forms.Label();
       this.labelNoteProPunktPrasentationUndFachgesprach = new System.Windows.Forms.Label();
+      this.buttonEditTemplate = new System.Windows.Forms.Button();
       this.SuspendLayout();
       // 
       // labelEndnote
@@ -76,7 +77,7 @@
       // buttonCreateTemplate
       // 
       this.buttonCreateTemplate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-      this.buttonCreateTemplate.Location = new System.Drawing.Point(760, 322);
+      this.buttonCreateTemplate.Location = new System.Drawing.Point(760, 312);
       this.buttonCreateTemplate.Name = "buttonCreateTemplate";
       this.buttonCreateTemplate.Size = new System.Drawing.Size(380, 32);
       this.buttonCreateTemplate.TabIndex = 2;
@@ -87,7 +88,7 @@
       // buttonShowTemplate
       // 
       this.buttonShowTemplate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-      this.buttonShowTemplate.Location = new System.Drawing.Point(760, 359);
+      this.buttonShowTemplate.Location = new System.Drawing.Point(760, 349);
       this.buttonShowTemplate.Name = "buttonShowTemplate";
       this.buttonShowTemplate.Size = new System.Drawing.Size(380, 32);
       this.buttonShowTemplate.TabIndex = 3;
@@ -271,11 +272,23 @@
       this.labelNoteProPunktPrasentationUndFachgesprach.TabIndex = 21;
       this.labelNoteProPunktPrasentationUndFachgesprach.Text = "0.05 Note pro Punkt";
       // 
+      // buttonEditTemplate
+      // 
+      this.buttonEditTemplate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+      this.buttonEditTemplate.Location = new System.Drawing.Point(760, 386);
+      this.buttonEditTemplate.Name = "buttonEditTemplate";
+      this.buttonEditTemplate.Size = new System.Drawing.Size(380, 32);
+      this.buttonEditTemplate.TabIndex = 22;
+      this.buttonEditTemplate.Text = "Template bearbeiten";
+      this.buttonEditTemplate.UseVisualStyleBackColor = true;
+      this.buttonEditTemplate.Click += new System.EventHandler(this.buttonEditTemplate_Click);
+      // 
       // Main_Form
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(1156, 429);
+      this.Controls.Add(this.buttonEditTemplate);
       this.Controls.Add(this.labelNoteProPunktPrasentationUndFachgesprach);
       this.Controls.Add(this.labelNoteProPunktDokumentation);
       this.Controls.Add(this.labelNoteProPunktKompetenz);
@@ -329,6 +342,7 @@
     private System.Windows.Forms.Label labelNoteProPunktKompetenz;
     private System.Windows.Forms.Label labelNoteProPunktDokumentation;
     private System.Windows.Forms.Label labelNoteProPunktPrasentationUndFachgesprach;
+    private System.Windows.Forms.Button buttonEditTemplate;
     }
   }
 

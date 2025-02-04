@@ -69,6 +69,12 @@
       <DependentUpon>CreateTemplate_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\DatabaseManager_Class.cs" />
+    <Compile Include="Forms\EditTemplate_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditTemplate_Form.Designer.cs">
+      <DependentUpon>EditTemplate_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Main_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     <Compile Include="Classes\Template_Class.cs" />
     <EmbeddedResource Include="Forms\CreateTemplate_Form.resx">
       <DependentUpon>CreateTemplate_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditTemplate_Form.resx">
+      <DependentUpon>EditTemplate_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Main_Form.resx">
       <DependentUpon>Main_Form.cs</DependentUpon>
