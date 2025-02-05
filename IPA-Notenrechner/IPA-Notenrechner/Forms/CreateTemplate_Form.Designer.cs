@@ -121,6 +121,35 @@
       this.buttonSaveTemplate = new System.Windows.Forms.Button();
       this.radioButtonTxt_Field = new System.Windows.Forms.RadioButton();
       this.radioButtonDB_Field = new System.Windows.Forms.RadioButton();
+      this.label19 = new System.Windows.Forms.Label();
+      this.label18 = new System.Windows.Forms.Label();
+      this.label17 = new System.Windows.Forms.Label();
+      this.label8 = new System.Windows.Forms.Label();
+      this.label7 = new System.Windows.Forms.Label();
+      this.label6 = new System.Windows.Forms.Label();
+      this.label5 = new System.Windows.Forms.Label();
+      this.label4 = new System.Windows.Forms.Label();
+      this.label3 = new System.Windows.Forms.Label();
+      this.label2 = new System.Windows.Forms.Label();
+      this.label1 = new System.Windows.Forms.Label();
+      this.label16 = new System.Windows.Forms.Label();
+      this.label15 = new System.Windows.Forms.Label();
+      this.label14 = new System.Windows.Forms.Label();
+      this.label13 = new System.Windows.Forms.Label();
+      this.label12 = new System.Windows.Forms.Label();
+      this.label11 = new System.Windows.Forms.Label();
+      this.label10 = new System.Windows.Forms.Label();
+      this.label9 = new System.Windows.Forms.Label();
+      this.label20 = new System.Windows.Forms.Label();
+      this.label21 = new System.Windows.Forms.Label();
+      this.label22 = new System.Windows.Forms.Label();
+      this.label23 = new System.Windows.Forms.Label();
+      this.label24 = new System.Windows.Forms.Label();
+      this.label25 = new System.Windows.Forms.Label();
+      this.label29 = new System.Windows.Forms.Label();
+      this.label28 = new System.Windows.Forms.Label();
+      this.label27 = new System.Windows.Forms.Label();
+      this.label26 = new System.Windows.Forms.Label();
       this.SuspendLayout();
       // 
       // labelCompetence
@@ -877,7 +906,7 @@
       // radioButtonTxt_Field
       // 
       this.radioButtonTxt_Field.AutoSize = true;
-      this.radioButtonTxt_Field.Location = new System.Drawing.Point(799, 144);
+      this.radioButtonTxt_Field.Location = new System.Drawing.Point(959, 62);
       this.radioButtonTxt_Field.Name = "radioButtonTxt_Field";
       this.radioButtonTxt_Field.Size = new System.Drawing.Size(104, 17);
       this.radioButtonTxt_Field.TabIndex = 91;
@@ -888,7 +917,7 @@
       // radioButtonDB_Field
       // 
       this.radioButtonDB_Field.AutoSize = true;
-      this.radioButtonDB_Field.Location = new System.Drawing.Point(799, 175);
+      this.radioButtonDB_Field.Location = new System.Drawing.Point(959, 93);
       this.radioButtonDB_Field.Name = "radioButtonDB_Field";
       this.radioButtonDB_Field.Size = new System.Drawing.Size(100, 17);
       this.radioButtonDB_Field.TabIndex = 92;
@@ -896,12 +925,348 @@
       this.radioButtonDB_Field.Text = "in DB speichern";
       this.radioButtonDB_Field.UseVisualStyleBackColor = true;
       // 
+      // label19
+      // 
+      this.label19.AutoSize = true;
+      this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.label19.Location = new System.Drawing.Point(152, 333);
+      this.label19.Name = "label19";
+      this.label19.Size = new System.Drawing.Size(323, 13);
+      this.label19.TabIndex = 213;
+      this.label19.Text = "Welche Informationen zur Projektaufbauorganisation sind verlangt?";
+      // 
+      // label18
+      // 
+      this.label18.AutoSize = true;
+      this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.label18.Location = new System.Drawing.Point(152, 150);
+      this.label18.Name = "label18";
+      this.label18.Size = new System.Drawing.Size(224, 13);
+      this.label18.TabIndex = 212;
+      this.label18.Text = "Was sind die Anforderungen an den Zeitplan?";
+      // 
+      // label17
+      // 
+      this.label17.AutoSize = true;
+      this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.label17.Location = new System.Drawing.Point(153, 73);
+      this.label17.Name = "label17";
+      this.label17.Size = new System.Drawing.Size(282, 13);
+      this.label17.TabIndex = 211;
+      this.label17.Text = "Wie erfolgt die Auftragsanalyse? Welche Projektmethode?";
+      // 
+      // label8
+      // 
+      this.label8.AutoSize = true;
+      this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.label8.Location = new System.Drawing.Point(152, 200);
+      this.label8.Name = "label8";
+      this.label8.Size = new System.Drawing.Size(162, 13);
+      this.label8.TabIndex = 210;
+      this.label8.Text = "Wie ist die Leistung einzustufen?";
+      // 
+      // label7
+      // 
+      this.label7.AutoSize = true;
+      this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.75F);
+      this.label7.Location = new System.Drawing.Point(153, 311);
+      this.label7.Name = "label7";
+      this.label7.Size = new System.Drawing.Size(300, 9);
+      this.label7.TabIndex = 209;
+      this.label7.Text = "Wie ist die Interaktion des Kandidaten mit den anderen Projektmitgliedern zu beur" +
+    "teilen?";
+      // 
+      // label6
+      // 
+      this.label6.AutoSize = true;
+      this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.label6.Location = new System.Drawing.Point(153, 281);
+      this.label6.Name = "label6";
+      this.label6.Size = new System.Drawing.Size(282, 13);
+      this.label6.TabIndex = 208;
+      this.label6.Text = "Wie ist die Anwendung der Fachkompetenz zu beurteilen?";
+      // 
+      // label5
+      // 
+      this.label5.AutoSize = true;
+      this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.75F);
+      this.label5.Location = new System.Drawing.Point(153, 176);
+      this.label5.Name = "label5";
+      this.label5.Size = new System.Drawing.Size(300, 9);
+      this.label5.TabIndex = 207;
+      this.label5.Text = "Wie erfolgt die Überprüfung und Dokumentation des Projektforschritts und der Risi" +
+    "ken ?";
+      // 
+      // label4
+      // 
+      this.label4.AutoSize = true;
+      this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.label4.Location = new System.Drawing.Point(153, 103);
+      this.label4.Name = "label4";
+      this.label4.Size = new System.Drawing.Size(196, 13);
+      this.label4.TabIndex = 206;
+      this.label4.Text = "Wie werden Informationen recherchiert?";
+      // 
+      // label3
+      // 
+      this.label3.AutoSize = true;
+      this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.label3.Location = new System.Drawing.Point(153, 249);
+      this.label3.Name = "label3";
+      this.label3.Size = new System.Drawing.Size(268, 13);
+      this.label3.TabIndex = 205;
+      this.label3.Text = "Wie ist die Anwendung der Fachsprache zu beurteilen?";
+      // 
+      // label2
+      // 
+      this.label2.AutoSize = true;
+      this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.label2.Location = new System.Drawing.Point(153, 226);
+      this.label2.Name = "label2";
+      this.label2.Size = new System.Drawing.Size(170, 13);
+      this.label2.TabIndex = 204;
+      this.label2.Text = "Wie selbständig wurde gearbeitet?";
+      // 
+      // label1
+      // 
+      this.label1.AutoSize = true;
+      this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.label1.Location = new System.Drawing.Point(153, 125);
+      this.label1.Name = "label1";
+      this.label1.Size = new System.Drawing.Size(302, 13);
+      this.label1.TabIndex = 203;
+      this.label1.Text = "Wie werden Informationen effektiv aufbereitet und verwendet?";
+      // 
+      // label16
+      // 
+      this.label16.AutoSize = true;
+      this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.label16.Location = new System.Drawing.Point(641, 266);
+      this.label16.Name = "label16";
+      this.label16.Size = new System.Drawing.Size(262, 13);
+      this.label16.TabIndex = 221;
+      this.label16.Text = "Was ist beim Führen des Arbeitsjournals zu beachten?";
+      // 
+      // label15
+      // 
+      this.label15.AutoSize = true;
+      this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.label15.Location = new System.Drawing.Point(641, 296);
+      this.label15.Name = "label15";
+      this.label15.Size = new System.Drawing.Size(328, 13);
+      this.label15.TabIndex = 220;
+      this.label15.Text = "Was ist beim Verfassen des persönlichen Fazits zu berücksichtigen?";
+      // 
+      // label14
+      // 
+      this.label14.AutoSize = true;
+      this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.label14.Location = new System.Drawing.Point(638, 242);
+      this.label14.Name = "label14";
+      this.label14.Size = new System.Drawing.Size(246, 13);
+      this.label14.TabIndex = 219;
+      this.label14.Text = "Was sind die Anforderungen an eine Kurzfassung?";
+      // 
+      // label13
+      // 
+      this.label13.AutoSize = true;
+      this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.label13.Location = new System.Drawing.Point(641, 147);
+      this.label13.Name = "label13";
+      this.label13.Size = new System.Drawing.Size(368, 13);
+      this.label13.TabIndex = 218;
+      this.label13.Text = "Was sind die Anforderungen an die formale Vollständigkeit des IPA-Berichts?";
+      // 
+      // label12
+      // 
+      this.label12.AutoSize = true;
+      this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.label12.Location = new System.Drawing.Point(641, 91);
+      this.label12.Name = "label12";
+      this.label12.Size = new System.Drawing.Size(186, 13);
+      this.label12.TabIndex = 217;
+      this.label12.Text = "Wie ist die Dokumentation gegliedert?";
+      // 
+      // label11
+      // 
+      this.label11.AutoSize = true;
+      this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.label11.Location = new System.Drawing.Point(638, 182);
+      this.label11.Name = "label11";
+      this.label11.Size = new System.Drawing.Size(341, 13);
+      this.label11.TabIndex = 216;
+      this.label11.Text = "Wie sind Rechtschreibung, Interpunktion und Grammatik zu bewerten?";
+      // 
+      // label10
+      // 
+      this.label10.AutoSize = true;
+      this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.label10.Location = new System.Drawing.Point(638, 212);
+      this.label10.Name = "label10";
+      this.label10.Size = new System.Drawing.Size(285, 13);
+      this.label10.TabIndex = 215;
+      this.label10.Text = "Welche visuellen Kriterien sind für Abbildungen zu erfüllen?";
+      // 
+      // label9
+      // 
+      this.label9.AutoSize = true;
+      this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.label9.Location = new System.Drawing.Point(638, 114);
+      this.label9.Name = "label9";
+      this.label9.Size = new System.Drawing.Size(180, 13);
+      this.label9.TabIndex = 214;
+      this.label9.Text = "Wie ist die Dokumentation gestaltet?";
+      // 
+      // label20
+      // 
+      this.label20.AutoSize = true;
+      this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
+      this.label20.Location = new System.Drawing.Point(641, 753);
+      this.label20.Name = "label20";
+      this.label20.Size = new System.Drawing.Size(409, 12);
+      this.label20.TabIndex = 222;
+      this.label20.Text = "Können die Fragen der Experten zur Facharbeit ausreichend und professionell beant" +
+    "wortet werden?";
+      // 
+      // label21
+      // 
+      this.label21.AutoSize = true;
+      this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
+      this.label21.Location = new System.Drawing.Point(639, 719);
+      this.label21.Name = "label21";
+      this.label21.Size = new System.Drawing.Size(409, 12);
+      this.label21.TabIndex = 223;
+      this.label21.Text = "Können die Fragen der Experten zur Facharbeit ausreichend und professionell beant" +
+    "wortet werden?";
+      // 
+      // label22
+      // 
+      this.label22.AutoSize = true;
+      this.label22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
+      this.label22.Location = new System.Drawing.Point(642, 690);
+      this.label22.Name = "label22";
+      this.label22.Size = new System.Drawing.Size(409, 12);
+      this.label22.TabIndex = 224;
+      this.label22.Text = "Können die Fragen der Experten zur Facharbeit ausreichend und professionell beant" +
+    "wortet werden?";
+      // 
+      // label23
+      // 
+      this.label23.AutoSize = true;
+      this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
+      this.label23.Location = new System.Drawing.Point(640, 655);
+      this.label23.Name = "label23";
+      this.label23.Size = new System.Drawing.Size(409, 12);
+      this.label23.TabIndex = 225;
+      this.label23.Text = "Können die Fragen der Experten zur Facharbeit ausreichend und professionell beant" +
+    "wortet werden?";
+      // 
+      // label24
+      // 
+      this.label24.AutoSize = true;
+      this.label24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
+      this.label24.Location = new System.Drawing.Point(641, 629);
+      this.label24.Name = "label24";
+      this.label24.Size = new System.Drawing.Size(409, 12);
+      this.label24.TabIndex = 226;
+      this.label24.Text = "Können die Fragen der Experten zur Facharbeit ausreichend und professionell beant" +
+    "wortet werden?";
+      // 
+      // label25
+      // 
+      this.label25.AutoSize = true;
+      this.label25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
+      this.label25.Location = new System.Drawing.Point(642, 595);
+      this.label25.Name = "label25";
+      this.label25.Size = new System.Drawing.Size(409, 12);
+      this.label25.TabIndex = 227;
+      this.label25.Text = "Können die Fragen der Experten zur Facharbeit ausreichend und professionell beant" +
+    "wortet werden?";
+      // 
+      // label29
+      // 
+      this.label29.AutoSize = true;
+      this.label29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.label29.Location = new System.Drawing.Point(641, 536);
+      this.label29.Name = "label29";
+      this.label29.Size = new System.Drawing.Size(238, 13);
+      this.label29.TabIndex = 241;
+      this.label29.Text = "Wie ist das Produkt der Facharbeit vorzuführen? ";
+      // 
+      // label28
+      // 
+      this.label28.AutoSize = true;
+      this.label28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.label28.Location = new System.Drawing.Point(641, 503);
+      this.label28.Name = "label28";
+      this.label28.Size = new System.Drawing.Size(260, 13);
+      this.label28.TabIndex = 240;
+      this.label28.Text = "Was zeichnet ein hohes Präsentationsgeschick aus? ";
+      // 
+      // label27
+      // 
+      this.label27.AutoSize = true;
+      this.label27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.label27.Location = new System.Drawing.Point(641, 472);
+      this.label27.Name = "label27";
+      this.label27.Size = new System.Drawing.Size(443, 13);
+      this.label27.TabIndex = 239;
+      this.label27.Text = "Was ist beim Einsatz von Medien und Technologie anlässlich der Präsentation zu be" +
+    "achten?";
+      // 
+      // label26
+      // 
+      this.label26.AutoSize = true;
+      this.label26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.label26.Location = new System.Drawing.Point(641, 445);
+      this.label26.Name = "label26";
+      this.label26.Size = new System.Drawing.Size(380, 13);
+      this.label26.TabIndex = 238;
+      this.label26.Text = "Wie ist die Präsentation zu strukturieren? Welche Zeitvorgabe ist zu beachten?";
+      // 
       // CreateTemplate_Form
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.AutoScroll = true;
       this.ClientSize = new System.Drawing.Size(1102, 845);
+      this.Controls.Add(this.label29);
+      this.Controls.Add(this.label28);
+      this.Controls.Add(this.label27);
+      this.Controls.Add(this.label26);
+      this.Controls.Add(this.label25);
+      this.Controls.Add(this.label24);
+      this.Controls.Add(this.label23);
+      this.Controls.Add(this.label22);
+      this.Controls.Add(this.label21);
+      this.Controls.Add(this.label20);
+      this.Controls.Add(this.label16);
+      this.Controls.Add(this.label15);
+      this.Controls.Add(this.label14);
+      this.Controls.Add(this.label13);
+      this.Controls.Add(this.label12);
+      this.Controls.Add(this.label11);
+      this.Controls.Add(this.label10);
+      this.Controls.Add(this.label9);
+      this.Controls.Add(this.label19);
+      this.Controls.Add(this.label18);
+      this.Controls.Add(this.label17);
+      this.Controls.Add(this.label8);
+      this.Controls.Add(this.label7);
+      this.Controls.Add(this.label6);
+      this.Controls.Add(this.label5);
+      this.Controls.Add(this.label4);
+      this.Controls.Add(this.label3);
+      this.Controls.Add(this.label2);
+      this.Controls.Add(this.label1);
       this.Controls.Add(this.radioButtonDB_Field);
       this.Controls.Add(this.radioButtonTxt_Field);
       this.Controls.Add(this.buttonSaveTemplate);
@@ -1097,5 +1462,34 @@
     private System.Windows.Forms.Button buttonSaveTemplate;
     private System.Windows.Forms.RadioButton radioButtonTxt_Field;
     private System.Windows.Forms.RadioButton radioButtonDB_Field;
+    private System.Windows.Forms.Label label19;
+    private System.Windows.Forms.Label label18;
+    private System.Windows.Forms.Label label17;
+    private System.Windows.Forms.Label label8;
+    private System.Windows.Forms.Label label7;
+    private System.Windows.Forms.Label label6;
+    private System.Windows.Forms.Label label5;
+    private System.Windows.Forms.Label label4;
+    private System.Windows.Forms.Label label3;
+    private System.Windows.Forms.Label label2;
+    private System.Windows.Forms.Label label1;
+    private System.Windows.Forms.Label label16;
+    private System.Windows.Forms.Label label15;
+    private System.Windows.Forms.Label label14;
+    private System.Windows.Forms.Label label13;
+    private System.Windows.Forms.Label label12;
+    private System.Windows.Forms.Label label11;
+    private System.Windows.Forms.Label label10;
+    private System.Windows.Forms.Label label9;
+    private System.Windows.Forms.Label label20;
+    private System.Windows.Forms.Label label21;
+    private System.Windows.Forms.Label label22;
+    private System.Windows.Forms.Label label23;
+    private System.Windows.Forms.Label label24;
+    private System.Windows.Forms.Label label25;
+    private System.Windows.Forms.Label label29;
+    private System.Windows.Forms.Label label28;
+    private System.Windows.Forms.Label label27;
+    private System.Windows.Forms.Label label26;
     }
   }
