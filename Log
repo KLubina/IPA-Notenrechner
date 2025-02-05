@@ -1,5 +1,0 @@
-ein log erstellen als neue Idee
-
--ActionLog (als Tabelle)
--ErrorLog (als Tabelle)
--> wenn es keine Tabelle gibt dann ErrorLog als .txt-Datei

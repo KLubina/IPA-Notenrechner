@@ -967,6 +967,7 @@
       this.Controls.Add(this.textBoxObligatoryCriteriaA1);
       this.Controls.Add(this.labelObligatoryCriteriaA1);
       this.Controls.Add(this.labelCompetence);
+      this.MinimumSize = new System.Drawing.Size(1120, 890);
       this.Name = "EditTemplate_Form";
       this.Text = "EditTemplate_Form";
       this.ResumeLayout(false);

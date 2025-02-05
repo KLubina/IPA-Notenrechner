@@ -995,6 +995,7 @@
       this.Controls.Add(this.textBoxObligatoryCriteriaA1);
       this.Controls.Add(this.labelObligatoryCriteriaA1);
       this.Controls.Add(this.labelCompetence);
+      this.MinimumSize = new System.Drawing.Size(1118, 884);
       this.Name = "CreateTemplate_Form";
       this.Text = "Template hinzufügen";
       this.ResumeLayout(false);
