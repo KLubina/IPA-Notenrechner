@@ -16,12 +16,28 @@ namespace IPA_Notenrechner.Forms
       {
       InitializeComponent();
       dbManager_Field = new DatabaseManager_Class( useDatabase_Parameter );
-      templatesPath_Field = templatesPath_Parameter ?? Path.Combine(
-          AppDomain.CurrentDomain.BaseDirectory,
-          "..", "..", "Templates"
+
+      // Definiere den Templates-Pfad mit dem aktuellen Laufwerk
+      templatesPath_Field = Path.Combine(
+          Directory.GetCurrentDirectory().Substring( 0, 3 ), // Gibt z.B. "C:\" oder "R:\" zurück
+          "IPA-Notenrechner .txt Vorlagen"
       );
 
-      LoadTemplate( templateName_Parameter, useDatabase_Parameter );
+      try
+        {
+        // Erstelle den Ordner falls er nicht existiert
+        if ( !Directory.Exists( templatesPath_Field ) )
+          {
+          Directory.CreateDirectory( templatesPath_Field );
+          }
+
+        LoadTemplate( templateName_Parameter, useDatabase_Parameter );
+        }
+      catch ( Exception ex_Variable )
+        {
+        MessageBox.Show( $"Fehler beim Erstellen des Template-Ordners: {ex_Variable.Message}",
+            "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error );
+        }
       }
 
     private void LoadTemplate( string templateName_Parameter, bool useDatabase_Parameter )

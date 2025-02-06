@@ -20,22 +20,15 @@ namespace IPA_Notenrechner
       currentTemplate_Field = new Template_Class();
       dbManager_Field = new DatabaseManager_Class( useDatabase_Parameter );
 
-      string gitPath_Variable = @"C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\Templates";
-
-      if ( Directory.Exists( gitPath_Variable ) )
-        {
-        templatesPath_Field = gitPath_Variable;
-        }
-      else
-        {
-        templatesPath_Field = Path.Combine(
-            Application.StartupPath,
-            "..", "..", "Templates"
-        );
-        }
+      // Definiere den Templates-Pfad mit dem aktuellen Laufwerk
+      templatesPath_Field = Path.Combine(
+          Directory.GetCurrentDirectory().Substring( 0, 3 ), // Gibt z.B. "C:\" oder "R:\" zurück
+          "IPA-Notenrechner .txt Vorlagen"
+      );
 
       try
         {
+        // Erstelle den Ordner falls er nicht existiert
         if ( !Directory.Exists( templatesPath_Field ) )
           {
           Directory.CreateDirectory( templatesPath_Field );
