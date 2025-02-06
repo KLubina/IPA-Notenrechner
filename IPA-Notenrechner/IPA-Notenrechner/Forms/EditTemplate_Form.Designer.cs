@@ -159,6 +159,7 @@
       this.buttonSaveTemplate.TabIndex = 183;
       this.buttonSaveTemplate.Text = "Vorlage speichern";
       this.buttonSaveTemplate.UseVisualStyleBackColor = true;
+      this.buttonSaveTemplate.Click += new System.EventHandler(this.buttonSaveTemplate_Click);
       // 
       // textBoxPresentationAndConversation10
       // 
