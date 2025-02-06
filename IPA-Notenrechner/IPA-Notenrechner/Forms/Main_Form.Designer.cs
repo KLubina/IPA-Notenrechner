@@ -51,6 +51,8 @@
       this.labelNoteProPunktDokumentation = new System.Windows.Forms.Label();
       this.labelNoteProPunktPrasentationUndFachgesprach = new System.Windows.Forms.Label();
       this.buttonEditTemplate = new System.Windows.Forms.Button();
+      this.richTextBoxTxtDesciption = new System.Windows.Forms.RichTextBox();
+      this.richTextBoxDBDescption = new System.Windows.Forms.RichTextBox();
       this.SuspendLayout();
       // 
       // labelEndnote
@@ -67,7 +69,7 @@
       // 
       this.checkedListBoxChooseTxtTemplate.FormattingEnabled = true;
       this.checkedListBoxChooseTxtTemplate.HorizontalScrollbar = true;
-      this.checkedListBoxChooseTxtTemplate.Location = new System.Drawing.Point(953, 36);
+      this.checkedListBoxChooseTxtTemplate.Location = new System.Drawing.Point(957, 80);
       this.checkedListBoxChooseTxtTemplate.Name = "checkedListBoxChooseTxtTemplate";
       this.checkedListBoxChooseTxtTemplate.ScrollAlwaysVisible = true;
       this.checkedListBoxChooseTxtTemplate.Size = new System.Drawing.Size(187, 259);
@@ -77,7 +79,7 @@
       // buttonCreateTemplate
       // 
       this.buttonCreateTemplate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-      this.buttonCreateTemplate.Location = new System.Drawing.Point(760, 312);
+      this.buttonCreateTemplate.Location = new System.Drawing.Point(764, 356);
       this.buttonCreateTemplate.Name = "buttonCreateTemplate";
       this.buttonCreateTemplate.Size = new System.Drawing.Size(380, 32);
       this.buttonCreateTemplate.TabIndex = 2;
@@ -88,7 +90,7 @@
       // buttonShowTemplate
       // 
       this.buttonShowTemplate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-      this.buttonShowTemplate.Location = new System.Drawing.Point(760, 349);
+      this.buttonShowTemplate.Location = new System.Drawing.Point(764, 393);
       this.buttonShowTemplate.Name = "buttonShowTemplate";
       this.buttonShowTemplate.Size = new System.Drawing.Size(380, 32);
       this.buttonShowTemplate.TabIndex = 3;
@@ -220,7 +222,7 @@
       // 
       this.checkedListBoxChooseDBTemplate.FormattingEnabled = true;
       this.checkedListBoxChooseDBTemplate.HorizontalScrollbar = true;
-      this.checkedListBoxChooseDBTemplate.Location = new System.Drawing.Point(760, 36);
+      this.checkedListBoxChooseDBTemplate.Location = new System.Drawing.Point(764, 80);
       this.checkedListBoxChooseDBTemplate.Name = "checkedListBoxChooseDBTemplate";
       this.checkedListBoxChooseDBTemplate.ScrollAlwaysVisible = true;
       this.checkedListBoxChooseDBTemplate.Size = new System.Drawing.Size(187, 259);
@@ -248,34 +250,37 @@
       // labelNoteProPunktKompetenz
       // 
       this.labelNoteProPunktKompetenz.AutoSize = true;
+      this.labelNoteProPunktKompetenz.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
       this.labelNoteProPunktKompetenz.Location = new System.Drawing.Point(17, 239);
       this.labelNoteProPunktKompetenz.Name = "labelNoteProPunktKompetenz";
-      this.labelNoteProPunktKompetenz.Size = new System.Drawing.Size(136, 13);
+      this.labelNoteProPunktKompetenz.Size = new System.Drawing.Size(204, 20);
       this.labelNoteProPunktKompetenz.TabIndex = 19;
       this.labelNoteProPunktKompetenz.Text = "0.037379... Note pro Punkt";
       // 
       // labelNoteProPunktDokumentation
       // 
       this.labelNoteProPunktDokumentation.AutoSize = true;
+      this.labelNoteProPunktDokumentation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
       this.labelNoteProPunktDokumentation.Location = new System.Drawing.Point(17, 322);
       this.labelNoteProPunktDokumentation.Name = "labelNoteProPunktDokumentation";
-      this.labelNoteProPunktDokumentation.Size = new System.Drawing.Size(130, 13);
+      this.labelNoteProPunktDokumentation.Size = new System.Drawing.Size(195, 20);
       this.labelNoteProPunktDokumentation.TabIndex = 20;
       this.labelNoteProPunktDokumentation.Text = "0.04167... Note pro Punkt";
       // 
       // labelNoteProPunktPrasentationUndFachgesprach
       // 
       this.labelNoteProPunktPrasentationUndFachgesprach.AutoSize = true;
+      this.labelNoteProPunktPrasentationUndFachgesprach.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
       this.labelNoteProPunktPrasentationUndFachgesprach.Location = new System.Drawing.Point(17, 405);
       this.labelNoteProPunktPrasentationUndFachgesprach.Name = "labelNoteProPunktPrasentationUndFachgesprach";
-      this.labelNoteProPunktPrasentationUndFachgesprach.Size = new System.Drawing.Size(103, 13);
+      this.labelNoteProPunktPrasentationUndFachgesprach.Size = new System.Drawing.Size(156, 20);
       this.labelNoteProPunktPrasentationUndFachgesprach.TabIndex = 21;
       this.labelNoteProPunktPrasentationUndFachgesprach.Text = "0.05 Note pro Punkt";
       // 
       // buttonEditTemplate
       // 
       this.buttonEditTemplate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-      this.buttonEditTemplate.Location = new System.Drawing.Point(760, 386);
+      this.buttonEditTemplate.Location = new System.Drawing.Point(764, 430);
       this.buttonEditTemplate.Name = "buttonEditTemplate";
       this.buttonEditTemplate.Size = new System.Drawing.Size(380, 32);
       this.buttonEditTemplate.TabIndex = 22;
@@ -283,11 +288,30 @@
       this.buttonEditTemplate.UseVisualStyleBackColor = true;
       this.buttonEditTemplate.Click += new System.EventHandler(this.buttonEditTemplate_Click);
       // 
+      // richTextBoxTxtDesciption
+      // 
+      this.richTextBoxTxtDesciption.Location = new System.Drawing.Point(953, 27);
+      this.richTextBoxTxtDesciption.Name = "richTextBoxTxtDesciption";
+      this.richTextBoxTxtDesciption.Size = new System.Drawing.Size(191, 47);
+      this.richTextBoxTxtDesciption.TabIndex = 23;
+      this.richTextBoxTxtDesciption.Text = "müssen alle in \"Laufwerk:\\IPA-Notenrechner .txt Vorlagen\" gespeichert werden";
+      // 
+      // richTextBoxDBDescption
+      // 
+      this.richTextBoxDBDescption.Location = new System.Drawing.Point(760, 27);
+      this.richTextBoxDBDescption.Name = "richTextBoxDBDescption";
+      this.richTextBoxDBDescption.Size = new System.Drawing.Size(191, 47);
+      this.richTextBoxDBDescption.TabIndex = 24;
+      this.richTextBoxDBDescption.Text = "werden in einer Datenbank namens \"IPA-Notenrechner\" gespeichert, falls bereits vo" +
+    "rhanden und eingerichtet";
+      // 
       // Main_Form
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(1156, 429);
+      this.ClientSize = new System.Drawing.Size(1156, 474);
+      this.Controls.Add(this.richTextBoxDBDescption);
+      this.Controls.Add(this.richTextBoxTxtDesciption);
       this.Controls.Add(this.buttonEditTemplate);
       this.Controls.Add(this.labelNoteProPunktPrasentationUndFachgesprach);
       this.Controls.Add(this.labelNoteProPunktDokumentation);
@@ -343,6 +367,8 @@
     private System.Windows.Forms.Label labelNoteProPunktDokumentation;
     private System.Windows.Forms.Label labelNoteProPunktPrasentationUndFachgesprach;
     private System.Windows.Forms.Button buttonEditTemplate;
+    private System.Windows.Forms.RichTextBox richTextBoxTxtDesciption;
+    private System.Windows.Forms.RichTextBox richTextBoxDBDescption;
     }
   }
 

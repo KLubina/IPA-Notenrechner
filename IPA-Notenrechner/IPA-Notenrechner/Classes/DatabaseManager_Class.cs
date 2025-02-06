@@ -14,6 +14,7 @@ namespace IPA_Notenrechner
     private readonly string connectionString_Field;
     private readonly bool useDatabase_Field;
     private readonly string textFilePath_Field;
+    private static bool errorMessageShown_Field = false;
 
     public DatabaseManager_Class( bool useDatabase_Parameter )
       {
@@ -35,17 +36,18 @@ namespace IPA_Notenrechner
           connectionString_Field = ConfigurationManager.ConnectionStrings[ "NotenrechnerDbLaptop" ].ConnectionString;
           }
 
-        // Stelle sicher, dass die Tabelle existiert
-        if ( !EnsureTemplateTableExists() )
+        if ( !EnsureTemplateTableExists() && !errorMessageShown_Field )
           {
-          MessageBox.Show( "Die Templates-Tabelle konnte nicht erstellt werden. " +
-              "Die Anwendung wird ohne Datenbankunterstützung gestartet.",
-              "Warnung", MessageBoxButtons.OK, MessageBoxIcon.Warning );
+          errorMessageShown_Field = true;
+          MessageBox.Show(
+              "Keine lokale Datenbank erkannt. Die Anwendung wird im Offline-Modus gestartet.",
+              "Hinweis",
+              MessageBoxButtons.OK,
+              MessageBoxIcon.Information );
           this.useDatabase_Field = false;
           }
         }
 
-      // Stelle sicher, dass der Ordner für die JSON-Datei existiert
       Directory.CreateDirectory( Path.GetDirectoryName( textFilePath_Field ) );
       }
 
@@ -59,18 +61,28 @@ namespace IPA_Notenrechner
           {
           connection_Variable.Open();
 
-          // Überprüfe zusätzlich, ob die Templates-Tabelle existiert
           if ( EnsureTemplateTableExists() )
             {
-            MessageBox.Show( "Verbindung zur Datenbank erfolgreich!" );
+            if ( !errorMessageShown_Field )
+              {
+              MessageBox.Show( "Verbindung zur Datenbank erfolgreich!" );
+              }
             return true;
             }
           return false;
           }
         }
-      catch ( Exception ex_Variable )
+      catch ( Exception )
         {
-        MessageBox.Show( $"Fehler bei der Datenbankverbindung: {ex_Variable.Message}" );
+        if ( !errorMessageShown_Field )
+          {
+          errorMessageShown_Field = true;
+          MessageBox.Show(
+              "Keine lokale Datenbank erkannt. Die Anwendung wird im Offline-Modus gestartet.",
+              "Hinweis",
+              MessageBoxButtons.OK,
+              MessageBoxIcon.Information );
+          }
         return false;
         }
       }
@@ -123,7 +135,6 @@ namespace IPA_Notenrechner
         {
         List<Template_Class> templates_Variable = LoadAllTemplatesFromFile();
 
-        // Entferne ein Template mit demselben Namen, falls vorhanden
         templates_Variable.RemoveAll( t_Parameter => t_Parameter.Name_Property == template_Parameter.Name_Property );
         templates_Variable.Add( template_Parameter );
 
@@ -175,7 +186,10 @@ namespace IPA_Notenrechner
         }
       catch ( Exception ex_Variable )
         {
-        MessageBox.Show( $"Fehler beim Laden der Template-Namen: {ex_Variable.Message}" );
+        if ( !errorMessageShown_Field )
+          {
+          MessageBox.Show( $"Fehler beim Laden der Template-Namen: {ex_Variable.Message}" );
+          }
         }
       return templateNames_Variable;
       }
@@ -239,7 +253,10 @@ namespace IPA_Notenrechner
         }
       catch ( Exception ex_Variable )
         {
-        MessageBox.Show( $"Fehler beim Laden des Templates: {ex_Variable.Message}" );
+        if ( !errorMessageShown_Field )
+          {
+          MessageBox.Show( $"Fehler beim Laden des Templates: {ex_Variable.Message}" );
+          }
         }
       return template_Variable;
       }
@@ -275,6 +292,7 @@ namespace IPA_Notenrechner
         return new List<Template_Class>();
         }
       }
+
     private bool EnsureTemplateTableExists()
       {
       if ( !useDatabase_Field ) return true;
@@ -285,20 +303,19 @@ namespace IPA_Notenrechner
           {
           connection_Variable.Open();
 
-          // Prüfe ob die Tabelle bereits existiert
           string checkTableQuery_Variable = @"
-                IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'Templates')
-                BEGIN
-                    CREATE TABLE Templates (
-                        Id INT IDENTITY(1,1) PRIMARY KEY,
-                        Name NVARCHAR(255) NOT NULL,
-                        KompetenzPunkte NVARCHAR(MAX),
-                        DokumentationPunkte NVARCHAR(MAX),
-                        PraesentationPunkte NVARCHAR(MAX),
-                        CreatedAt DATETIME DEFAULT GETDATE(),
-                        UpdatedAt DATETIME DEFAULT GETDATE()
-                    )
-                END";
+                        IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'Templates')
+                        BEGIN
+                            CREATE TABLE Templates (
+                                Id INT IDENTITY(1,1) PRIMARY KEY,
+                                Name NVARCHAR(255) NOT NULL,
+                                KompetenzPunkte NVARCHAR(MAX),
+                                DokumentationPunkte NVARCHAR(MAX),
+                                PraesentationPunkte NVARCHAR(MAX),
+                                CreatedAt DATETIME DEFAULT GETDATE(),
+                                UpdatedAt DATETIME DEFAULT GETDATE()
+                            )
+                        END";
 
           using ( SqlCommand command_Variable = new SqlCommand( checkTableQuery_Variable, connection_Variable ) )
             {
@@ -307,10 +324,17 @@ namespace IPA_Notenrechner
           return true;
           }
         }
-      catch ( Exception ex_Variable )
+      catch ( Exception )
         {
-        MessageBox.Show( $"Fehler beim Erstellen der Templates-Tabelle: {ex_Variable.Message}",
-            "Datenbankfehler", MessageBoxButtons.OK, MessageBoxIcon.Error );
+        if ( !errorMessageShown_Field )
+          {
+          errorMessageShown_Field = true;
+          MessageBox.Show(
+              "Keine lokale Datenbank erkannt. Die Anwendung wird im Offline-Modus gestartet.",
+              "Hinweis",
+              MessageBoxButtons.OK,
+              MessageBoxIcon.Information );
+          }
         return false;
         }
       }
