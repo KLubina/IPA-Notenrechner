@@ -148,6 +148,9 @@
       this.label27 = new System.Windows.Forms.Label();
       this.label28 = new System.Windows.Forms.Label();
       this.label29 = new System.Windows.Forms.Label();
+      this.label30 = new System.Windows.Forms.Label();
+      this.label31 = new System.Windows.Forms.Label();
+      this.label32 = new System.Windows.Forms.Label();
       this.SuspendLayout();
       // 
       // buttonSaveTemplate
@@ -1011,9 +1014,9 @@
       this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
       this.label11.Location = new System.Drawing.Point(639, 183);
       this.label11.Name = "label11";
-      this.label11.Size = new System.Drawing.Size(291, 13);
+      this.label11.Size = new System.Drawing.Size(341, 13);
       this.label11.TabIndex = 194;
-      this.label11.Text = "Wie sind Rechtschreibung, Interpunktion und Grammatik zu ";
+      this.label11.Text = "Wie sind Rechtschreibung, Interpunktion und Grammatik zu bewerten?";
       // 
       // label12
       // 
@@ -1208,11 +1211,44 @@
       this.label29.TabIndex = 237;
       this.label29.Text = "Wie ist das Produkt der Facharbeit vorzuführen? ";
       // 
+      // label30
+      // 
+      this.label30.AutoSize = true;
+      this.label30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.label30.Location = new System.Drawing.Point(956, 224);
+      this.label30.Name = "label30";
+      this.label30.Size = new System.Drawing.Size(101, 13);
+      this.label30.TabIndex = 238;
+      this.label30.Text = "sehr klares Kriterium";
+      // 
+      // label31
+      // 
+      this.label31.AutoSize = true;
+      this.label31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.label31.Location = new System.Drawing.Point(955, 240);
+      this.label31.Name = "label31";
+      this.label31.Size = new System.Drawing.Size(129, 13);
+      this.label31.TabIndex = 239;
+      this.label31.Text = "mittelallgemeines Kriterium";
+      // 
+      // label32
+      // 
+      this.label32.AutoSize = true;
+      this.label32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.label32.Location = new System.Drawing.Point(956, 253);
+      this.label32.Name = "label32";
+      this.label32.Size = new System.Drawing.Size(105, 13);
+      this.label32.TabIndex = 240;
+      this.label32.Text = "allgemeines Kriterium";
+      // 
       // EditTemplate_Form
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(1104, 851);
+      this.Controls.Add(this.label32);
+      this.Controls.Add(this.label31);
+      this.Controls.Add(this.label30);
       this.Controls.Add(this.label29);
       this.Controls.Add(this.label28);
       this.Controls.Add(this.label27);
@@ -1462,5 +1498,8 @@
     private System.Windows.Forms.Label label27;
     private System.Windows.Forms.Label label28;
     private System.Windows.Forms.Label label29;
+    private System.Windows.Forms.Label label30;
+    private System.Windows.Forms.Label label31;
+    private System.Windows.Forms.Label label32;
     }
   }

@@ -150,6 +150,9 @@
       this.label28 = new System.Windows.Forms.Label();
       this.label27 = new System.Windows.Forms.Label();
       this.label26 = new System.Windows.Forms.Label();
+      this.label32 = new System.Windows.Forms.Label();
+      this.label31 = new System.Windows.Forms.Label();
+      this.label30 = new System.Windows.Forms.Label();
       this.SuspendLayout();
       // 
       // labelCompetence
@@ -1232,12 +1235,45 @@
       this.label26.TabIndex = 238;
       this.label26.Text = "Wie ist die Präsentation zu strukturieren? Welche Zeitvorgabe ist zu beachten?";
       // 
+      // label32
+      // 
+      this.label32.AutoSize = true;
+      this.label32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.label32.Location = new System.Drawing.Point(946, 260);
+      this.label32.Name = "label32";
+      this.label32.Size = new System.Drawing.Size(105, 13);
+      this.label32.TabIndex = 244;
+      this.label32.Text = "allgemeines Kriterium";
+      // 
+      // label31
+      // 
+      this.label31.AutoSize = true;
+      this.label31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.label31.Location = new System.Drawing.Point(945, 247);
+      this.label31.Name = "label31";
+      this.label31.Size = new System.Drawing.Size(129, 13);
+      this.label31.TabIndex = 243;
+      this.label31.Text = "mittelallgemeines Kriterium";
+      // 
+      // label30
+      // 
+      this.label30.AutoSize = true;
+      this.label30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.label30.Location = new System.Drawing.Point(946, 231);
+      this.label30.Name = "label30";
+      this.label30.Size = new System.Drawing.Size(101, 13);
+      this.label30.TabIndex = 242;
+      this.label30.Text = "sehr klares Kriterium";
+      // 
       // CreateTemplate_Form
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.AutoScroll = true;
       this.ClientSize = new System.Drawing.Size(1102, 845);
+      this.Controls.Add(this.label32);
+      this.Controls.Add(this.label31);
+      this.Controls.Add(this.label30);
       this.Controls.Add(this.label29);
       this.Controls.Add(this.label28);
       this.Controls.Add(this.label27);
@@ -1491,5 +1527,8 @@
     private System.Windows.Forms.Label label28;
     private System.Windows.Forms.Label label27;
     private System.Windows.Forms.Label label26;
+    private System.Windows.Forms.Label label32;
+    private System.Windows.Forms.Label label31;
+    private System.Windows.Forms.Label label30;
     }
   }
