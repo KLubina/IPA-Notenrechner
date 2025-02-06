@@ -158,11 +158,22 @@ namespace IPA_Notenrechner.Forms
       try
         {
         CollectPoints();
-        template_Field.SaveTemplate( Path.Combine( templatesPath_Field, template_Field.Name_Property + ".txt" ) );
-        MessageBox.Show( "Template wurde erfolgreich aktualisiert!",
-            "Erfolg", MessageBoxButtons.OK, MessageBoxIcon.Information );
-        this.DialogResult = DialogResult.OK;
-        this.Close();
+
+        SaveFileDialog saveDialog_Variable = new SaveFileDialog
+          {
+          Filter = "Text files (*.txt)|*.txt",
+          DefaultExt = "txt",
+          FileName = template_Field.Name_Property ?? "Neue Vorlage"
+          };
+
+        if ( saveDialog_Variable.ShowDialog() == DialogResult.OK )
+          {
+          template_Field.SaveTemplate( saveDialog_Variable.FileName );
+          MessageBox.Show( "Template wurde erfolgreich gespeichert!",
+              "Erfolg", MessageBoxButtons.OK, MessageBoxIcon.Information );
+          this.DialogResult = DialogResult.OK;
+          this.Close();
+          }
         }
       catch ( Exception ex_Variable )
         {
