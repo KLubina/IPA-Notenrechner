@@ -899,7 +899,7 @@
       this.buttonSaveTemplate.Name = "buttonSaveTemplate";
       this.buttonSaveTemplate.Size = new System.Drawing.Size(1061, 50);
       this.buttonSaveTemplate.TabIndex = 90;
-      this.buttonSaveTemplate.Text = "Template speichern";
+      this.buttonSaveTemplate.Text = "Vorlage speichern";
       this.buttonSaveTemplate.UseVisualStyleBackColor = true;
       this.buttonSaveTemplate.Click += new System.EventHandler(this.buttonSaveTemplate_Click);
       // 
@@ -1362,7 +1362,7 @@
       this.Controls.Add(this.labelCompetence);
       this.MinimumSize = new System.Drawing.Size(1118, 884);
       this.Name = "CreateTemplate_Form";
-      this.Text = "Template hinzufügen";
+      this.Text = "Vorlage hinzufügen";
       this.ResumeLayout(false);
       this.PerformLayout();
 

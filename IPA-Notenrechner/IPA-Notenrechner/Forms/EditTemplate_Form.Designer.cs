@@ -157,7 +157,7 @@
       this.buttonSaveTemplate.Name = "buttonSaveTemplate";
       this.buttonSaveTemplate.Size = new System.Drawing.Size(1061, 50);
       this.buttonSaveTemplate.TabIndex = 183;
-      this.buttonSaveTemplate.Text = "Template speichern";
+      this.buttonSaveTemplate.Text = "Vorlage speichern";
       this.buttonSaveTemplate.UseVisualStyleBackColor = true;
       // 
       // textBoxPresentationAndConversation10
@@ -1334,7 +1334,7 @@
       this.Controls.Add(this.labelCompetence);
       this.MinimumSize = new System.Drawing.Size(1120, 890);
       this.Name = "EditTemplate_Form";
-      this.Text = "EditTemplate_Form";
+      this.Text = "Vorlage bearbeiten";
       this.ResumeLayout(false);
       this.PerformLayout();
 

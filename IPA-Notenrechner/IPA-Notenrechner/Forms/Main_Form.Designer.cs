@@ -81,7 +81,7 @@
       this.buttonCreateTemplate.Name = "buttonCreateTemplate";
       this.buttonCreateTemplate.Size = new System.Drawing.Size(380, 32);
       this.buttonCreateTemplate.TabIndex = 2;
-      this.buttonCreateTemplate.Text = "Erstelle ein Template";
+      this.buttonCreateTemplate.Text = "Erstelle eine Vorlage";
       this.buttonCreateTemplate.UseVisualStyleBackColor = true;
       this.buttonCreateTemplate.Click += new System.EventHandler(this.buttonCreateTemplate_Click);
       // 
@@ -92,7 +92,7 @@
       this.buttonShowTemplate.Name = "buttonShowTemplate";
       this.buttonShowTemplate.Size = new System.Drawing.Size(380, 32);
       this.buttonShowTemplate.TabIndex = 3;
-      this.buttonShowTemplate.Text = "Template anzeigen lassen";
+      this.buttonShowTemplate.Text = "Vorlage anzeigen lassen";
       this.buttonShowTemplate.UseVisualStyleBackColor = true;
       this.buttonShowTemplate.Click += new System.EventHandler(this.buttonShowTemplate_Click);
       // 
@@ -279,7 +279,7 @@
       this.buttonEditTemplate.Name = "buttonEditTemplate";
       this.buttonEditTemplate.Size = new System.Drawing.Size(380, 32);
       this.buttonEditTemplate.TabIndex = 22;
-      this.buttonEditTemplate.Text = "Template bearbeiten";
+      this.buttonEditTemplate.Text = "Vorlage bearbeiten";
       this.buttonEditTemplate.UseVisualStyleBackColor = true;
       this.buttonEditTemplate.Click += new System.EventHandler(this.buttonEditTemplate_Click);
       // 
