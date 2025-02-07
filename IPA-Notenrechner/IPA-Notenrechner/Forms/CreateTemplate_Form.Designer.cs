@@ -121,38 +121,38 @@
       this.buttonSaveTemplate = new System.Windows.Forms.Button();
       this.radioButtonTxt_Field = new System.Windows.Forms.RadioButton();
       this.radioButtonDB_Field = new System.Windows.Forms.RadioButton();
-      this.label19 = new System.Windows.Forms.Label();
-      this.label18 = new System.Windows.Forms.Label();
-      this.label17 = new System.Windows.Forms.Label();
-      this.label8 = new System.Windows.Forms.Label();
-      this.label7 = new System.Windows.Forms.Label();
-      this.label6 = new System.Windows.Forms.Label();
-      this.label5 = new System.Windows.Forms.Label();
-      this.label4 = new System.Windows.Forms.Label();
-      this.label3 = new System.Windows.Forms.Label();
-      this.label2 = new System.Windows.Forms.Label();
-      this.label1 = new System.Windows.Forms.Label();
-      this.label16 = new System.Windows.Forms.Label();
-      this.label15 = new System.Windows.Forms.Label();
-      this.label14 = new System.Windows.Forms.Label();
-      this.label13 = new System.Windows.Forms.Label();
-      this.label12 = new System.Windows.Forms.Label();
-      this.label11 = new System.Windows.Forms.Label();
-      this.label10 = new System.Windows.Forms.Label();
-      this.label9 = new System.Windows.Forms.Label();
-      this.label20 = new System.Windows.Forms.Label();
-      this.label21 = new System.Windows.Forms.Label();
-      this.label22 = new System.Windows.Forms.Label();
-      this.label23 = new System.Windows.Forms.Label();
-      this.label24 = new System.Windows.Forms.Label();
-      this.label25 = new System.Windows.Forms.Label();
-      this.label29 = new System.Windows.Forms.Label();
-      this.label28 = new System.Windows.Forms.Label();
-      this.label27 = new System.Windows.Forms.Label();
-      this.label26 = new System.Windows.Forms.Label();
-      this.label32 = new System.Windows.Forms.Label();
-      this.label31 = new System.Windows.Forms.Label();
-      this.label30 = new System.Windows.Forms.Label();
+      this.labelObligatoryCriteriaA11Description = new System.Windows.Forms.Label();
+      this.labelObligatoryCriteriaA4Description = new System.Windows.Forms.Label();
+      this.labelObligatoryCriteriaA1Description = new System.Windows.Forms.Label();
+      this.labelObligatoryCriteriaA6Description = new System.Windows.Forms.Label();
+      this.labelObligatoryCriteriaA10Description = new System.Windows.Forms.Label();
+      this.labelObligatoryCriteriaA9Description = new System.Windows.Forms.Label();
+      this.labelObligatoryCriteriaA5Description = new System.Windows.Forms.Label();
+      this.labelObligatoryCriteriaA2Description = new System.Windows.Forms.Label();
+      this.labelObligatoryCriteriaA8Description = new System.Windows.Forms.Label();
+      this.labelObligatoryCriteriaA7Description = new System.Windows.Forms.Label();
+      this.labelObligatoryCriteriaA3Description = new System.Windows.Forms.Label();
+      this.labelObligatoryCriteriaDocumentation7Description = new System.Windows.Forms.Label();
+      this.labelObligatoryCriteriaDocumentation8Description = new System.Windows.Forms.Label();
+      this.labelObligatoryCriteriaDocumentation6Description = new System.Windows.Forms.Label();
+      this.labelObligatoryCriteriaDocumentation3Description = new System.Windows.Forms.Label();
+      this.labelObligatoryCriteriaDocumentation1Description = new System.Windows.Forms.Label();
+      this.labelObligatoryCriteriaDocumentation4Description = new System.Windows.Forms.Label();
+      this.labelObligatoryCriteriaDocumentation5Description = new System.Windows.Forms.Label();
+      this.labelObligatoryCriteriaDocumentation2Description = new System.Windows.Forms.Label();
+      this.labelObligatoryCriteriaPresentationAndConversation10Description = new System.Windows.Forms.Label();
+      this.labelObligatoryCriteriaPresentationAndConversation9Description = new System.Windows.Forms.Label();
+      this.labelObligatoryCriteriaPresentationAndConversation8Description = new System.Windows.Forms.Label();
+      this.labelObligatoryCriteriaPresentationAndConversation7Description = new System.Windows.Forms.Label();
+      this.labelObligatoryCriteriaPresentationAndConversation6Description = new System.Windows.Forms.Label();
+      this.labelObligatoryCriteriaPresentationAndConversation5Description = new System.Windows.Forms.Label();
+      this.labelObligatoryCriteriaPresentationAndConversation4Description = new System.Windows.Forms.Label();
+      this.labelObligatoryCriteriaPresentationAndConversation3Description = new System.Windows.Forms.Label();
+      this.labelObligatoryCriteriaPresentationAndConversation2Description = new System.Windows.Forms.Label();
+      this.labelObligatoryCriteriaPresentationAndConversation1Description = new System.Windows.Forms.Label();
+      this.labelVeryGeneralCriteria = new System.Windows.Forms.Label();
+      this.labelMediumGeneralCriteria = new System.Windows.Forms.Label();
+      this.labelClearCriteria = new System.Windows.Forms.Label();
       this.SuspendLayout();
       // 
       // labelCompetence
@@ -928,342 +928,342 @@
       this.radioButtonDB_Field.Text = "in DB speichern";
       this.radioButtonDB_Field.UseVisualStyleBackColor = true;
       // 
-      // label19
+      // labelObligatoryCriteriaA11Description
       // 
-      this.label19.AutoSize = true;
-      this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.label19.Location = new System.Drawing.Point(152, 333);
-      this.label19.Name = "label19";
-      this.label19.Size = new System.Drawing.Size(323, 13);
-      this.label19.TabIndex = 213;
-      this.label19.Text = "Welche Informationen zur Projektaufbauorganisation sind verlangt?";
+      this.labelObligatoryCriteriaA11Description.AutoSize = true;
+      this.labelObligatoryCriteriaA11Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.labelObligatoryCriteriaA11Description.Location = new System.Drawing.Point(152, 333);
+      this.labelObligatoryCriteriaA11Description.Name = "labelObligatoryCriteriaA11Description";
+      this.labelObligatoryCriteriaA11Description.Size = new System.Drawing.Size(323, 13);
+      this.labelObligatoryCriteriaA11Description.TabIndex = 213;
+      this.labelObligatoryCriteriaA11Description.Text = "Welche Informationen zur Projektaufbauorganisation sind verlangt?";
       // 
-      // label18
+      // labelObligatoryCriteriaA4Description
       // 
-      this.label18.AutoSize = true;
-      this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.label18.Location = new System.Drawing.Point(152, 150);
-      this.label18.Name = "label18";
-      this.label18.Size = new System.Drawing.Size(224, 13);
-      this.label18.TabIndex = 212;
-      this.label18.Text = "Was sind die Anforderungen an den Zeitplan?";
+      this.labelObligatoryCriteriaA4Description.AutoSize = true;
+      this.labelObligatoryCriteriaA4Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.labelObligatoryCriteriaA4Description.Location = new System.Drawing.Point(152, 150);
+      this.labelObligatoryCriteriaA4Description.Name = "labelObligatoryCriteriaA4Description";
+      this.labelObligatoryCriteriaA4Description.Size = new System.Drawing.Size(224, 13);
+      this.labelObligatoryCriteriaA4Description.TabIndex = 212;
+      this.labelObligatoryCriteriaA4Description.Text = "Was sind die Anforderungen an den Zeitplan?";
       // 
-      // label17
+      // labelObligatoryCriteriaA1Description
       // 
-      this.label17.AutoSize = true;
-      this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.label17.Location = new System.Drawing.Point(153, 73);
-      this.label17.Name = "label17";
-      this.label17.Size = new System.Drawing.Size(282, 13);
-      this.label17.TabIndex = 211;
-      this.label17.Text = "Wie erfolgt die Auftragsanalyse? Welche Projektmethode?";
+      this.labelObligatoryCriteriaA1Description.AutoSize = true;
+      this.labelObligatoryCriteriaA1Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.labelObligatoryCriteriaA1Description.Location = new System.Drawing.Point(153, 73);
+      this.labelObligatoryCriteriaA1Description.Name = "labelObligatoryCriteriaA1Description";
+      this.labelObligatoryCriteriaA1Description.Size = new System.Drawing.Size(282, 13);
+      this.labelObligatoryCriteriaA1Description.TabIndex = 211;
+      this.labelObligatoryCriteriaA1Description.Text = "Wie erfolgt die Auftragsanalyse? Welche Projektmethode?";
       // 
-      // label8
+      // labelObligatoryCriteriaA6Description
       // 
-      this.label8.AutoSize = true;
-      this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-      this.label8.Location = new System.Drawing.Point(152, 200);
-      this.label8.Name = "label8";
-      this.label8.Size = new System.Drawing.Size(162, 13);
-      this.label8.TabIndex = 210;
-      this.label8.Text = "Wie ist die Leistung einzustufen?";
+      this.labelObligatoryCriteriaA6Description.AutoSize = true;
+      this.labelObligatoryCriteriaA6Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.labelObligatoryCriteriaA6Description.Location = new System.Drawing.Point(152, 200);
+      this.labelObligatoryCriteriaA6Description.Name = "labelObligatoryCriteriaA6Description";
+      this.labelObligatoryCriteriaA6Description.Size = new System.Drawing.Size(162, 13);
+      this.labelObligatoryCriteriaA6Description.TabIndex = 210;
+      this.labelObligatoryCriteriaA6Description.Text = "Wie ist die Leistung einzustufen?";
       // 
-      // label7
+      // labelObligatoryCriteriaA10Description
       // 
-      this.label7.AutoSize = true;
-      this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-      this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.75F);
-      this.label7.Location = new System.Drawing.Point(153, 311);
-      this.label7.Name = "label7";
-      this.label7.Size = new System.Drawing.Size(300, 9);
-      this.label7.TabIndex = 209;
-      this.label7.Text = "Wie ist die Interaktion des Kandidaten mit den anderen Projektmitgliedern zu beur" +
+      this.labelObligatoryCriteriaA10Description.AutoSize = true;
+      this.labelObligatoryCriteriaA10Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.labelObligatoryCriteriaA10Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.75F);
+      this.labelObligatoryCriteriaA10Description.Location = new System.Drawing.Point(153, 311);
+      this.labelObligatoryCriteriaA10Description.Name = "labelObligatoryCriteriaA10Description";
+      this.labelObligatoryCriteriaA10Description.Size = new System.Drawing.Size(300, 9);
+      this.labelObligatoryCriteriaA10Description.TabIndex = 209;
+      this.labelObligatoryCriteriaA10Description.Text = "Wie ist die Interaktion des Kandidaten mit den anderen Projektmitgliedern zu beur" +
     "teilen?";
       // 
-      // label6
+      // labelObligatoryCriteriaA9Description
       // 
-      this.label6.AutoSize = true;
-      this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-      this.label6.Location = new System.Drawing.Point(153, 281);
-      this.label6.Name = "label6";
-      this.label6.Size = new System.Drawing.Size(282, 13);
-      this.label6.TabIndex = 208;
-      this.label6.Text = "Wie ist die Anwendung der Fachkompetenz zu beurteilen?";
+      this.labelObligatoryCriteriaA9Description.AutoSize = true;
+      this.labelObligatoryCriteriaA9Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.labelObligatoryCriteriaA9Description.Location = new System.Drawing.Point(153, 281);
+      this.labelObligatoryCriteriaA9Description.Name = "labelObligatoryCriteriaA9Description";
+      this.labelObligatoryCriteriaA9Description.Size = new System.Drawing.Size(282, 13);
+      this.labelObligatoryCriteriaA9Description.TabIndex = 208;
+      this.labelObligatoryCriteriaA9Description.Text = "Wie ist die Anwendung der Fachkompetenz zu beurteilen?";
       // 
-      // label5
+      // labelObligatoryCriteriaA5Description
       // 
-      this.label5.AutoSize = true;
-      this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.75F);
-      this.label5.Location = new System.Drawing.Point(153, 176);
-      this.label5.Name = "label5";
-      this.label5.Size = new System.Drawing.Size(300, 9);
-      this.label5.TabIndex = 207;
-      this.label5.Text = "Wie erfolgt die Überprüfung und Dokumentation des Projektforschritts und der Risi" +
+      this.labelObligatoryCriteriaA5Description.AutoSize = true;
+      this.labelObligatoryCriteriaA5Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.labelObligatoryCriteriaA5Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.75F);
+      this.labelObligatoryCriteriaA5Description.Location = new System.Drawing.Point(153, 176);
+      this.labelObligatoryCriteriaA5Description.Name = "labelObligatoryCriteriaA5Description";
+      this.labelObligatoryCriteriaA5Description.Size = new System.Drawing.Size(300, 9);
+      this.labelObligatoryCriteriaA5Description.TabIndex = 207;
+      this.labelObligatoryCriteriaA5Description.Text = "Wie erfolgt die Überprüfung und Dokumentation des Projektforschritts und der Risi" +
     "ken ?";
       // 
-      // label4
+      // labelObligatoryCriteriaA2Description
       // 
-      this.label4.AutoSize = true;
-      this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.label4.Location = new System.Drawing.Point(153, 103);
-      this.label4.Name = "label4";
-      this.label4.Size = new System.Drawing.Size(196, 13);
-      this.label4.TabIndex = 206;
-      this.label4.Text = "Wie werden Informationen recherchiert?";
+      this.labelObligatoryCriteriaA2Description.AutoSize = true;
+      this.labelObligatoryCriteriaA2Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.labelObligatoryCriteriaA2Description.Location = new System.Drawing.Point(153, 103);
+      this.labelObligatoryCriteriaA2Description.Name = "labelObligatoryCriteriaA2Description";
+      this.labelObligatoryCriteriaA2Description.Size = new System.Drawing.Size(196, 13);
+      this.labelObligatoryCriteriaA2Description.TabIndex = 206;
+      this.labelObligatoryCriteriaA2Description.Text = "Wie werden Informationen recherchiert?";
       // 
-      // label3
+      // labelObligatoryCriteriaA8Description
       // 
-      this.label3.AutoSize = true;
-      this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-      this.label3.Location = new System.Drawing.Point(153, 249);
-      this.label3.Name = "label3";
-      this.label3.Size = new System.Drawing.Size(268, 13);
-      this.label3.TabIndex = 205;
-      this.label3.Text = "Wie ist die Anwendung der Fachsprache zu beurteilen?";
+      this.labelObligatoryCriteriaA8Description.AutoSize = true;
+      this.labelObligatoryCriteriaA8Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.labelObligatoryCriteriaA8Description.Location = new System.Drawing.Point(153, 249);
+      this.labelObligatoryCriteriaA8Description.Name = "labelObligatoryCriteriaA8Description";
+      this.labelObligatoryCriteriaA8Description.Size = new System.Drawing.Size(268, 13);
+      this.labelObligatoryCriteriaA8Description.TabIndex = 205;
+      this.labelObligatoryCriteriaA8Description.Text = "Wie ist die Anwendung der Fachsprache zu beurteilen?";
       // 
-      // label2
+      // labelObligatoryCriteriaA7Description
       // 
-      this.label2.AutoSize = true;
-      this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-      this.label2.Location = new System.Drawing.Point(153, 226);
-      this.label2.Name = "label2";
-      this.label2.Size = new System.Drawing.Size(170, 13);
-      this.label2.TabIndex = 204;
-      this.label2.Text = "Wie selbständig wurde gearbeitet?";
+      this.labelObligatoryCriteriaA7Description.AutoSize = true;
+      this.labelObligatoryCriteriaA7Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.labelObligatoryCriteriaA7Description.Location = new System.Drawing.Point(153, 226);
+      this.labelObligatoryCriteriaA7Description.Name = "labelObligatoryCriteriaA7Description";
+      this.labelObligatoryCriteriaA7Description.Size = new System.Drawing.Size(170, 13);
+      this.labelObligatoryCriteriaA7Description.TabIndex = 204;
+      this.labelObligatoryCriteriaA7Description.Text = "Wie selbständig wurde gearbeitet?";
       // 
-      // label1
+      // labelObligatoryCriteriaA3Description
       // 
-      this.label1.AutoSize = true;
-      this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-      this.label1.Location = new System.Drawing.Point(153, 125);
-      this.label1.Name = "label1";
-      this.label1.Size = new System.Drawing.Size(302, 13);
-      this.label1.TabIndex = 203;
-      this.label1.Text = "Wie werden Informationen effektiv aufbereitet und verwendet?";
+      this.labelObligatoryCriteriaA3Description.AutoSize = true;
+      this.labelObligatoryCriteriaA3Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.labelObligatoryCriteriaA3Description.Location = new System.Drawing.Point(153, 125);
+      this.labelObligatoryCriteriaA3Description.Name = "labelObligatoryCriteriaA3Description";
+      this.labelObligatoryCriteriaA3Description.Size = new System.Drawing.Size(302, 13);
+      this.labelObligatoryCriteriaA3Description.TabIndex = 203;
+      this.labelObligatoryCriteriaA3Description.Text = "Wie werden Informationen effektiv aufbereitet und verwendet?";
       // 
-      // label16
+      // labelObligatoryCriteriaDocumentation7Description
       // 
-      this.label16.AutoSize = true;
-      this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.label16.Location = new System.Drawing.Point(641, 266);
-      this.label16.Name = "label16";
-      this.label16.Size = new System.Drawing.Size(262, 13);
-      this.label16.TabIndex = 221;
-      this.label16.Text = "Was ist beim Führen des Arbeitsjournals zu beachten?";
+      this.labelObligatoryCriteriaDocumentation7Description.AutoSize = true;
+      this.labelObligatoryCriteriaDocumentation7Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.labelObligatoryCriteriaDocumentation7Description.Location = new System.Drawing.Point(641, 266);
+      this.labelObligatoryCriteriaDocumentation7Description.Name = "labelObligatoryCriteriaDocumentation7Description";
+      this.labelObligatoryCriteriaDocumentation7Description.Size = new System.Drawing.Size(262, 13);
+      this.labelObligatoryCriteriaDocumentation7Description.TabIndex = 221;
+      this.labelObligatoryCriteriaDocumentation7Description.Text = "Was ist beim Führen des Arbeitsjournals zu beachten?";
       // 
-      // label15
+      // labelObligatoryCriteriaDocumentation8Description
       // 
-      this.label15.AutoSize = true;
-      this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.label15.Location = new System.Drawing.Point(641, 296);
-      this.label15.Name = "label15";
-      this.label15.Size = new System.Drawing.Size(328, 13);
-      this.label15.TabIndex = 220;
-      this.label15.Text = "Was ist beim Verfassen des persönlichen Fazits zu berücksichtigen?";
+      this.labelObligatoryCriteriaDocumentation8Description.AutoSize = true;
+      this.labelObligatoryCriteriaDocumentation8Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.labelObligatoryCriteriaDocumentation8Description.Location = new System.Drawing.Point(641, 296);
+      this.labelObligatoryCriteriaDocumentation8Description.Name = "labelObligatoryCriteriaDocumentation8Description";
+      this.labelObligatoryCriteriaDocumentation8Description.Size = new System.Drawing.Size(328, 13);
+      this.labelObligatoryCriteriaDocumentation8Description.TabIndex = 220;
+      this.labelObligatoryCriteriaDocumentation8Description.Text = "Was ist beim Verfassen des persönlichen Fazits zu berücksichtigen?";
       // 
-      // label14
+      // labelObligatoryCriteriaDocumentation6Description
       // 
-      this.label14.AutoSize = true;
-      this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.label14.Location = new System.Drawing.Point(638, 242);
-      this.label14.Name = "label14";
-      this.label14.Size = new System.Drawing.Size(246, 13);
-      this.label14.TabIndex = 219;
-      this.label14.Text = "Was sind die Anforderungen an eine Kurzfassung?";
+      this.labelObligatoryCriteriaDocumentation6Description.AutoSize = true;
+      this.labelObligatoryCriteriaDocumentation6Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.labelObligatoryCriteriaDocumentation6Description.Location = new System.Drawing.Point(638, 242);
+      this.labelObligatoryCriteriaDocumentation6Description.Name = "labelObligatoryCriteriaDocumentation6Description";
+      this.labelObligatoryCriteriaDocumentation6Description.Size = new System.Drawing.Size(246, 13);
+      this.labelObligatoryCriteriaDocumentation6Description.TabIndex = 219;
+      this.labelObligatoryCriteriaDocumentation6Description.Text = "Was sind die Anforderungen an eine Kurzfassung?";
       // 
-      // label13
+      // labelObligatoryCriteriaDocumentation3Description
       // 
-      this.label13.AutoSize = true;
-      this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.label13.Location = new System.Drawing.Point(641, 147);
-      this.label13.Name = "label13";
-      this.label13.Size = new System.Drawing.Size(368, 13);
-      this.label13.TabIndex = 218;
-      this.label13.Text = "Was sind die Anforderungen an die formale Vollständigkeit des IPA-Berichts?";
+      this.labelObligatoryCriteriaDocumentation3Description.AutoSize = true;
+      this.labelObligatoryCriteriaDocumentation3Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.labelObligatoryCriteriaDocumentation3Description.Location = new System.Drawing.Point(641, 147);
+      this.labelObligatoryCriteriaDocumentation3Description.Name = "labelObligatoryCriteriaDocumentation3Description";
+      this.labelObligatoryCriteriaDocumentation3Description.Size = new System.Drawing.Size(368, 13);
+      this.labelObligatoryCriteriaDocumentation3Description.TabIndex = 218;
+      this.labelObligatoryCriteriaDocumentation3Description.Text = "Was sind die Anforderungen an die formale Vollständigkeit des IPA-Berichts?";
       // 
-      // label12
+      // labelObligatoryCriteriaDocumentation1Description
       // 
-      this.label12.AutoSize = true;
-      this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.label12.Location = new System.Drawing.Point(641, 91);
-      this.label12.Name = "label12";
-      this.label12.Size = new System.Drawing.Size(186, 13);
-      this.label12.TabIndex = 217;
-      this.label12.Text = "Wie ist die Dokumentation gegliedert?";
+      this.labelObligatoryCriteriaDocumentation1Description.AutoSize = true;
+      this.labelObligatoryCriteriaDocumentation1Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.labelObligatoryCriteriaDocumentation1Description.Location = new System.Drawing.Point(641, 91);
+      this.labelObligatoryCriteriaDocumentation1Description.Name = "labelObligatoryCriteriaDocumentation1Description";
+      this.labelObligatoryCriteriaDocumentation1Description.Size = new System.Drawing.Size(186, 13);
+      this.labelObligatoryCriteriaDocumentation1Description.TabIndex = 217;
+      this.labelObligatoryCriteriaDocumentation1Description.Text = "Wie ist die Dokumentation gegliedert?";
       // 
-      // label11
+      // labelObligatoryCriteriaDocumentation4Description
       // 
-      this.label11.AutoSize = true;
-      this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-      this.label11.Location = new System.Drawing.Point(638, 182);
-      this.label11.Name = "label11";
-      this.label11.Size = new System.Drawing.Size(341, 13);
-      this.label11.TabIndex = 216;
-      this.label11.Text = "Wie sind Rechtschreibung, Interpunktion und Grammatik zu bewerten?";
+      this.labelObligatoryCriteriaDocumentation4Description.AutoSize = true;
+      this.labelObligatoryCriteriaDocumentation4Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.labelObligatoryCriteriaDocumentation4Description.Location = new System.Drawing.Point(638, 182);
+      this.labelObligatoryCriteriaDocumentation4Description.Name = "labelObligatoryCriteriaDocumentation4Description";
+      this.labelObligatoryCriteriaDocumentation4Description.Size = new System.Drawing.Size(341, 13);
+      this.labelObligatoryCriteriaDocumentation4Description.TabIndex = 216;
+      this.labelObligatoryCriteriaDocumentation4Description.Text = "Wie sind Rechtschreibung, Interpunktion und Grammatik zu bewerten?";
       // 
-      // label10
+      // labelObligatoryCriteriaDocumentation5Description
       // 
-      this.label10.AutoSize = true;
-      this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-      this.label10.Location = new System.Drawing.Point(638, 212);
-      this.label10.Name = "label10";
-      this.label10.Size = new System.Drawing.Size(285, 13);
-      this.label10.TabIndex = 215;
-      this.label10.Text = "Welche visuellen Kriterien sind für Abbildungen zu erfüllen?";
+      this.labelObligatoryCriteriaDocumentation5Description.AutoSize = true;
+      this.labelObligatoryCriteriaDocumentation5Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.labelObligatoryCriteriaDocumentation5Description.Location = new System.Drawing.Point(638, 212);
+      this.labelObligatoryCriteriaDocumentation5Description.Name = "labelObligatoryCriteriaDocumentation5Description";
+      this.labelObligatoryCriteriaDocumentation5Description.Size = new System.Drawing.Size(285, 13);
+      this.labelObligatoryCriteriaDocumentation5Description.TabIndex = 215;
+      this.labelObligatoryCriteriaDocumentation5Description.Text = "Welche visuellen Kriterien sind für Abbildungen zu erfüllen?";
       // 
-      // label9
+      // labelObligatoryCriteriaDocumentation2Description
       // 
-      this.label9.AutoSize = true;
-      this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-      this.label9.Location = new System.Drawing.Point(638, 114);
-      this.label9.Name = "label9";
-      this.label9.Size = new System.Drawing.Size(180, 13);
-      this.label9.TabIndex = 214;
-      this.label9.Text = "Wie ist die Dokumentation gestaltet?";
+      this.labelObligatoryCriteriaDocumentation2Description.AutoSize = true;
+      this.labelObligatoryCriteriaDocumentation2Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.labelObligatoryCriteriaDocumentation2Description.Location = new System.Drawing.Point(638, 114);
+      this.labelObligatoryCriteriaDocumentation2Description.Name = "labelObligatoryCriteriaDocumentation2Description";
+      this.labelObligatoryCriteriaDocumentation2Description.Size = new System.Drawing.Size(180, 13);
+      this.labelObligatoryCriteriaDocumentation2Description.TabIndex = 214;
+      this.labelObligatoryCriteriaDocumentation2Description.Text = "Wie ist die Dokumentation gestaltet?";
       // 
-      // label20
+      // labelObligatoryCriteriaPresentationAndConversation10Description
       // 
-      this.label20.AutoSize = true;
-      this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-      this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
-      this.label20.Location = new System.Drawing.Point(641, 753);
-      this.label20.Name = "label20";
-      this.label20.Size = new System.Drawing.Size(409, 12);
-      this.label20.TabIndex = 222;
-      this.label20.Text = "Können die Fragen der Experten zur Facharbeit ausreichend und professionell beant" +
+      this.labelObligatoryCriteriaPresentationAndConversation10Description.AutoSize = true;
+      this.labelObligatoryCriteriaPresentationAndConversation10Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.labelObligatoryCriteriaPresentationAndConversation10Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
+      this.labelObligatoryCriteriaPresentationAndConversation10Description.Location = new System.Drawing.Point(641, 753);
+      this.labelObligatoryCriteriaPresentationAndConversation10Description.Name = "labelObligatoryCriteriaPresentationAndConversation10Description";
+      this.labelObligatoryCriteriaPresentationAndConversation10Description.Size = new System.Drawing.Size(409, 12);
+      this.labelObligatoryCriteriaPresentationAndConversation10Description.TabIndex = 222;
+      this.labelObligatoryCriteriaPresentationAndConversation10Description.Text = "Können die Fragen der Experten zur Facharbeit ausreichend und professionell beant" +
     "wortet werden?";
       // 
-      // label21
+      // labelObligatoryCriteriaPresentationAndConversation9Description
       // 
-      this.label21.AutoSize = true;
-      this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-      this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
-      this.label21.Location = new System.Drawing.Point(639, 719);
-      this.label21.Name = "label21";
-      this.label21.Size = new System.Drawing.Size(409, 12);
-      this.label21.TabIndex = 223;
-      this.label21.Text = "Können die Fragen der Experten zur Facharbeit ausreichend und professionell beant" +
+      this.labelObligatoryCriteriaPresentationAndConversation9Description.AutoSize = true;
+      this.labelObligatoryCriteriaPresentationAndConversation9Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.labelObligatoryCriteriaPresentationAndConversation9Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
+      this.labelObligatoryCriteriaPresentationAndConversation9Description.Location = new System.Drawing.Point(639, 719);
+      this.labelObligatoryCriteriaPresentationAndConversation9Description.Name = "labelObligatoryCriteriaPresentationAndConversation9Description";
+      this.labelObligatoryCriteriaPresentationAndConversation9Description.Size = new System.Drawing.Size(409, 12);
+      this.labelObligatoryCriteriaPresentationAndConversation9Description.TabIndex = 223;
+      this.labelObligatoryCriteriaPresentationAndConversation9Description.Text = "Können die Fragen der Experten zur Facharbeit ausreichend und professionell beant" +
     "wortet werden?";
       // 
-      // label22
+      // labelObligatoryCriteriaPresentationAndConversation8Description
       // 
-      this.label22.AutoSize = true;
-      this.label22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-      this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
-      this.label22.Location = new System.Drawing.Point(642, 690);
-      this.label22.Name = "label22";
-      this.label22.Size = new System.Drawing.Size(409, 12);
-      this.label22.TabIndex = 224;
-      this.label22.Text = "Können die Fragen der Experten zur Facharbeit ausreichend und professionell beant" +
+      this.labelObligatoryCriteriaPresentationAndConversation8Description.AutoSize = true;
+      this.labelObligatoryCriteriaPresentationAndConversation8Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.labelObligatoryCriteriaPresentationAndConversation8Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
+      this.labelObligatoryCriteriaPresentationAndConversation8Description.Location = new System.Drawing.Point(642, 690);
+      this.labelObligatoryCriteriaPresentationAndConversation8Description.Name = "labelObligatoryCriteriaPresentationAndConversation8Description";
+      this.labelObligatoryCriteriaPresentationAndConversation8Description.Size = new System.Drawing.Size(409, 12);
+      this.labelObligatoryCriteriaPresentationAndConversation8Description.TabIndex = 224;
+      this.labelObligatoryCriteriaPresentationAndConversation8Description.Text = "Können die Fragen der Experten zur Facharbeit ausreichend und professionell beant" +
     "wortet werden?";
       // 
-      // label23
+      // labelObligatoryCriteriaPresentationAndConversation7Description
       // 
-      this.label23.AutoSize = true;
-      this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-      this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
-      this.label23.Location = new System.Drawing.Point(640, 655);
-      this.label23.Name = "label23";
-      this.label23.Size = new System.Drawing.Size(409, 12);
-      this.label23.TabIndex = 225;
-      this.label23.Text = "Können die Fragen der Experten zur Facharbeit ausreichend und professionell beant" +
+      this.labelObligatoryCriteriaPresentationAndConversation7Description.AutoSize = true;
+      this.labelObligatoryCriteriaPresentationAndConversation7Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.labelObligatoryCriteriaPresentationAndConversation7Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
+      this.labelObligatoryCriteriaPresentationAndConversation7Description.Location = new System.Drawing.Point(640, 655);
+      this.labelObligatoryCriteriaPresentationAndConversation7Description.Name = "labelObligatoryCriteriaPresentationAndConversation7Description";
+      this.labelObligatoryCriteriaPresentationAndConversation7Description.Size = new System.Drawing.Size(409, 12);
+      this.labelObligatoryCriteriaPresentationAndConversation7Description.TabIndex = 225;
+      this.labelObligatoryCriteriaPresentationAndConversation7Description.Text = "Können die Fragen der Experten zur Facharbeit ausreichend und professionell beant" +
     "wortet werden?";
       // 
-      // label24
+      // labelObligatoryCriteriaPresentationAndConversation6Description
       // 
-      this.label24.AutoSize = true;
-      this.label24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-      this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
-      this.label24.Location = new System.Drawing.Point(641, 629);
-      this.label24.Name = "label24";
-      this.label24.Size = new System.Drawing.Size(409, 12);
-      this.label24.TabIndex = 226;
-      this.label24.Text = "Können die Fragen der Experten zur Facharbeit ausreichend und professionell beant" +
+      this.labelObligatoryCriteriaPresentationAndConversation6Description.AutoSize = true;
+      this.labelObligatoryCriteriaPresentationAndConversation6Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.labelObligatoryCriteriaPresentationAndConversation6Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
+      this.labelObligatoryCriteriaPresentationAndConversation6Description.Location = new System.Drawing.Point(641, 629);
+      this.labelObligatoryCriteriaPresentationAndConversation6Description.Name = "labelObligatoryCriteriaPresentationAndConversation6Description";
+      this.labelObligatoryCriteriaPresentationAndConversation6Description.Size = new System.Drawing.Size(409, 12);
+      this.labelObligatoryCriteriaPresentationAndConversation6Description.TabIndex = 226;
+      this.labelObligatoryCriteriaPresentationAndConversation6Description.Text = "Können die Fragen der Experten zur Facharbeit ausreichend und professionell beant" +
     "wortet werden?";
       // 
-      // label25
+      // labelObligatoryCriteriaPresentationAndConversation5Description
       // 
-      this.label25.AutoSize = true;
-      this.label25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-      this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
-      this.label25.Location = new System.Drawing.Point(642, 595);
-      this.label25.Name = "label25";
-      this.label25.Size = new System.Drawing.Size(409, 12);
-      this.label25.TabIndex = 227;
-      this.label25.Text = "Können die Fragen der Experten zur Facharbeit ausreichend und professionell beant" +
+      this.labelObligatoryCriteriaPresentationAndConversation5Description.AutoSize = true;
+      this.labelObligatoryCriteriaPresentationAndConversation5Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.labelObligatoryCriteriaPresentationAndConversation5Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
+      this.labelObligatoryCriteriaPresentationAndConversation5Description.Location = new System.Drawing.Point(642, 595);
+      this.labelObligatoryCriteriaPresentationAndConversation5Description.Name = "labelObligatoryCriteriaPresentationAndConversation5Description";
+      this.labelObligatoryCriteriaPresentationAndConversation5Description.Size = new System.Drawing.Size(409, 12);
+      this.labelObligatoryCriteriaPresentationAndConversation5Description.TabIndex = 227;
+      this.labelObligatoryCriteriaPresentationAndConversation5Description.Text = "Können die Fragen der Experten zur Facharbeit ausreichend und professionell beant" +
     "wortet werden?";
       // 
-      // label29
+      // labelObligatoryCriteriaPresentationAndConversation4Description
       // 
-      this.label29.AutoSize = true;
-      this.label29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.label29.Location = new System.Drawing.Point(641, 536);
-      this.label29.Name = "label29";
-      this.label29.Size = new System.Drawing.Size(238, 13);
-      this.label29.TabIndex = 241;
-      this.label29.Text = "Wie ist das Produkt der Facharbeit vorzuführen? ";
+      this.labelObligatoryCriteriaPresentationAndConversation4Description.AutoSize = true;
+      this.labelObligatoryCriteriaPresentationAndConversation4Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.labelObligatoryCriteriaPresentationAndConversation4Description.Location = new System.Drawing.Point(641, 536);
+      this.labelObligatoryCriteriaPresentationAndConversation4Description.Name = "labelObligatoryCriteriaPresentationAndConversation4Description";
+      this.labelObligatoryCriteriaPresentationAndConversation4Description.Size = new System.Drawing.Size(238, 13);
+      this.labelObligatoryCriteriaPresentationAndConversation4Description.TabIndex = 241;
+      this.labelObligatoryCriteriaPresentationAndConversation4Description.Text = "Wie ist das Produkt der Facharbeit vorzuführen? ";
       // 
-      // label28
+      // labelObligatoryCriteriaPresentationAndConversation3Description
       // 
-      this.label28.AutoSize = true;
-      this.label28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-      this.label28.Location = new System.Drawing.Point(641, 503);
-      this.label28.Name = "label28";
-      this.label28.Size = new System.Drawing.Size(260, 13);
-      this.label28.TabIndex = 240;
-      this.label28.Text = "Was zeichnet ein hohes Präsentationsgeschick aus? ";
+      this.labelObligatoryCriteriaPresentationAndConversation3Description.AutoSize = true;
+      this.labelObligatoryCriteriaPresentationAndConversation3Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.labelObligatoryCriteriaPresentationAndConversation3Description.Location = new System.Drawing.Point(641, 503);
+      this.labelObligatoryCriteriaPresentationAndConversation3Description.Name = "labelObligatoryCriteriaPresentationAndConversation3Description";
+      this.labelObligatoryCriteriaPresentationAndConversation3Description.Size = new System.Drawing.Size(260, 13);
+      this.labelObligatoryCriteriaPresentationAndConversation3Description.TabIndex = 240;
+      this.labelObligatoryCriteriaPresentationAndConversation3Description.Text = "Was zeichnet ein hohes Präsentationsgeschick aus? ";
       // 
-      // label27
+      // labelObligatoryCriteriaPresentationAndConversation2Description
       // 
-      this.label27.AutoSize = true;
-      this.label27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-      this.label27.Location = new System.Drawing.Point(641, 472);
-      this.label27.Name = "label27";
-      this.label27.Size = new System.Drawing.Size(443, 13);
-      this.label27.TabIndex = 239;
-      this.label27.Text = "Was ist beim Einsatz von Medien und Technologie anlässlich der Präsentation zu be" +
+      this.labelObligatoryCriteriaPresentationAndConversation2Description.AutoSize = true;
+      this.labelObligatoryCriteriaPresentationAndConversation2Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.labelObligatoryCriteriaPresentationAndConversation2Description.Location = new System.Drawing.Point(641, 472);
+      this.labelObligatoryCriteriaPresentationAndConversation2Description.Name = "labelObligatoryCriteriaPresentationAndConversation2Description";
+      this.labelObligatoryCriteriaPresentationAndConversation2Description.Size = new System.Drawing.Size(443, 13);
+      this.labelObligatoryCriteriaPresentationAndConversation2Description.TabIndex = 239;
+      this.labelObligatoryCriteriaPresentationAndConversation2Description.Text = "Was ist beim Einsatz von Medien und Technologie anlässlich der Präsentation zu be" +
     "achten?";
       // 
-      // label26
+      // labelObligatoryCriteriaPresentationAndConversation1Description
       // 
-      this.label26.AutoSize = true;
-      this.label26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.label26.Location = new System.Drawing.Point(641, 445);
-      this.label26.Name = "label26";
-      this.label26.Size = new System.Drawing.Size(380, 13);
-      this.label26.TabIndex = 238;
-      this.label26.Text = "Wie ist die Präsentation zu strukturieren? Welche Zeitvorgabe ist zu beachten?";
+      this.labelObligatoryCriteriaPresentationAndConversation1Description.AutoSize = true;
+      this.labelObligatoryCriteriaPresentationAndConversation1Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.labelObligatoryCriteriaPresentationAndConversation1Description.Location = new System.Drawing.Point(641, 445);
+      this.labelObligatoryCriteriaPresentationAndConversation1Description.Name = "labelObligatoryCriteriaPresentationAndConversation1Description";
+      this.labelObligatoryCriteriaPresentationAndConversation1Description.Size = new System.Drawing.Size(380, 13);
+      this.labelObligatoryCriteriaPresentationAndConversation1Description.TabIndex = 238;
+      this.labelObligatoryCriteriaPresentationAndConversation1Description.Text = "Wie ist die Präsentation zu strukturieren? Welche Zeitvorgabe ist zu beachten?";
       // 
-      // label32
+      // labelVeryGeneralCriteria
       // 
-      this.label32.AutoSize = true;
-      this.label32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-      this.label32.Location = new System.Drawing.Point(946, 260);
-      this.label32.Name = "label32";
-      this.label32.Size = new System.Drawing.Size(105, 13);
-      this.label32.TabIndex = 244;
-      this.label32.Text = "allgemeines Kriterium";
+      this.labelVeryGeneralCriteria.AutoSize = true;
+      this.labelVeryGeneralCriteria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+      this.labelVeryGeneralCriteria.Location = new System.Drawing.Point(946, 260);
+      this.labelVeryGeneralCriteria.Name = "labelVeryGeneralCriteria";
+      this.labelVeryGeneralCriteria.Size = new System.Drawing.Size(105, 13);
+      this.labelVeryGeneralCriteria.TabIndex = 244;
+      this.labelVeryGeneralCriteria.Text = "allgemeines Kriterium";
       // 
-      // label31
+      // labelMediumGeneralCriteria
       // 
-      this.label31.AutoSize = true;
-      this.label31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.label31.Location = new System.Drawing.Point(945, 247);
-      this.label31.Name = "label31";
-      this.label31.Size = new System.Drawing.Size(129, 13);
-      this.label31.TabIndex = 243;
-      this.label31.Text = "mittelallgemeines Kriterium";
+      this.labelMediumGeneralCriteria.AutoSize = true;
+      this.labelMediumGeneralCriteria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.labelMediumGeneralCriteria.Location = new System.Drawing.Point(945, 247);
+      this.labelMediumGeneralCriteria.Name = "labelMediumGeneralCriteria";
+      this.labelMediumGeneralCriteria.Size = new System.Drawing.Size(129, 13);
+      this.labelMediumGeneralCriteria.TabIndex = 243;
+      this.labelMediumGeneralCriteria.Text = "mittelallgemeines Kriterium";
       // 
-      // label30
+      // labelClearCriteria
       // 
-      this.label30.AutoSize = true;
-      this.label30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.label30.Location = new System.Drawing.Point(946, 231);
-      this.label30.Name = "label30";
-      this.label30.Size = new System.Drawing.Size(101, 13);
-      this.label30.TabIndex = 242;
-      this.label30.Text = "sehr klares Kriterium";
+      this.labelClearCriteria.AutoSize = true;
+      this.labelClearCriteria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.labelClearCriteria.Location = new System.Drawing.Point(946, 231);
+      this.labelClearCriteria.Name = "labelClearCriteria";
+      this.labelClearCriteria.Size = new System.Drawing.Size(101, 13);
+      this.labelClearCriteria.TabIndex = 242;
+      this.labelClearCriteria.Text = "sehr klares Kriterium";
       // 
       // CreateTemplate_Form
       // 
@@ -1271,38 +1271,38 @@
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.AutoScroll = true;
       this.ClientSize = new System.Drawing.Size(1102, 845);
-      this.Controls.Add(this.label32);
-      this.Controls.Add(this.label31);
-      this.Controls.Add(this.label30);
-      this.Controls.Add(this.label29);
-      this.Controls.Add(this.label28);
-      this.Controls.Add(this.label27);
-      this.Controls.Add(this.label26);
-      this.Controls.Add(this.label25);
-      this.Controls.Add(this.label24);
-      this.Controls.Add(this.label23);
-      this.Controls.Add(this.label22);
-      this.Controls.Add(this.label21);
-      this.Controls.Add(this.label20);
-      this.Controls.Add(this.label16);
-      this.Controls.Add(this.label15);
-      this.Controls.Add(this.label14);
-      this.Controls.Add(this.label13);
-      this.Controls.Add(this.label12);
-      this.Controls.Add(this.label11);
-      this.Controls.Add(this.label10);
-      this.Controls.Add(this.label9);
-      this.Controls.Add(this.label19);
-      this.Controls.Add(this.label18);
-      this.Controls.Add(this.label17);
-      this.Controls.Add(this.label8);
-      this.Controls.Add(this.label7);
-      this.Controls.Add(this.label6);
-      this.Controls.Add(this.label5);
-      this.Controls.Add(this.label4);
-      this.Controls.Add(this.label3);
-      this.Controls.Add(this.label2);
-      this.Controls.Add(this.label1);
+      this.Controls.Add(this.labelVeryGeneralCriteria);
+      this.Controls.Add(this.labelMediumGeneralCriteria);
+      this.Controls.Add(this.labelClearCriteria);
+      this.Controls.Add(this.labelObligatoryCriteriaPresentationAndConversation4Description);
+      this.Controls.Add(this.labelObligatoryCriteriaPresentationAndConversation3Description);
+      this.Controls.Add(this.labelObligatoryCriteriaPresentationAndConversation2Description);
+      this.Controls.Add(this.labelObligatoryCriteriaPresentationAndConversation1Description);
+      this.Controls.Add(this.labelObligatoryCriteriaPresentationAndConversation5Description);
+      this.Controls.Add(this.labelObligatoryCriteriaPresentationAndConversation6Description);
+      this.Controls.Add(this.labelObligatoryCriteriaPresentationAndConversation7Description);
+      this.Controls.Add(this.labelObligatoryCriteriaPresentationAndConversation8Description);
+      this.Controls.Add(this.labelObligatoryCriteriaPresentationAndConversation9Description);
+      this.Controls.Add(this.labelObligatoryCriteriaPresentationAndConversation10Description);
+      this.Controls.Add(this.labelObligatoryCriteriaDocumentation7Description);
+      this.Controls.Add(this.labelObligatoryCriteriaDocumentation8Description);
+      this.Controls.Add(this.labelObligatoryCriteriaDocumentation6Description);
+      this.Controls.Add(this.labelObligatoryCriteriaDocumentation3Description);
+      this.Controls.Add(this.labelObligatoryCriteriaDocumentation1Description);
+      this.Controls.Add(this.labelObligatoryCriteriaDocumentation4Description);
+      this.Controls.Add(this.labelObligatoryCriteriaDocumentation5Description);
+      this.Controls.Add(this.labelObligatoryCriteriaDocumentation2Description);
+      this.Controls.Add(this.labelObligatoryCriteriaA11Description);
+      this.Controls.Add(this.labelObligatoryCriteriaA4Description);
+      this.Controls.Add(this.labelObligatoryCriteriaA1Description);
+      this.Controls.Add(this.labelObligatoryCriteriaA6Description);
+      this.Controls.Add(this.labelObligatoryCriteriaA10Description);
+      this.Controls.Add(this.labelObligatoryCriteriaA9Description);
+      this.Controls.Add(this.labelObligatoryCriteriaA5Description);
+      this.Controls.Add(this.labelObligatoryCriteriaA2Description);
+      this.Controls.Add(this.labelObligatoryCriteriaA8Description);
+      this.Controls.Add(this.labelObligatoryCriteriaA7Description);
+      this.Controls.Add(this.labelObligatoryCriteriaA3Description);
       this.Controls.Add(this.radioButtonDB_Field);
       this.Controls.Add(this.radioButtonTxt_Field);
       this.Controls.Add(this.buttonSaveTemplate);
@@ -1498,37 +1498,37 @@
     private System.Windows.Forms.Button buttonSaveTemplate;
     private System.Windows.Forms.RadioButton radioButtonTxt_Field;
     private System.Windows.Forms.RadioButton radioButtonDB_Field;
-    private System.Windows.Forms.Label label19;
-    private System.Windows.Forms.Label label18;
-    private System.Windows.Forms.Label label17;
-    private System.Windows.Forms.Label label8;
-    private System.Windows.Forms.Label label7;
-    private System.Windows.Forms.Label label6;
-    private System.Windows.Forms.Label label5;
-    private System.Windows.Forms.Label label4;
-    private System.Windows.Forms.Label label3;
-    private System.Windows.Forms.Label label2;
-    private System.Windows.Forms.Label label1;
-    private System.Windows.Forms.Label label16;
-    private System.Windows.Forms.Label label15;
-    private System.Windows.Forms.Label label14;
-    private System.Windows.Forms.Label label13;
-    private System.Windows.Forms.Label label12;
-    private System.Windows.Forms.Label label11;
-    private System.Windows.Forms.Label label10;
-    private System.Windows.Forms.Label label9;
-    private System.Windows.Forms.Label label20;
-    private System.Windows.Forms.Label label21;
-    private System.Windows.Forms.Label label22;
-    private System.Windows.Forms.Label label23;
-    private System.Windows.Forms.Label label24;
-    private System.Windows.Forms.Label label25;
-    private System.Windows.Forms.Label label29;
-    private System.Windows.Forms.Label label28;
-    private System.Windows.Forms.Label label27;
-    private System.Windows.Forms.Label label26;
-    private System.Windows.Forms.Label label32;
-    private System.Windows.Forms.Label label31;
-    private System.Windows.Forms.Label label30;
+    private System.Windows.Forms.Label labelObligatoryCriteriaA11Description;
+    private System.Windows.Forms.Label labelObligatoryCriteriaA4Description;
+    private System.Windows.Forms.Label labelObligatoryCriteriaA1Description;
+    private System.Windows.Forms.Label labelObligatoryCriteriaA6Description;
+    private System.Windows.Forms.Label labelObligatoryCriteriaA10Description;
+    private System.Windows.Forms.Label labelObligatoryCriteriaA9Description;
+    private System.Windows.Forms.Label labelObligatoryCriteriaA5Description;
+    private System.Windows.Forms.Label labelObligatoryCriteriaA2Description;
+    private System.Windows.Forms.Label labelObligatoryCriteriaA8Description;
+    private System.Windows.Forms.Label labelObligatoryCriteriaA7Description;
+    private System.Windows.Forms.Label labelObligatoryCriteriaA3Description;
+    private System.Windows.Forms.Label labelObligatoryCriteriaDocumentation7Description;
+    private System.Windows.Forms.Label labelObligatoryCriteriaDocumentation8Description;
+    private System.Windows.Forms.Label labelObligatoryCriteriaDocumentation6Description;
+    private System.Windows.Forms.Label labelObligatoryCriteriaDocumentation3Description;
+    private System.Windows.Forms.Label labelObligatoryCriteriaDocumentation1Description;
+    private System.Windows.Forms.Label labelObligatoryCriteriaDocumentation4Description;
+    private System.Windows.Forms.Label labelObligatoryCriteriaDocumentation5Description;
+    private System.Windows.Forms.Label labelObligatoryCriteriaDocumentation2Description;
+    private System.Windows.Forms.Label labelObligatoryCriteriaPresentationAndConversation10Description;
+    private System.Windows.Forms.Label labelObligatoryCriteriaPresentationAndConversation9Description;
+    private System.Windows.Forms.Label labelObligatoryCriteriaPresentationAndConversation8Description;
+    private System.Windows.Forms.Label labelObligatoryCriteriaPresentationAndConversation7Description;
+    private System.Windows.Forms.Label labelObligatoryCriteriaPresentationAndConversation6Description;
+    private System.Windows.Forms.Label labelObligatoryCriteriaPresentationAndConversation5Description;
+    private System.Windows.Forms.Label labelObligatoryCriteriaPresentationAndConversation4Description;
+    private System.Windows.Forms.Label labelObligatoryCriteriaPresentationAndConversation3Description;
+    private System.Windows.Forms.Label labelObligatoryCriteriaPresentationAndConversation2Description;
+    private System.Windows.Forms.Label labelObligatoryCriteriaPresentationAndConversation1Description;
+    private System.Windows.Forms.Label labelVeryGeneralCriteria;
+    private System.Windows.Forms.Label labelMediumGeneralCriteria;
+    private System.Windows.Forms.Label labelClearCriteria;
     }
   }
