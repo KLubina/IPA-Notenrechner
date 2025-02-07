@@ -4,16 +4,15 @@ Windows Forms Anwendung zur Berechnung und Verwaltung von IPA-Noten.
 
 ## Features
 
-- Notenberechnung mit konfigurierbaren Gewichtungen (50%, 20%, 30%)
+- Notenberechnung mit konfigurierten Gewichtungen (50%, 20%, 30%)
 - Vorlagen als .txt-Datei oder in SQL-Datenbank speichern
 - Bearbeiten bestehender Vorlagen
 - Automatische Berechnung der Teilnoten und Endnote
 
 ## Installation
 
-1. Repository klonen
-2. In Visual Studio öffnen und kompilieren
-3. Anwendung starten - erforderliche Ordner werden automatisch erstellt
+1. .exe-File aus https://github.com/KLubina/IPA-Notenrechner/blob/main/IPA-Notenrechner/IPA-Notenrechner/bin/Debug/IPA-Notenrechner.exe herunterladen
+2. .exe-File ausführen
 
 ## Ordnerstruktur
 
@@ -43,12 +42,5 @@ Bestehende Vorlagen können bearbeitet werden:
 
 - .NET Framework 4.8
 - Windows Forms
-- SQL Server für optionale DB-Anbindung
-- Speicherung als .txt Dateien oder in SQL DB
-
-## Hinweis zur Datenbank
-
-Die DB-Funktionalität erfordert:
-- SQL Server Express/Developer Edition
-- Installierte Datenbank "IPA-Notenrechner"
-- Korrekte Connection Strings in App.config
+- Speicherung der Informationen als .txt Dateien
+- SQL Server für optionale DB-Anbindung (nur für den Ersteller (also KLubina) nutzbar)
