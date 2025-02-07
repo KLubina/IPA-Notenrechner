@@ -5,7 +5,7 @@ Windows Forms Anwendung zur Berechnung und Verwaltung von IPA-Noten.
 ## Features
 
 - Notenberechnung mit konfigurierten Gewichtungen (50%, 20%, 30%)
-- Vorlagen als .txt-Datei oder in SQL-Datenbank speichern
+- Vorlagen als .txt-Datei speichern
 - Bearbeiten bestehender Vorlagen
 - Automatische Berechnung der Teilnoten und Endnote
 
