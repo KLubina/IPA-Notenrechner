@@ -28,6 +28,7 @@
     /// </summary>
     private void InitializeComponent()
       {
+      System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateTemplate_Form));
       this.labelCompetence = new System.Windows.Forms.Label();
       this.labelObligatoryCriteriaA1 = new System.Windows.Forms.Label();
       this.textBoxObligatoryCriteriaA1 = new System.Windows.Forms.TextBox();
@@ -1396,6 +1397,7 @@
       this.Controls.Add(this.textBoxObligatoryCriteriaA1);
       this.Controls.Add(this.labelObligatoryCriteriaA1);
       this.Controls.Add(this.labelCompetence);
+      this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
       this.MinimumSize = new System.Drawing.Size(1118, 884);
       this.Name = "CreateTemplate_Form";
       this.Text = "Vorlage hinzufügen";

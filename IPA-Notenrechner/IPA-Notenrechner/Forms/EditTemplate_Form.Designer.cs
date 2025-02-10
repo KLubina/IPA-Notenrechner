@@ -28,6 +28,7 @@
     /// </summary>
     private void InitializeComponent()
       {
+      System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditTemplate_Form));
       this.buttonSaveTemplate = new System.Windows.Forms.Button();
       this.textBoxPresentationAndConversation10 = new System.Windows.Forms.TextBox();
       this.textBoxPresentationAndConversation9 = new System.Windows.Forms.TextBox();
@@ -1369,6 +1370,7 @@
       this.Controls.Add(this.textBoxObligatoryCriteriaA1);
       this.Controls.Add(this.labelObligatoryCriteriaA1);
       this.Controls.Add(this.labelCompetence);
+      this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
       this.MinimumSize = new System.Drawing.Size(1120, 890);
       this.Name = "EditTemplate_Form";
       this.Text = "Vorlage bearbeiten";

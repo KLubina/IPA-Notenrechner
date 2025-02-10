@@ -28,6 +28,7 @@
     /// </summary>
     private void InitializeComponent()
       {
+      System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_Form));
       this.labelEndnote = new System.Windows.Forms.Label();
       this.checkedListBoxChooseTxtTemplate = new System.Windows.Forms.CheckedListBox();
       this.buttonCreateTemplate = new System.Windows.Forms.Button();
@@ -335,7 +336,8 @@
       this.Controls.Add(this.buttonCreateTemplate);
       this.Controls.Add(this.checkedListBoxChooseTxtTemplate);
       this.Controls.Add(this.labelEndnote);
-      this.MinimumSize = new System.Drawing.Size(1172, 468);
+      this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+      this.MinimumSize = new System.Drawing.Size(1172, 513);
       this.Name = "Main_Form";
       this.Text = "IPA-Notenrechner";
       this.ResumeLayout(false);
