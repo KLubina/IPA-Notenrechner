@@ -9,17 +9,6 @@ C:\Users\KL3555\OneDrive - Hitachi Energy\Desktop\IPA-Notenrechner\IPA-Notenrech
 C:\Users\KL3555\OneDrive - Hitachi Energy\Desktop\IPA-Notenrechner\IPA-Notenrechner\obj\Debug\IPA-Notenrechner.csproj.CoreCompileInputs.cache
 C:\Users\KL3555\OneDrive - Hitachi Energy\Desktop\IPA-Notenrechner\IPA-Notenrechner\obj\Debug\IPA-Notenrechner.exe
 C:\Users\KL3555\OneDrive - Hitachi Energy\Desktop\IPA-Notenrechner\IPA-Notenrechner\obj\Debug\IPA-Notenrechner.pdb
-C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\bin\Debug\IPA-Notenrechner.exe.config
-C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\bin\Debug\IPA-Notenrechner.exe
-C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\bin\Debug\IPA-Notenrechner.pdb
-C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\obj\Debug\IPA-Notenrechner.csproj.AssemblyReference.cache
-C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\obj\Debug\IPA_Notenrechner.CreateTemplate_Form.resources
-C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\obj\Debug\IPA_Notenrechner.Main_Form.resources
-C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\obj\Debug\IPA_Notenrechner.Properties.Resources.resources
-C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\obj\Debug\IPA-Notenrechner.csproj.GenerateResource.cache
-C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\obj\Debug\IPA-Notenrechner.csproj.CoreCompileInputs.cache
-C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\obj\Debug\IPA-Notenrechner.exe
-C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\obj\Debug\IPA-Notenrechner.pdb
 C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner (Old v1)\IPA-Notenrechner\obj\Debug\IPA-Notenrechner.csproj.AssemblyReference.cache
 C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner (Old v1)\IPA-Notenrechner\obj\Debug\IPA_Notenrechner.CreateTemplate_Form.resources
 C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner (Old v1)\IPA-Notenrechner\obj\Debug\IPA_Notenrechner.Main_Form.resources
@@ -42,6 +31,9 @@ C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner (.txt and local DB)\IPA-Noten
 C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner (.txt and local DB)\IPA-Notenrechner\obj\Debug\IPA-Notenrechner.csproj.CoreCompileInputs.cache
 C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner (.txt and local DB)\IPA-Notenrechner\obj\Debug\IPA-Notenrechner.exe
 C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner (.txt and local DB)\IPA-Notenrechner\obj\Debug\IPA-Notenrechner.pdb
+C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\bin\Debug\IPA-Notenrechner.exe.config
+C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\bin\Debug\IPA-Notenrechner.exe
+C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\bin\Debug\IPA-Notenrechner.pdb
 C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\bin\Debug\System.Buffers.dll
 C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\bin\Debug\System.Memory.dll
 C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\bin\Debug\System.Numerics.Vectors.dll
@@ -55,5 +47,13 @@ C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\bin\Debug\Sy
 C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\bin\Debug\System.Memory.xml
 C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\bin\Debug\System.Numerics.Vectors.xml
 C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\obj\Debug\IPA-Note.DC638018.Up2Date
+C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\obj\Debug\IPA-Notenrechner.csproj.AssemblyReference.cache
+C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\obj\Debug\IPA_Notenrechner.CreateTemplate_Form.resources
 C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\obj\Debug\IPA_Notenrechner.Forms.EditTemplate_Form.resources
+C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\obj\Debug\IPA_Notenrechner.Main_Form.resources
+C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\obj\Debug\IPA_Notenrechner.Properties.Resources.resources
+C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\obj\Debug\IPA-Notenrechner.csproj.GenerateResource.cache
+C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\obj\Debug\IPA-Notenrechner.csproj.CoreCompileInputs.cache
+C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\obj\Debug\IPA-Note.DC638018.Up2Date
+C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\obj\Debug\IPA-Notenrechner.exe
+C:\GitHubDesktop\IPA-Notenrechner\IPA-Notenrechner\IPA-Notenrechner\obj\Debug\IPA-Notenrechner.pdb

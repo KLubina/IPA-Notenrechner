@@ -10,7 +10,7 @@
       "RelativeMoniker": "D:0:0:{F96D3679-0737-4FBB-93C4-3380395818B2}|IPA-Notenrechner\\IPA-Notenrechner.csproj|solutionrelative:ipa-notenrechner\\forms\\edittemplate_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F96D3679-0737-4FBB-93C4-3380395818B2}|IPA-Notenrechner\\IPA-Notenrechner.csproj|c:\\githubdesktop\\ipa-notenrechner\\ipa-notenrechner\\ipa-notenrechner\\config-files\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{F96D3679-0737-4FBB-93C4-3380395818B2}|IPA-Notenrechner\\IPA-Notenrechner.csproj|C:\\GitHubDesktop\\IPA-Notenrechner\\IPA-Notenrechner\\ipa-notenrechner\\config-files\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{F96D3679-0737-4FBB-93C4-3380395818B2}|IPA-Notenrechner\\IPA-Notenrechner.csproj|solutionrelative:ipa-notenrechner\\config-files\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
@@ -76,8 +76,8 @@
               "Title": "IPA-Notenrechner",
               "DocumentMoniker": "C:\\GitHubDesktop\\IPA-Notenrechner\\IPA-Notenrechner\\IPA-Notenrechner\\IPA-Notenrechner.csproj",
               "RelativeDocumentMoniker": "IPA-Notenrechner\\IPA-Notenrechner.csproj",
-              "ToolTip": "C:\\GitHubDesktop\\IPA-Notenrechner\\IPA-Notenrechner\\IPA-Notenrechner\\IPA-Notenrechner.csproj*",
-              "RelativeToolTip": "IPA-Notenrechner\\IPA-Notenrechner.csproj*",
+              "ToolTip": "C:\\GitHubDesktop\\IPA-Notenrechner\\IPA-Notenrechner\\IPA-Notenrechner\\IPA-Notenrechner.csproj",
+              "RelativeToolTip": "IPA-Notenrechner\\IPA-Notenrechner.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-02-10T13:41:03.403Z",
               "EditorCaption": ""
@@ -92,8 +92,7 @@
               "RelativeToolTip": "IPA-Notenrechner\\Config-Files\\App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-02-07T13:22:31.141Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T13:22:31.141Z"
             },
             {
               "$type": "Document",
@@ -116,8 +115,7 @@
               "ToolTip": "C:\\GitHubDesktop\\IPA-Notenrechner\\IPA-Notenrechner\\IPA-Notenrechner\\Forms\\EditTemplate_Form.cs [Design]",
               "RelativeToolTip": "IPA-Notenrechner\\Forms\\EditTemplate_Form.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T09:45:02.535Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-02-05T09:45:02.535Z"
             },
             {
               "$type": "Document",
@@ -129,8 +127,7 @@
               "RelativeToolTip": "IPA-Notenrechner\\Forms\\Main_Form.cs",
               "ViewState": "AgIAAAsBAAAAAAAAAADwvyEBAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T18:24:30.355Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-04T18:24:30.355Z"
             },
             {
               "$type": "Document",
@@ -142,8 +139,7 @@
               "RelativeToolTip": "IPA-Notenrechner\\Forms\\EditTemplate_Form.cs",
               "ViewState": "AgIAAI4AAAAAAAAAAAAswLYAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T18:24:15.951Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-04T18:24:15.951Z"
             },
             {
               "$type": "Document",
@@ -155,8 +151,7 @@
               "RelativeToolTip": "IPA-Notenrechner\\Forms\\CreateTemplate_Form.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAswDIAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T18:23:58.371Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-04T18:23:58.371Z"
             },
             {
               "$type": "Document",
