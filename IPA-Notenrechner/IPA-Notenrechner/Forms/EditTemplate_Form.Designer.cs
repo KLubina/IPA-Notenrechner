@@ -152,6 +152,17 @@
       this.labelClearCriteria = new System.Windows.Forms.Label();
       this.labelMediumGeneralCriteria = new System.Windows.Forms.Label();
       this.labelVeryGeneralCriteria = new System.Windows.Forms.Label();
+      this.label1 = new System.Windows.Forms.Label();
+      this.label2 = new System.Windows.Forms.Label();
+      this.label3 = new System.Windows.Forms.Label();
+      this.label4 = new System.Windows.Forms.Label();
+      this.label5 = new System.Windows.Forms.Label();
+      this.label6 = new System.Windows.Forms.Label();
+      this.label7 = new System.Windows.Forms.Label();
+      this.label8 = new System.Windows.Forms.Label();
+      this.label9 = new System.Windows.Forms.Label();
+      this.label10 = new System.Windows.Forms.Label();
+      this.label11 = new System.Windows.Forms.Label();
       this.SuspendLayout();
       // 
       // buttonSaveTemplate
@@ -1242,11 +1253,147 @@
       this.labelVeryGeneralCriteria.TabIndex = 240;
       this.labelVeryGeneralCriteria.Text = "allgemeines Kriterium";
       // 
+      // label1
+      // 
+      this.label1.AutoSize = true;
+      this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.label1.Location = new System.Drawing.Point(188, 396);
+      this.label1.Name = "label1";
+      this.label1.Size = new System.Drawing.Size(185, 13);
+      this.label1.TabIndex = 241;
+      this.label1.Text = "Wie erfolgt die Abnahme der Lösung?";
+      // 
+      // label2
+      // 
+      this.label2.AutoSize = true;
+      this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F);
+      this.label2.Location = new System.Drawing.Point(183, 455);
+      this.label2.Name = "label2";
+      this.label2.Size = new System.Drawing.Size(281, 7);
+      this.label2.TabIndex = 242;
+      this.label2.Text = "Wie wurden die fachlichen und technischen Anforderungen erfasst und dokumentiert?" +
+    "";
+      // 
+      // label3
+      // 
+      this.label3.AutoSize = true;
+      this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F);
+      this.label3.Location = new System.Drawing.Point(186, 484);
+      this.label3.Name = "label3";
+      this.label3.Size = new System.Drawing.Size(278, 7);
+      this.label3.TabIndex = 243;
+      this.label3.Text = "Wie werden Applikationen und Schnittstellen konform implementiert und versioniert" +
+    "?";
+      // 
+      // label4
+      // 
+      this.label4.AutoSize = true;
+      this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F);
+      this.label4.Location = new System.Drawing.Point(186, 546);
+      this.label4.Name = "label4";
+      this.label4.Size = new System.Drawing.Size(317, 7);
+      this.label4.TabIndex = 244;
+      this.label4.Text = "Wie wurden Testkonzepte und Testfälle für die Applikationen und/oder Schnittstell" +
+    "en entwickelt?";
+      // 
+      // label5
+      // 
+      this.label5.AutoSize = true;
+      this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F);
+      this.label5.Location = new System.Drawing.Point(183, 573);
+      this.label5.Name = "label5";
+      this.label5.Size = new System.Drawing.Size(277, 7);
+      this.label5.TabIndex = 245;
+      this.label5.Text = "Wie wird die Durchführung von Tests organisiert und deren Ergebnisse ausgewertet?" +
+    "";
+      // 
+      // label6
+      // 
+      this.label6.AutoSize = true;
+      this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+      this.label6.Location = new System.Drawing.Point(187, 604);
+      this.label6.Name = "label6";
+      this.label6.Size = new System.Drawing.Size(153, 13);
+      this.label6.TabIndex = 246;
+      this.label6.Text = "Wie werden Daten dargestellt?";
+      // 
+      // label7
+      // 
+      this.label7.AutoSize = true;
+      this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F);
+      this.label7.Location = new System.Drawing.Point(187, 637);
+      this.label7.Name = "label7";
+      this.label7.Size = new System.Drawing.Size(292, 7);
+      this.label7.TabIndex = 247;
+      this.label7.Text = "Wie wird das Realisierungskonzept für die ausgewählte Umsetzungsvariante entwicke" +
+    "lt?";
+      // 
+      // label8
+      // 
+      this.label8.AutoSize = true;
+      this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+      this.label8.Location = new System.Drawing.Point(185, 662);
+      this.label8.Name = "label8";
+      this.label8.Size = new System.Drawing.Size(192, 13);
+      this.label8.TabIndex = 248;
+      this.label8.Text = "Wie wird eine Instruktion durchgeführt?";
+      // 
+      // label9
+      // 
+      this.label9.AutoSize = true;
+      this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F);
+      this.label9.Location = new System.Drawing.Point(183, 696);
+      this.label9.Name = "label9";
+      this.label9.Size = new System.Drawing.Size(265, 7);
+      this.label9.TabIndex = 249;
+      this.label9.Text = "Werden mögliche Fehler mit den entsprechenden Mitteln erkannt und behandelt?";
+      // 
+      // label10
+      // 
+      this.label10.AutoSize = true;
+      this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F);
+      this.label10.Location = new System.Drawing.Point(183, 723);
+      this.label10.Name = "label10";
+      this.label10.Size = new System.Drawing.Size(250, 7);
+      this.label10.TabIndex = 250;
+      this.label10.Text = "Wie wurde die korrekte oder fehlerhafte Bearbeitung von Daten protokolliert?";
+      // 
+      // label11
+      // 
+      this.label11.AutoSize = true;
+      this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+      this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F);
+      this.label11.Location = new System.Drawing.Point(182, 755);
+      this.label11.Name = "label11";
+      this.label11.Size = new System.Drawing.Size(276, 7);
+      this.label11.TabIndex = 251;
+      this.label11.Text = "Wie wurde die Kommunikation der Anwendung mit Datenbanksystemen umgesetzt?";
+      // 
       // EditTemplate_Form
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(1104, 851);
+      this.Controls.Add(this.label11);
+      this.Controls.Add(this.label10);
+      this.Controls.Add(this.label9);
+      this.Controls.Add(this.label8);
+      this.Controls.Add(this.label7);
+      this.Controls.Add(this.label6);
+      this.Controls.Add(this.label5);
+      this.Controls.Add(this.label4);
+      this.Controls.Add(this.label3);
+      this.Controls.Add(this.label2);
+      this.Controls.Add(this.label1);
       this.Controls.Add(this.labelVeryGeneralCriteria);
       this.Controls.Add(this.labelMediumGeneralCriteria);
       this.Controls.Add(this.labelClearCriteria);
@@ -1503,5 +1650,16 @@
     private System.Windows.Forms.Label labelClearCriteria;
     private System.Windows.Forms.Label labelMediumGeneralCriteria;
     private System.Windows.Forms.Label labelVeryGeneralCriteria;
+    private System.Windows.Forms.Label label1;
+    private System.Windows.Forms.Label label2;
+    private System.Windows.Forms.Label label3;
+    private System.Windows.Forms.Label label4;
+    private System.Windows.Forms.Label label5;
+    private System.Windows.Forms.Label label6;
+    private System.Windows.Forms.Label label7;
+    private System.Windows.Forms.Label label8;
+    private System.Windows.Forms.Label label9;
+    private System.Windows.Forms.Label label10;
+    private System.Windows.Forms.Label label11;
     }
   }
