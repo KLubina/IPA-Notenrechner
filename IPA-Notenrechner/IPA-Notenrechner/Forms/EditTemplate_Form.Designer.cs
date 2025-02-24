@@ -170,7 +170,7 @@
       this.buttonSaveTemplate.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
       this.buttonSaveTemplate.Location = new System.Drawing.Point(14, 784);
       this.buttonSaveTemplate.Name = "buttonSaveTemplate";
-      this.buttonSaveTemplate.Size = new System.Drawing.Size(1061, 50);
+      this.buttonSaveTemplate.Size = new System.Drawing.Size(1147, 50);
       this.buttonSaveTemplate.TabIndex = 183;
       this.buttonSaveTemplate.Text = "Vorlage speichern";
       this.buttonSaveTemplate.UseVisualStyleBackColor = true;
@@ -178,14 +178,14 @@
       // 
       // textBoxPresentationAndConversation10
       // 
-      this.textBoxPresentationAndConversation10.Location = new System.Drawing.Point(533, 750);
+      this.textBoxPresentationAndConversation10.Location = new System.Drawing.Point(609, 752);
       this.textBoxPresentationAndConversation10.Name = "textBoxPresentationAndConversation10";
       this.textBoxPresentationAndConversation10.Size = new System.Drawing.Size(100, 20);
       this.textBoxPresentationAndConversation10.TabIndex = 182;
       // 
       // textBoxPresentationAndConversation9
       // 
-      this.textBoxPresentationAndConversation9.Location = new System.Drawing.Point(536, 717);
+      this.textBoxPresentationAndConversation9.Location = new System.Drawing.Point(612, 719);
       this.textBoxPresentationAndConversation9.Name = "textBoxPresentationAndConversation9";
       this.textBoxPresentationAndConversation9.Size = new System.Drawing.Size(100, 20);
       this.textBoxPresentationAndConversation9.TabIndex = 181;
@@ -193,7 +193,7 @@
       // labelPresentationAndConversation10
       // 
       this.labelPresentationAndConversation10.AutoSize = true;
-      this.labelPresentationAndConversation10.Location = new System.Drawing.Point(491, 753);
+      this.labelPresentationAndConversation10.Location = new System.Drawing.Point(567, 755);
       this.labelPresentationAndConversation10.Name = "labelPresentationAndConversation10";
       this.labelPresentationAndConversation10.Size = new System.Drawing.Size(35, 13);
       this.labelPresentationAndConversation10.TabIndex = 180;
@@ -202,7 +202,7 @@
       // labelPresentationAndConversation9
       // 
       this.labelPresentationAndConversation9.AutoSize = true;
-      this.labelPresentationAndConversation9.Location = new System.Drawing.Point(491, 719);
+      this.labelPresentationAndConversation9.Location = new System.Drawing.Point(567, 721);
       this.labelPresentationAndConversation9.Name = "labelPresentationAndConversation9";
       this.labelPresentationAndConversation9.Size = new System.Drawing.Size(29, 13);
       this.labelPresentationAndConversation9.TabIndex = 179;
@@ -210,28 +210,28 @@
       // 
       // textBoxPresentationAndConversation8
       // 
-      this.textBoxPresentationAndConversation8.Location = new System.Drawing.Point(533, 687);
+      this.textBoxPresentationAndConversation8.Location = new System.Drawing.Point(609, 689);
       this.textBoxPresentationAndConversation8.Name = "textBoxPresentationAndConversation8";
       this.textBoxPresentationAndConversation8.Size = new System.Drawing.Size(100, 20);
       this.textBoxPresentationAndConversation8.TabIndex = 178;
       // 
       // textBoxPresentationAndConversation7
       // 
-      this.textBoxPresentationAndConversation7.Location = new System.Drawing.Point(536, 654);
+      this.textBoxPresentationAndConversation7.Location = new System.Drawing.Point(612, 656);
       this.textBoxPresentationAndConversation7.Name = "textBoxPresentationAndConversation7";
       this.textBoxPresentationAndConversation7.Size = new System.Drawing.Size(100, 20);
       this.textBoxPresentationAndConversation7.TabIndex = 177;
       // 
       // textBoxPresentationAndConversation6
       // 
-      this.textBoxPresentationAndConversation6.Location = new System.Drawing.Point(533, 623);
+      this.textBoxPresentationAndConversation6.Location = new System.Drawing.Point(609, 625);
       this.textBoxPresentationAndConversation6.Name = "textBoxPresentationAndConversation6";
       this.textBoxPresentationAndConversation6.Size = new System.Drawing.Size(100, 20);
       this.textBoxPresentationAndConversation6.TabIndex = 176;
       // 
       // textBoxPresentationAndConversation5
       // 
-      this.textBoxPresentationAndConversation5.Location = new System.Drawing.Point(536, 596);
+      this.textBoxPresentationAndConversation5.Location = new System.Drawing.Point(612, 598);
       this.textBoxPresentationAndConversation5.Name = "textBoxPresentationAndConversation5";
       this.textBoxPresentationAndConversation5.Size = new System.Drawing.Size(100, 20);
       this.textBoxPresentationAndConversation5.TabIndex = 175;
@@ -239,7 +239,7 @@
       // labelPresentationAndConversation8
       // 
       this.labelPresentationAndConversation8.AutoSize = true;
-      this.labelPresentationAndConversation8.Location = new System.Drawing.Point(491, 690);
+      this.labelPresentationAndConversation8.Location = new System.Drawing.Point(567, 692);
       this.labelPresentationAndConversation8.Name = "labelPresentationAndConversation8";
       this.labelPresentationAndConversation8.Size = new System.Drawing.Size(29, 13);
       this.labelPresentationAndConversation8.TabIndex = 174;
@@ -248,7 +248,7 @@
       // labelPresentationAndConversation7
       // 
       this.labelPresentationAndConversation7.AutoSize = true;
-      this.labelPresentationAndConversation7.Location = new System.Drawing.Point(491, 656);
+      this.labelPresentationAndConversation7.Location = new System.Drawing.Point(567, 658);
       this.labelPresentationAndConversation7.Name = "labelPresentationAndConversation7";
       this.labelPresentationAndConversation7.Size = new System.Drawing.Size(29, 13);
       this.labelPresentationAndConversation7.TabIndex = 173;
@@ -257,7 +257,7 @@
       // labelPresentationAndConversation6
       // 
       this.labelPresentationAndConversation6.AutoSize = true;
-      this.labelPresentationAndConversation6.Location = new System.Drawing.Point(491, 626);
+      this.labelPresentationAndConversation6.Location = new System.Drawing.Point(567, 628);
       this.labelPresentationAndConversation6.Name = "labelPresentationAndConversation6";
       this.labelPresentationAndConversation6.Size = new System.Drawing.Size(29, 13);
       this.labelPresentationAndConversation6.TabIndex = 172;
@@ -266,7 +266,7 @@
       // labelPresentationAndConversation5
       // 
       this.labelPresentationAndConversation5.AutoSize = true;
-      this.labelPresentationAndConversation5.Location = new System.Drawing.Point(491, 602);
+      this.labelPresentationAndConversation5.Location = new System.Drawing.Point(567, 604);
       this.labelPresentationAndConversation5.Name = "labelPresentationAndConversation5";
       this.labelPresentationAndConversation5.Size = new System.Drawing.Size(29, 13);
       this.labelPresentationAndConversation5.TabIndex = 171;
@@ -274,28 +274,28 @@
       // 
       // textBoxPresentationAndConversation4
       // 
-      this.textBoxPresentationAndConversation4.Location = new System.Drawing.Point(533, 529);
+      this.textBoxPresentationAndConversation4.Location = new System.Drawing.Point(609, 531);
       this.textBoxPresentationAndConversation4.Name = "textBoxPresentationAndConversation4";
       this.textBoxPresentationAndConversation4.Size = new System.Drawing.Size(100, 20);
       this.textBoxPresentationAndConversation4.TabIndex = 170;
       // 
       // textBoxPresentationAndConversation3
       // 
-      this.textBoxPresentationAndConversation3.Location = new System.Drawing.Point(536, 496);
+      this.textBoxPresentationAndConversation3.Location = new System.Drawing.Point(612, 498);
       this.textBoxPresentationAndConversation3.Name = "textBoxPresentationAndConversation3";
       this.textBoxPresentationAndConversation3.Size = new System.Drawing.Size(100, 20);
       this.textBoxPresentationAndConversation3.TabIndex = 169;
       // 
       // textBoxPresentationAndConversation2
       // 
-      this.textBoxPresentationAndConversation2.Location = new System.Drawing.Point(533, 465);
+      this.textBoxPresentationAndConversation2.Location = new System.Drawing.Point(609, 467);
       this.textBoxPresentationAndConversation2.Name = "textBoxPresentationAndConversation2";
       this.textBoxPresentationAndConversation2.Size = new System.Drawing.Size(100, 20);
       this.textBoxPresentationAndConversation2.TabIndex = 168;
       // 
       // textBoxPresentationAndConversation1
       // 
-      this.textBoxPresentationAndConversation1.Location = new System.Drawing.Point(536, 438);
+      this.textBoxPresentationAndConversation1.Location = new System.Drawing.Point(612, 440);
       this.textBoxPresentationAndConversation1.Name = "textBoxPresentationAndConversation1";
       this.textBoxPresentationAndConversation1.Size = new System.Drawing.Size(100, 20);
       this.textBoxPresentationAndConversation1.TabIndex = 167;
@@ -303,7 +303,7 @@
       // labelPresentationAndConversation4
       // 
       this.labelPresentationAndConversation4.AutoSize = true;
-      this.labelPresentationAndConversation4.Location = new System.Drawing.Point(491, 532);
+      this.labelPresentationAndConversation4.Location = new System.Drawing.Point(567, 534);
       this.labelPresentationAndConversation4.Name = "labelPresentationAndConversation4";
       this.labelPresentationAndConversation4.Size = new System.Drawing.Size(29, 13);
       this.labelPresentationAndConversation4.TabIndex = 166;
@@ -312,7 +312,7 @@
       // labelPresentationAndConversation3
       // 
       this.labelPresentationAndConversation3.AutoSize = true;
-      this.labelPresentationAndConversation3.Location = new System.Drawing.Point(491, 498);
+      this.labelPresentationAndConversation3.Location = new System.Drawing.Point(567, 500);
       this.labelPresentationAndConversation3.Name = "labelPresentationAndConversation3";
       this.labelPresentationAndConversation3.Size = new System.Drawing.Size(29, 13);
       this.labelPresentationAndConversation3.TabIndex = 165;
@@ -321,7 +321,7 @@
       // labelPresentationAndConversation2
       // 
       this.labelPresentationAndConversation2.AutoSize = true;
-      this.labelPresentationAndConversation2.Location = new System.Drawing.Point(491, 468);
+      this.labelPresentationAndConversation2.Location = new System.Drawing.Point(567, 470);
       this.labelPresentationAndConversation2.Name = "labelPresentationAndConversation2";
       this.labelPresentationAndConversation2.Size = new System.Drawing.Size(29, 13);
       this.labelPresentationAndConversation2.TabIndex = 164;
@@ -330,7 +330,7 @@
       // labelPresentationAndConversation1
       // 
       this.labelPresentationAndConversation1.AutoSize = true;
-      this.labelPresentationAndConversation1.Location = new System.Drawing.Point(491, 444);
+      this.labelPresentationAndConversation1.Location = new System.Drawing.Point(567, 446);
       this.labelPresentationAndConversation1.Name = "labelPresentationAndConversation1";
       this.labelPresentationAndConversation1.Size = new System.Drawing.Size(29, 13);
       this.labelPresentationAndConversation1.TabIndex = 163;
@@ -338,56 +338,56 @@
       // 
       // textBoxDocumentation8
       // 
-      this.textBoxDocumentation8.Location = new System.Drawing.Point(533, 294);
+      this.textBoxDocumentation8.Location = new System.Drawing.Point(572, 294);
       this.textBoxDocumentation8.Name = "textBoxDocumentation8";
       this.textBoxDocumentation8.Size = new System.Drawing.Size(100, 20);
       this.textBoxDocumentation8.TabIndex = 162;
       // 
       // textBoxDocumentation7
       // 
-      this.textBoxDocumentation7.Location = new System.Drawing.Point(533, 264);
+      this.textBoxDocumentation7.Location = new System.Drawing.Point(572, 264);
       this.textBoxDocumentation7.Name = "textBoxDocumentation7";
       this.textBoxDocumentation7.Size = new System.Drawing.Size(100, 20);
       this.textBoxDocumentation7.TabIndex = 161;
       // 
       // textBoxDocumentation6
       // 
-      this.textBoxDocumentation6.Location = new System.Drawing.Point(533, 236);
+      this.textBoxDocumentation6.Location = new System.Drawing.Point(572, 236);
       this.textBoxDocumentation6.Name = "textBoxDocumentation6";
       this.textBoxDocumentation6.Size = new System.Drawing.Size(100, 20);
       this.textBoxDocumentation6.TabIndex = 160;
       // 
       // textBoxDocumentation5
       // 
-      this.textBoxDocumentation5.Location = new System.Drawing.Point(533, 206);
+      this.textBoxDocumentation5.Location = new System.Drawing.Point(572, 206);
       this.textBoxDocumentation5.Name = "textBoxDocumentation5";
       this.textBoxDocumentation5.Size = new System.Drawing.Size(100, 20);
       this.textBoxDocumentation5.TabIndex = 159;
       // 
       // textBoxDocumentation4
       // 
-      this.textBoxDocumentation4.Location = new System.Drawing.Point(533, 176);
+      this.textBoxDocumentation4.Location = new System.Drawing.Point(572, 176);
       this.textBoxDocumentation4.Name = "textBoxDocumentation4";
       this.textBoxDocumentation4.Size = new System.Drawing.Size(100, 20);
       this.textBoxDocumentation4.TabIndex = 158;
       // 
       // textBoxDocumentation3
       // 
-      this.textBoxDocumentation3.Location = new System.Drawing.Point(536, 143);
+      this.textBoxDocumentation3.Location = new System.Drawing.Point(575, 143);
       this.textBoxDocumentation3.Name = "textBoxDocumentation3";
       this.textBoxDocumentation3.Size = new System.Drawing.Size(100, 20);
       this.textBoxDocumentation3.TabIndex = 157;
       // 
       // textBoxDocumentation2
       // 
-      this.textBoxDocumentation2.Location = new System.Drawing.Point(533, 112);
+      this.textBoxDocumentation2.Location = new System.Drawing.Point(572, 112);
       this.textBoxDocumentation2.Name = "textBoxDocumentation2";
       this.textBoxDocumentation2.Size = new System.Drawing.Size(100, 20);
       this.textBoxDocumentation2.TabIndex = 156;
       // 
       // textBoxDocumentation1
       // 
-      this.textBoxDocumentation1.Location = new System.Drawing.Point(536, 85);
+      this.textBoxDocumentation1.Location = new System.Drawing.Point(575, 85);
       this.textBoxDocumentation1.Name = "textBoxDocumentation1";
       this.textBoxDocumentation1.Size = new System.Drawing.Size(100, 20);
       this.textBoxDocumentation1.TabIndex = 155;
@@ -542,7 +542,7 @@
       // labelDocumentation8
       // 
       this.labelDocumentation8.AutoSize = true;
-      this.labelDocumentation8.Location = new System.Drawing.Point(491, 297);
+      this.labelDocumentation8.Location = new System.Drawing.Point(530, 297);
       this.labelDocumentation8.Name = "labelDocumentation8";
       this.labelDocumentation8.Size = new System.Drawing.Size(36, 13);
       this.labelDocumentation8.TabIndex = 133;
@@ -551,7 +551,7 @@
       // labelDocumentation7
       // 
       this.labelDocumentation7.AutoSize = true;
-      this.labelDocumentation7.Location = new System.Drawing.Point(491, 267);
+      this.labelDocumentation7.Location = new System.Drawing.Point(530, 267);
       this.labelDocumentation7.Name = "labelDocumentation7";
       this.labelDocumentation7.Size = new System.Drawing.Size(36, 13);
       this.labelDocumentation7.TabIndex = 132;
@@ -560,7 +560,7 @@
       // labelDocumentation6
       // 
       this.labelDocumentation6.AutoSize = true;
-      this.labelDocumentation6.Location = new System.Drawing.Point(491, 235);
+      this.labelDocumentation6.Location = new System.Drawing.Point(530, 235);
       this.labelDocumentation6.Name = "labelDocumentation6";
       this.labelDocumentation6.Size = new System.Drawing.Size(36, 13);
       this.labelDocumentation6.TabIndex = 131;
@@ -569,7 +569,7 @@
       // labelDocumentation5
       // 
       this.labelDocumentation5.AutoSize = true;
-      this.labelDocumentation5.Location = new System.Drawing.Point(491, 203);
+      this.labelDocumentation5.Location = new System.Drawing.Point(530, 203);
       this.labelDocumentation5.Name = "labelDocumentation5";
       this.labelDocumentation5.Size = new System.Drawing.Size(36, 13);
       this.labelDocumentation5.TabIndex = 130;
@@ -578,7 +578,7 @@
       // labelDocumentation4
       // 
       this.labelDocumentation4.AutoSize = true;
-      this.labelDocumentation4.Location = new System.Drawing.Point(491, 179);
+      this.labelDocumentation4.Location = new System.Drawing.Point(530, 179);
       this.labelDocumentation4.Name = "labelDocumentation4";
       this.labelDocumentation4.Size = new System.Drawing.Size(36, 13);
       this.labelDocumentation4.TabIndex = 129;
@@ -587,7 +587,7 @@
       // labelDocumentation3
       // 
       this.labelDocumentation3.AutoSize = true;
-      this.labelDocumentation3.Location = new System.Drawing.Point(491, 145);
+      this.labelDocumentation3.Location = new System.Drawing.Point(530, 145);
       this.labelDocumentation3.Name = "labelDocumentation3";
       this.labelDocumentation3.Size = new System.Drawing.Size(36, 13);
       this.labelDocumentation3.TabIndex = 128;
@@ -596,7 +596,7 @@
       // labelDocumentation2
       // 
       this.labelDocumentation2.AutoSize = true;
-      this.labelDocumentation2.Location = new System.Drawing.Point(491, 115);
+      this.labelDocumentation2.Location = new System.Drawing.Point(530, 115);
       this.labelDocumentation2.Name = "labelDocumentation2";
       this.labelDocumentation2.Size = new System.Drawing.Size(36, 13);
       this.labelDocumentation2.TabIndex = 127;
@@ -605,7 +605,7 @@
       // labelDocumentation1
       // 
       this.labelDocumentation1.AutoSize = true;
-      this.labelDocumentation1.Location = new System.Drawing.Point(491, 91);
+      this.labelDocumentation1.Location = new System.Drawing.Point(530, 91);
       this.labelDocumentation1.Name = "labelDocumentation1";
       this.labelDocumentation1.Size = new System.Drawing.Size(36, 13);
       this.labelDocumentation1.TabIndex = 126;
@@ -615,7 +615,7 @@
       // 
       this.labelDocumentationSmall.AutoSize = true;
       this.labelDocumentationSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-      this.labelDocumentationSmall.Location = new System.Drawing.Point(490, 59);
+      this.labelDocumentationSmall.Location = new System.Drawing.Point(529, 59);
       this.labelDocumentationSmall.Name = "labelDocumentationSmall";
       this.labelDocumentationSmall.Size = new System.Drawing.Size(270, 24);
       this.labelDocumentationSmall.TabIndex = 125;
@@ -814,7 +814,7 @@
       // 
       this.labelConversation.AutoSize = true;
       this.labelConversation.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-      this.labelConversation.Location = new System.Drawing.Point(490, 568);
+      this.labelConversation.Location = new System.Drawing.Point(566, 570);
       this.labelConversation.Name = "labelConversation";
       this.labelConversation.Size = new System.Drawing.Size(266, 24);
       this.labelConversation.TabIndex = 103;
@@ -824,7 +824,7 @@
       // 
       this.labelPresentation.AutoSize = true;
       this.labelPresentation.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-      this.labelPresentation.Location = new System.Drawing.Point(492, 409);
+      this.labelPresentation.Location = new System.Drawing.Point(568, 411);
       this.labelPresentation.Name = "labelPresentation";
       this.labelPresentation.Size = new System.Drawing.Size(247, 24);
       this.labelPresentation.TabIndex = 102;
@@ -874,7 +874,7 @@
       // 
       this.labelPresentationAndConversation.AutoSize = true;
       this.labelPresentationAndConversation.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
-      this.labelPresentationAndConversation.Location = new System.Drawing.Point(491, 367);
+      this.labelPresentationAndConversation.Location = new System.Drawing.Point(567, 369);
       this.labelPresentationAndConversation.Name = "labelPresentationAndConversation";
       this.labelPresentationAndConversation.Size = new System.Drawing.Size(584, 29);
       this.labelPresentationAndConversation.TabIndex = 97;
@@ -884,7 +884,7 @@
       // 
       this.labelDocumentationMain.AutoSize = true;
       this.labelDocumentationMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
-      this.labelDocumentationMain.Location = new System.Drawing.Point(489, 17);
+      this.labelDocumentationMain.Location = new System.Drawing.Point(528, 17);
       this.labelDocumentationMain.Name = "labelDocumentationMain";
       this.labelDocumentationMain.Size = new System.Drawing.Size(397, 29);
       this.labelDocumentationMain.TabIndex = 96;
@@ -960,10 +960,10 @@
       // 
       this.labelObligatoryCriteriaA5Description.AutoSize = true;
       this.labelObligatoryCriteriaA5Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.labelObligatoryCriteriaA5Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.75F);
+      this.labelObligatoryCriteriaA5Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
       this.labelObligatoryCriteriaA5Description.Location = new System.Drawing.Point(150, 176);
       this.labelObligatoryCriteriaA5Description.Name = "labelObligatoryCriteriaA5Description";
-      this.labelObligatoryCriteriaA5Description.Size = new System.Drawing.Size(300, 9);
+      this.labelObligatoryCriteriaA5Description.Size = new System.Drawing.Size(360, 12);
       this.labelObligatoryCriteriaA5Description.TabIndex = 188;
       this.labelObligatoryCriteriaA5Description.Text = "Wie erfolgt die Überprüfung und Dokumentation des Projektforschritts und der Risi" +
     "ken ?";
@@ -982,10 +982,10 @@
       // 
       this.labelObligatoryCriteriaA10Description.AutoSize = true;
       this.labelObligatoryCriteriaA10Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-      this.labelObligatoryCriteriaA10Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.75F);
+      this.labelObligatoryCriteriaA10Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
       this.labelObligatoryCriteriaA10Description.Location = new System.Drawing.Point(150, 311);
       this.labelObligatoryCriteriaA10Description.Name = "labelObligatoryCriteriaA10Description";
-      this.labelObligatoryCriteriaA10Description.Size = new System.Drawing.Size(300, 9);
+      this.labelObligatoryCriteriaA10Description.Size = new System.Drawing.Size(360, 12);
       this.labelObligatoryCriteriaA10Description.TabIndex = 190;
       this.labelObligatoryCriteriaA10Description.Text = "Wie ist die Interaktion des Kandidaten mit den anderen Projektmitgliedern zu beur" +
     "teilen?";
@@ -1004,7 +1004,7 @@
       // 
       this.labelObligatoryCriteriaDocumentation2Description.AutoSize = true;
       this.labelObligatoryCriteriaDocumentation2Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-      this.labelObligatoryCriteriaDocumentation2Description.Location = new System.Drawing.Point(639, 115);
+      this.labelObligatoryCriteriaDocumentation2Description.Location = new System.Drawing.Point(678, 115);
       this.labelObligatoryCriteriaDocumentation2Description.Name = "labelObligatoryCriteriaDocumentation2Description";
       this.labelObligatoryCriteriaDocumentation2Description.Size = new System.Drawing.Size(180, 13);
       this.labelObligatoryCriteriaDocumentation2Description.TabIndex = 192;
@@ -1014,7 +1014,7 @@
       // 
       this.labelObligatoryCriteriaDocumentation5Description.AutoSize = true;
       this.labelObligatoryCriteriaDocumentation5Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-      this.labelObligatoryCriteriaDocumentation5Description.Location = new System.Drawing.Point(639, 213);
+      this.labelObligatoryCriteriaDocumentation5Description.Location = new System.Drawing.Point(678, 213);
       this.labelObligatoryCriteriaDocumentation5Description.Name = "labelObligatoryCriteriaDocumentation5Description";
       this.labelObligatoryCriteriaDocumentation5Description.Size = new System.Drawing.Size(285, 13);
       this.labelObligatoryCriteriaDocumentation5Description.TabIndex = 193;
@@ -1024,7 +1024,7 @@
       // 
       this.labelObligatoryCriteriaDocumentation4Description.AutoSize = true;
       this.labelObligatoryCriteriaDocumentation4Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-      this.labelObligatoryCriteriaDocumentation4Description.Location = new System.Drawing.Point(639, 183);
+      this.labelObligatoryCriteriaDocumentation4Description.Location = new System.Drawing.Point(678, 183);
       this.labelObligatoryCriteriaDocumentation4Description.Name = "labelObligatoryCriteriaDocumentation4Description";
       this.labelObligatoryCriteriaDocumentation4Description.Size = new System.Drawing.Size(341, 13);
       this.labelObligatoryCriteriaDocumentation4Description.TabIndex = 194;
@@ -1034,7 +1034,7 @@
       // 
       this.labelObligatoryCriteriaDocumentation1Description.AutoSize = true;
       this.labelObligatoryCriteriaDocumentation1Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.labelObligatoryCriteriaDocumentation1Description.Location = new System.Drawing.Point(642, 92);
+      this.labelObligatoryCriteriaDocumentation1Description.Location = new System.Drawing.Point(681, 92);
       this.labelObligatoryCriteriaDocumentation1Description.Name = "labelObligatoryCriteriaDocumentation1Description";
       this.labelObligatoryCriteriaDocumentation1Description.Size = new System.Drawing.Size(186, 13);
       this.labelObligatoryCriteriaDocumentation1Description.TabIndex = 195;
@@ -1044,7 +1044,7 @@
       // 
       this.labelObligatoryCriteriaDocumentation3Description.AutoSize = true;
       this.labelObligatoryCriteriaDocumentation3Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.labelObligatoryCriteriaDocumentation3Description.Location = new System.Drawing.Point(642, 148);
+      this.labelObligatoryCriteriaDocumentation3Description.Location = new System.Drawing.Point(681, 148);
       this.labelObligatoryCriteriaDocumentation3Description.Name = "labelObligatoryCriteriaDocumentation3Description";
       this.labelObligatoryCriteriaDocumentation3Description.Size = new System.Drawing.Size(368, 13);
       this.labelObligatoryCriteriaDocumentation3Description.TabIndex = 196;
@@ -1054,7 +1054,7 @@
       // 
       this.labelObligatoryCriteriaDocumentation6Description.AutoSize = true;
       this.labelObligatoryCriteriaDocumentation6Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.labelObligatoryCriteriaDocumentation6Description.Location = new System.Drawing.Point(639, 243);
+      this.labelObligatoryCriteriaDocumentation6Description.Location = new System.Drawing.Point(678, 243);
       this.labelObligatoryCriteriaDocumentation6Description.Name = "labelObligatoryCriteriaDocumentation6Description";
       this.labelObligatoryCriteriaDocumentation6Description.Size = new System.Drawing.Size(246, 13);
       this.labelObligatoryCriteriaDocumentation6Description.TabIndex = 197;
@@ -1064,7 +1064,7 @@
       // 
       this.labelObligatoryCriteriaDocumentation8Description.AutoSize = true;
       this.labelObligatoryCriteriaDocumentation8Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.labelObligatoryCriteriaDocumentation8Description.Location = new System.Drawing.Point(642, 297);
+      this.labelObligatoryCriteriaDocumentation8Description.Location = new System.Drawing.Point(681, 297);
       this.labelObligatoryCriteriaDocumentation8Description.Name = "labelObligatoryCriteriaDocumentation8Description";
       this.labelObligatoryCriteriaDocumentation8Description.Size = new System.Drawing.Size(328, 13);
       this.labelObligatoryCriteriaDocumentation8Description.TabIndex = 198;
@@ -1074,7 +1074,7 @@
       // 
       this.labelObligatoryCriteriaDocumentation7Description.AutoSize = true;
       this.labelObligatoryCriteriaDocumentation7Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.labelObligatoryCriteriaDocumentation7Description.Location = new System.Drawing.Point(642, 267);
+      this.labelObligatoryCriteriaDocumentation7Description.Location = new System.Drawing.Point(681, 267);
       this.labelObligatoryCriteriaDocumentation7Description.Name = "labelObligatoryCriteriaDocumentation7Description";
       this.labelObligatoryCriteriaDocumentation7Description.Size = new System.Drawing.Size(262, 13);
       this.labelObligatoryCriteriaDocumentation7Description.TabIndex = 199;
@@ -1115,7 +1115,7 @@
       this.labelObligatoryCriteriaPresentationAndConversation5Description.AutoSize = true;
       this.labelObligatoryCriteriaPresentationAndConversation5Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
       this.labelObligatoryCriteriaPresentationAndConversation5Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
-      this.labelObligatoryCriteriaPresentationAndConversation5Description.Location = new System.Drawing.Point(640, 599);
+      this.labelObligatoryCriteriaPresentationAndConversation5Description.Location = new System.Drawing.Point(716, 601);
       this.labelObligatoryCriteriaPresentationAndConversation5Description.Name = "labelObligatoryCriteriaPresentationAndConversation5Description";
       this.labelObligatoryCriteriaPresentationAndConversation5Description.Size = new System.Drawing.Size(409, 12);
       this.labelObligatoryCriteriaPresentationAndConversation5Description.TabIndex = 233;
@@ -1127,7 +1127,7 @@
       this.labelObligatoryCriteriaPresentationAndConversation6Description.AutoSize = true;
       this.labelObligatoryCriteriaPresentationAndConversation6Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
       this.labelObligatoryCriteriaPresentationAndConversation6Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
-      this.labelObligatoryCriteriaPresentationAndConversation6Description.Location = new System.Drawing.Point(639, 633);
+      this.labelObligatoryCriteriaPresentationAndConversation6Description.Location = new System.Drawing.Point(715, 635);
       this.labelObligatoryCriteriaPresentationAndConversation6Description.Name = "labelObligatoryCriteriaPresentationAndConversation6Description";
       this.labelObligatoryCriteriaPresentationAndConversation6Description.Size = new System.Drawing.Size(409, 12);
       this.labelObligatoryCriteriaPresentationAndConversation6Description.TabIndex = 232;
@@ -1139,7 +1139,7 @@
       this.labelObligatoryCriteriaPresentationAndConversation7Description.AutoSize = true;
       this.labelObligatoryCriteriaPresentationAndConversation7Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
       this.labelObligatoryCriteriaPresentationAndConversation7Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
-      this.labelObligatoryCriteriaPresentationAndConversation7Description.Location = new System.Drawing.Point(638, 659);
+      this.labelObligatoryCriteriaPresentationAndConversation7Description.Location = new System.Drawing.Point(714, 661);
       this.labelObligatoryCriteriaPresentationAndConversation7Description.Name = "labelObligatoryCriteriaPresentationAndConversation7Description";
       this.labelObligatoryCriteriaPresentationAndConversation7Description.Size = new System.Drawing.Size(409, 12);
       this.labelObligatoryCriteriaPresentationAndConversation7Description.TabIndex = 231;
@@ -1151,7 +1151,7 @@
       this.labelObligatoryCriteriaPresentationAndConversation8Description.AutoSize = true;
       this.labelObligatoryCriteriaPresentationAndConversation8Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
       this.labelObligatoryCriteriaPresentationAndConversation8Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
-      this.labelObligatoryCriteriaPresentationAndConversation8Description.Location = new System.Drawing.Point(640, 694);
+      this.labelObligatoryCriteriaPresentationAndConversation8Description.Location = new System.Drawing.Point(716, 696);
       this.labelObligatoryCriteriaPresentationAndConversation8Description.Name = "labelObligatoryCriteriaPresentationAndConversation8Description";
       this.labelObligatoryCriteriaPresentationAndConversation8Description.Size = new System.Drawing.Size(409, 12);
       this.labelObligatoryCriteriaPresentationAndConversation8Description.TabIndex = 230;
@@ -1163,7 +1163,7 @@
       this.labelObligatoryCriteriaPresentationAndConversation9Description.AutoSize = true;
       this.labelObligatoryCriteriaPresentationAndConversation9Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
       this.labelObligatoryCriteriaPresentationAndConversation9Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
-      this.labelObligatoryCriteriaPresentationAndConversation9Description.Location = new System.Drawing.Point(637, 723);
+      this.labelObligatoryCriteriaPresentationAndConversation9Description.Location = new System.Drawing.Point(713, 725);
       this.labelObligatoryCriteriaPresentationAndConversation9Description.Name = "labelObligatoryCriteriaPresentationAndConversation9Description";
       this.labelObligatoryCriteriaPresentationAndConversation9Description.Size = new System.Drawing.Size(409, 12);
       this.labelObligatoryCriteriaPresentationAndConversation9Description.TabIndex = 229;
@@ -1175,7 +1175,7 @@
       this.labelObligatoryCriteriaPresentationAndConversation10Description.AutoSize = true;
       this.labelObligatoryCriteriaPresentationAndConversation10Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
       this.labelObligatoryCriteriaPresentationAndConversation10Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
-      this.labelObligatoryCriteriaPresentationAndConversation10Description.Location = new System.Drawing.Point(639, 757);
+      this.labelObligatoryCriteriaPresentationAndConversation10Description.Location = new System.Drawing.Point(715, 759);
       this.labelObligatoryCriteriaPresentationAndConversation10Description.Name = "labelObligatoryCriteriaPresentationAndConversation10Description";
       this.labelObligatoryCriteriaPresentationAndConversation10Description.Size = new System.Drawing.Size(409, 12);
       this.labelObligatoryCriteriaPresentationAndConversation10Description.TabIndex = 228;
@@ -1186,7 +1186,7 @@
       // 
       this.labelObligatoryCriteriaPresentationAndConversation1Description.AutoSize = true;
       this.labelObligatoryCriteriaPresentationAndConversation1Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.labelObligatoryCriteriaPresentationAndConversation1Description.Location = new System.Drawing.Point(642, 441);
+      this.labelObligatoryCriteriaPresentationAndConversation1Description.Location = new System.Drawing.Point(718, 443);
       this.labelObligatoryCriteriaPresentationAndConversation1Description.Name = "labelObligatoryCriteriaPresentationAndConversation1Description";
       this.labelObligatoryCriteriaPresentationAndConversation1Description.Size = new System.Drawing.Size(380, 13);
       this.labelObligatoryCriteriaPresentationAndConversation1Description.TabIndex = 234;
@@ -1196,7 +1196,7 @@
       // 
       this.labelObligatoryCriteriaPresentationAndConversation2Description.AutoSize = true;
       this.labelObligatoryCriteriaPresentationAndConversation2Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-      this.labelObligatoryCriteriaPresentationAndConversation2Description.Location = new System.Drawing.Point(642, 468);
+      this.labelObligatoryCriteriaPresentationAndConversation2Description.Location = new System.Drawing.Point(718, 470);
       this.labelObligatoryCriteriaPresentationAndConversation2Description.Name = "labelObligatoryCriteriaPresentationAndConversation2Description";
       this.labelObligatoryCriteriaPresentationAndConversation2Description.Size = new System.Drawing.Size(443, 13);
       this.labelObligatoryCriteriaPresentationAndConversation2Description.TabIndex = 235;
@@ -1207,7 +1207,7 @@
       // 
       this.labelObligatoryCriteriaPresentationAndConversation3Description.AutoSize = true;
       this.labelObligatoryCriteriaPresentationAndConversation3Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-      this.labelObligatoryCriteriaPresentationAndConversation3Description.Location = new System.Drawing.Point(642, 499);
+      this.labelObligatoryCriteriaPresentationAndConversation3Description.Location = new System.Drawing.Point(718, 501);
       this.labelObligatoryCriteriaPresentationAndConversation3Description.Name = "labelObligatoryCriteriaPresentationAndConversation3Description";
       this.labelObligatoryCriteriaPresentationAndConversation3Description.Size = new System.Drawing.Size(260, 13);
       this.labelObligatoryCriteriaPresentationAndConversation3Description.TabIndex = 236;
@@ -1217,7 +1217,7 @@
       // 
       this.labelObligatoryCriteriaPresentationAndConversation4Description.AutoSize = true;
       this.labelObligatoryCriteriaPresentationAndConversation4Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.labelObligatoryCriteriaPresentationAndConversation4Description.Location = new System.Drawing.Point(642, 532);
+      this.labelObligatoryCriteriaPresentationAndConversation4Description.Location = new System.Drawing.Point(718, 534);
       this.labelObligatoryCriteriaPresentationAndConversation4Description.Name = "labelObligatoryCriteriaPresentationAndConversation4Description";
       this.labelObligatoryCriteriaPresentationAndConversation4Description.Size = new System.Drawing.Size(238, 13);
       this.labelObligatoryCriteriaPresentationAndConversation4Description.TabIndex = 237;
@@ -1227,7 +1227,7 @@
       // 
       this.labelClearCriteria.AutoSize = true;
       this.labelClearCriteria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.labelClearCriteria.Location = new System.Drawing.Point(956, 224);
+      this.labelClearCriteria.Location = new System.Drawing.Point(995, 224);
       this.labelClearCriteria.Name = "labelClearCriteria";
       this.labelClearCriteria.Size = new System.Drawing.Size(101, 13);
       this.labelClearCriteria.TabIndex = 238;
@@ -1237,7 +1237,7 @@
       // 
       this.labelMediumGeneralCriteria.AutoSize = true;
       this.labelMediumGeneralCriteria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.labelMediumGeneralCriteria.Location = new System.Drawing.Point(955, 240);
+      this.labelMediumGeneralCriteria.Location = new System.Drawing.Point(994, 240);
       this.labelMediumGeneralCriteria.Name = "labelMediumGeneralCriteria";
       this.labelMediumGeneralCriteria.Size = new System.Drawing.Size(129, 13);
       this.labelMediumGeneralCriteria.TabIndex = 239;
@@ -1247,7 +1247,7 @@
       // 
       this.labelVeryGeneralCriteria.AutoSize = true;
       this.labelVeryGeneralCriteria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-      this.labelVeryGeneralCriteria.Location = new System.Drawing.Point(956, 253);
+      this.labelVeryGeneralCriteria.Location = new System.Drawing.Point(995, 253);
       this.labelVeryGeneralCriteria.Name = "labelVeryGeneralCriteria";
       this.labelVeryGeneralCriteria.Size = new System.Drawing.Size(105, 13);
       this.labelVeryGeneralCriteria.TabIndex = 240;
@@ -1267,10 +1267,10 @@
       // 
       this.label2.AutoSize = true;
       this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F);
+      this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
       this.label2.Location = new System.Drawing.Point(183, 455);
       this.label2.Name = "label2";
-      this.label2.Size = new System.Drawing.Size(281, 7);
+      this.label2.Size = new System.Drawing.Size(353, 12);
       this.label2.TabIndex = 242;
       this.label2.Text = "Wie wurden die fachlichen und technischen Anforderungen erfasst und dokumentiert?" +
     "";
@@ -1279,10 +1279,10 @@
       // 
       this.label3.AutoSize = true;
       this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F);
+      this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
       this.label3.Location = new System.Drawing.Point(186, 484);
       this.label3.Name = "label3";
-      this.label3.Size = new System.Drawing.Size(278, 7);
+      this.label3.Size = new System.Drawing.Size(349, 12);
       this.label3.TabIndex = 243;
       this.label3.Text = "Wie werden Applikationen und Schnittstellen konform implementiert und versioniert" +
     "?";
@@ -1291,10 +1291,10 @@
       // 
       this.label4.AutoSize = true;
       this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F);
+      this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
       this.label4.Location = new System.Drawing.Point(186, 546);
       this.label4.Name = "label4";
-      this.label4.Size = new System.Drawing.Size(317, 7);
+      this.label4.Size = new System.Drawing.Size(397, 12);
       this.label4.TabIndex = 244;
       this.label4.Text = "Wie wurden Testkonzepte und Testfälle für die Applikationen und/oder Schnittstell" +
     "en entwickelt?";
@@ -1303,10 +1303,10 @@
       // 
       this.label5.AutoSize = true;
       this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F);
+      this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
       this.label5.Location = new System.Drawing.Point(183, 573);
       this.label5.Name = "label5";
-      this.label5.Size = new System.Drawing.Size(277, 7);
+      this.label5.Size = new System.Drawing.Size(350, 12);
       this.label5.TabIndex = 245;
       this.label5.Text = "Wie wird die Durchführung von Tests organisiert und deren Ergebnisse ausgewertet?" +
     "";
@@ -1326,10 +1326,10 @@
       // 
       this.label7.AutoSize = true;
       this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F);
+      this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
       this.label7.Location = new System.Drawing.Point(187, 637);
       this.label7.Name = "label7";
-      this.label7.Size = new System.Drawing.Size(292, 7);
+      this.label7.Size = new System.Drawing.Size(370, 12);
       this.label7.TabIndex = 247;
       this.label7.Text = "Wie wird das Realisierungskonzept für die ausgewählte Umsetzungsvariante entwicke" +
     "lt?";
@@ -1349,10 +1349,10 @@
       // 
       this.label9.AutoSize = true;
       this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F);
+      this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
       this.label9.Location = new System.Drawing.Point(183, 696);
       this.label9.Name = "label9";
-      this.label9.Size = new System.Drawing.Size(265, 7);
+      this.label9.Size = new System.Drawing.Size(332, 12);
       this.label9.TabIndex = 249;
       this.label9.Text = "Werden mögliche Fehler mit den entsprechenden Mitteln erkannt und behandelt?";
       // 
@@ -1360,10 +1360,10 @@
       // 
       this.label10.AutoSize = true;
       this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F);
+      this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
       this.label10.Location = new System.Drawing.Point(183, 723);
       this.label10.Name = "label10";
-      this.label10.Size = new System.Drawing.Size(250, 7);
+      this.label10.Size = new System.Drawing.Size(316, 12);
       this.label10.TabIndex = 250;
       this.label10.Text = "Wie wurde die korrekte oder fehlerhafte Bearbeitung von Daten protokolliert?";
       // 
@@ -1371,10 +1371,10 @@
       // 
       this.label11.AutoSize = true;
       this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-      this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F);
+      this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
       this.label11.Location = new System.Drawing.Point(182, 755);
       this.label11.Name = "label11";
-      this.label11.Size = new System.Drawing.Size(276, 7);
+      this.label11.Size = new System.Drawing.Size(350, 12);
       this.label11.TabIndex = 251;
       this.label11.Text = "Wie wurde die Kommunikation der Anwendung mit Datenbanksystemen umgesetzt?";
       // 
@@ -1382,7 +1382,7 @@
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(1104, 851);
+      this.ClientSize = new System.Drawing.Size(1175, 851);
       this.Controls.Add(this.label11);
       this.Controls.Add(this.label10);
       this.Controls.Add(this.label9);
